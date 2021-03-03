@@ -1,6 +1,7 @@
 # Quickstart
 
-**Prerequisites.** Ensure that you have `node` and `yarn` installed.
+**Prerequisites.** Ensure that you have `node` and `yarn` installed on your
+command line.
 
 **Development.** Once you have verified that `node` and `yarn` are installed,
 navigate to the root folder of this project and run `yarn install` to install 
