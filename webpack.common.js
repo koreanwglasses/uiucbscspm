@@ -9,7 +9,7 @@ module.exports = {
 
   resolve: {
     // Add '.ts' and '.tsx' as resolvable extensions.
-    extensions: [".ts", ".tsx", ".js", ".jsx"]
+    extensions: [".ts", ".tsx", ".js", ".jsx"],
   },
 
   module: {
@@ -19,17 +19,17 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           {
-            loader: "ts-loader"
-          }
-        ]
+            loader: "ts-loader",
+          },
+        ],
       },
       // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
       {
         enforce: "pre",
         test: /\.js$/,
-        loader: "source-map-loader"
-      }
-    ]
+        loader: "source-map-loader",
+      },
+    ],
   },
 
   // When importing a module whose path matches one of the following, just
@@ -38,7 +38,7 @@ module.exports = {
   // dependencies, which allows browsers to cache those libraries between builds.
   externals: {
     react: "React",
-    "react-dom": "ReactDOM"
+    "react-dom": "ReactDOM",
   },
 
   plugins: [
@@ -52,14 +52,14 @@ module.exports = {
         ...(process.env.NODE_ENV === "production"
           ? [
               "https://unpkg.com/react@17/umd/react.production.min.js",
-              "https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
+              "https://unpkg.com/react-dom@17/umd/react-dom.production.min.js",
             ]
           : [
               "https://unpkg.com/react@17/umd/react.development.js",
-              "https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+              "https://unpkg.com/react-dom@17/umd/react-dom.development.js",
             ]),
-        "./main.js"
-      ]
-    })
-  ]
+        "./main.js",
+      ],
+    }),
+  ],
 };
