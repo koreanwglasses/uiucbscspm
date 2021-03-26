@@ -27,3 +27,10 @@ export type Course = {
    */
   followupCourses: string[];
 };
+
+export type CourseSelection = {
+  course: Course;
+  semester: string;
+  year: number;
+  position?: number;
+};

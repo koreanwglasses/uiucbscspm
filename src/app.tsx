@@ -1,5 +1,6 @@
 import * as React from "react";
 import styles from "./app.module.css";
+import { Palette } from "./components/palette";
 import { Course } from "./model/course";
 
 export function App() {
@@ -11,5 +12,12 @@ export function App() {
     })();
   }, []);
 
-  return <div className={styles.container}>Hello World!</div>;
+  return (
+    <div className={styles.container}>
+      <Palette
+        courses={[{ id: "CS467", name: "CS467" } as Course]}
+        selectedCourses={[]}
+      />
+    </div>
+  );
 }
