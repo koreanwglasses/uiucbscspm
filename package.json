@@ -27,6 +27,7 @@
     "prettier": "2.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-draggable": "^4.4.3",
     "source-map-loader": "^2.0.1",
     "style-loader": "^2.0.0",
     "ts-loader": "^8.0.17",
