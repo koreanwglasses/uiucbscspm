@@ -10,7 +10,7 @@ import styles from "./course-tile.module.css";
 import paletteStyles from "./palette.module.css";
 import scheduleStyles from "./schedule.module.css";
 
-export type DropTileEventHandler = (
+export type TileEventHandler = (
   course: Course,
   target: "palette" | "schedule",
   event: DraggableEvent,
@@ -19,8 +19,8 @@ export type DropTileEventHandler = (
 
 export const CourseTile: React.FC<{
   course: Course;
-  onDropTile: DropTileEventHandler;
-}> = ({ course, onDropTile = () => false }) => {
+  onTileEvent: TileEventHandler;
+}> = ({ course, onTileEvent = () => false }) => {
   const containerRef = React.useRef<HTMLDivElement>();
   const startPosition = [0, 0] as [number, number];
   const [position, setPosition] = React.useState<[number, number]>(
@@ -52,7 +52,7 @@ export const CourseTile: React.FC<{
       return;
     }
 
-    if (!onDropTile(course, target, e, data)) {
+    if (!onTileEvent(course, target, e, data)) {
       reset();
     }
   };
