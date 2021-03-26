@@ -9,9 +9,10 @@ import styles from "./course-tile.module.css";
 import paletteStyles from "./palette.module.css";
 import scheduleStyles from "./schedule.module.css";
 
-export type TileEventHandler = (course: Course, event: DropEvent) => boolean;
+export type TileEventHandler = (event: DropEvent) => boolean;
 
 export type DropEvent = {
+  course: Course;
   type: "drop";
   target: "palette" | "schedule";
   event: MouseEvent;
@@ -53,7 +54,7 @@ export const CourseTile: React.FC<{
       return;
     }
 
-    if (!onTileEvent(course, { type: "drop", target, event, data })) {
+    if (!onTileEvent({ type: "drop", course, target, event, data })) {
       reset();
     }
   };

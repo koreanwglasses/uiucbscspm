@@ -9,9 +9,9 @@ import { useCourses } from "./hooks/use-courses";
 export const App: React.FC = () => {
   const courses = useCourses();
 
-  const handleTileEvent: TileEventHandler = (course, event) => {
+  const handleTileEvent: TileEventHandler = (event) => {
     if (event.type === "drop") {
-      console.log(`Dropped ${course.id} onto ${event.target}`);
+      console.log(`Dropped ${event.course.id} onto ${event.target}`);
     }
     return false;
   };
