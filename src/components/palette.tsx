@@ -11,6 +11,8 @@ export const Palette: React.FC<{
   return (
     <div className={styles.palette}>
       {courses?.length && (
+        // Be sure to pass onDropTile like I did here ┐ That's how data gets
+        // passed back up to the main application     ↓
         <CourseTile course={courses[0]} onDropTile={onDropTile} />
       )}
     </div>
