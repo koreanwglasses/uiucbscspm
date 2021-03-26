@@ -1,10 +1,12 @@
-[{
-  "id": "CS467_3",
-  "name": "CS 467",
-  "description": "Social Visualiation\n\n<description>",
-  "creditHours": 3,
-  "semestersOffered": ["fall"],
-  "requirementsSatisfied": [],
-  "prereqs": [],
-  "followupCourses": []
-}]
+[
+  {
+    "id": "CS467_3",
+    "name": "CS 467",
+    "description": "Social Visualiation\n\n<description>",
+    "creditHours": 3,
+    "semestersOffered": ["fall"],
+    "requirementsSatisfied": [],
+    "prereqs": [],
+    "followupCourses": []
+  }
+]
