@@ -72,9 +72,11 @@ export const Schedule: React.FC<{
       <h1>Schedule</h1>
       {rows.map(({ semester, year, selectedCourses }) => (
         <div className={styles.row} key={`${year}-${semester}`}>
-          <p>{semester} {year}</p>
+          <p>
+            {semester} {year}
+          </p>
           {range(
-            Math.max(...selectedCourses.map(({ position }) => position))
+            Math.max(5, ...selectedCourses.map(({ position }) => position))
           ).map((i) => {
             const selectedCourse = selectedCourses.find(
               ({ position }) => position === i
