@@ -1,4 +1,17 @@
 .container {
-  width: fit-content;
   padding: 5px;
+}
+
+.panelsContainer {
+  display: table;
+  border-spacing: 10px;
+}
+.scheduleContainer {
+  display: table-cell;
+  width: 60vw;
+}
+
+.paletteContainer {
+  display: table-cell;
+  width: auto;
 }

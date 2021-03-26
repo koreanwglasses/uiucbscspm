@@ -1,4 +1,5 @@
 import * as React from "react";
+import "./layout.css";
 import styles from "./app.module.css";
 import { TileEventHandler } from "./components/course-tile";
 import { Palette } from "./components/palette";
@@ -17,12 +18,18 @@ export const App: React.FC = () => {
 
   return (
     <div className={styles.container}>
-      <Schedule selectedCourses={[]} onTileEvent={handleTileEvent} />
-      <Palette
-        courses={courses}
-        selectedCourses={[]}
-        onTileEvent={handleTileEvent}
-      />
+      <div className={styles.panelsContainer}>
+        <div className={styles.scheduleContainer}>
+          <Schedule selectedCourses={[]} onTileEvent={handleTileEvent} />
+        </div>
+        <div className={styles.paletteContainer}>
+          <Palette
+            courses={courses}
+            selectedCourses={[]}
+            onTileEvent={handleTileEvent}
+          />
+        </div>
+      </div>
     </div>
   );
 };

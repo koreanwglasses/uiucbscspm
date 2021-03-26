@@ -9,6 +9,7 @@ export const Schedule: React.FC<{
 }> = ({ selectedCourses, onTileEvent }) => {
   return (
     <div className={styles.schedule}>
+      <h1>Schedule</h1>
       {selectedCourses?.length ? (
         <CourseTile
           course={selectedCourses[0].course}
