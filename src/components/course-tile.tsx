@@ -1,11 +1,26 @@
 import * as React from "react";
-import { DraggableCore, DraggableEventHandler } from "react-draggable";
+import {
+  DraggableCore,
+  DraggableData,
+  DraggableEvent,
+  DraggableEventHandler,
+} from "react-draggable";
 import { Course } from "../model/course";
 import styles from "./course-tile.module.css";
+import paletteStyles from "./palette.module.css";
+import scheduleStyles from "./schedule.module.css";
+
+export type DropTileEventHandler = (
+  course: Course,
+  target: "palette" | "schedule",
+  event: DraggableEvent,
+  data: DraggableData
+) => boolean;
 
 export const CourseTile: React.FC<{
   course: Course;
-}> = ({ course }) => {
+  onDropTile: DropTileEventHandler;
+}> = ({ course, onDropTile = () => false }) => {
   const containerRef = React.useRef<HTMLDivElement>();
   const startPosition = [0, 0] as [number, number];
   const [position, setPosition] = React.useState<[number, number]>(
@@ -16,16 +31,34 @@ export const CourseTile: React.FC<{
     setPosition(startPosition);
   };
 
-  const onDrag: DraggableEventHandler = (e, { deltaX, deltaY }) => {
+  const handleDrag: DraggableEventHandler = (e, { deltaX, deltaY }) => {
     setPosition([position[0] + deltaX, position[1] + deltaY]);
   };
 
-  const dragStop: DraggableEventHandler = (e) => {
-    reset();
+  const handleStop: DraggableEventHandler = (e: MouseEvent, data) => {
+    const elements = document.elementsFromPoint(e.clientX, e.clientY);
+
+    let target: "palette" | "schedule";
+    if (
+      elements.find((elem) => elem.classList.contains(paletteStyles.palette))
+    ) {
+      target = "palette";
+    } else if (
+      elements.find((elem) => elem.classList.contains(scheduleStyles.schedule))
+    ) {
+      target = "schedule";
+    } else {
+      reset();
+      return;
+    }
+
+    if (!onDropTile(course, target, e, data)) {
+      reset();
+    }
   };
 
   return (
-    <DraggableCore onDrag={onDrag} onStop={dragStop}>
+    <DraggableCore onDrag={handleDrag} onStop={handleStop}>
       <div
         className={styles.tile}
         ref={containerRef}

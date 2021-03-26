@@ -1,14 +1,18 @@
 import * as React from "react";
 import { Course, CourseSelection } from "../model/course";
-import { CourseTile } from "./course-tile";
+import { CourseTile, DropTileEventHandler } from "./course-tile";
+import styles from "./palette.module.css";
 
 export const Palette: React.FC<{
   courses: Course[];
   selectedCourses: CourseSelection[];
-}> = ({ courses, selectedCourses }) => {
+  onDropTile: DropTileEventHandler;
+}> = ({ courses, selectedCourses, onDropTile = () => false }) => {
   return (
-    <div>
-      <CourseTile course={courses[0]} />
+    <div className={styles.palette}>
+      {courses?.length && (
+        <CourseTile course={courses[0]} onDropTile={onDropTile} />
+      )}
     </div>
   );
 };
