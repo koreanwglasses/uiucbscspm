@@ -1,6 +1,6 @@
 import { CourseSelection } from "./course";
 
-function courseSuggestions(
+export function courseSuggestions(
   selectedCourses: CourseSelection[],
   targetCourse: CourseSelection
 ) {
