@@ -1,2 +1,22 @@
 .schedule {
+
+}
+
+.row {
+  display: flex;
+  height: 70px;
+  width: 100%;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #888;
+}
+
+.row > p {
+  font-size: smaller;
+  align-self: flex-end;
+  margin: 2px;
+  color: #888;
+}
+
+.cell {
 }
