@@ -3,7 +3,7 @@ import styles from "./app.module.css";
 import { Palette } from "./components/palette";
 import { Course } from "./model/course";
 
-export function App() {
+export const App: React.FC = () => {
   const coursesRef = React.useRef<Course[]>();
   React.useEffect(() => {
     (async () => {
@@ -20,4 +20,4 @@ export function App() {
       />
     </div>
   );
-}
+};
