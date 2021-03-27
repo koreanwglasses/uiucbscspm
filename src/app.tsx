@@ -19,19 +19,23 @@ export const App: React.FC = () => {
       course: event.course,
     };
 
+    if (!newCourseSelection) return false;
+
     setSelectedCourses([
       ...selectedCourses.filter(
         (selectedCourse) => selectedCourse.course.id !== event.course.id
       ),
       newCourseSelection,
     ]);
+
+    return true;
   };
 
   const handleTileEvent: TileEventHandler = (event) => {
     if (event.type === "drop") {
       console.log(`Dropped ${event.course.id} onto ${event.target}`);
       if (event.target === "schedule") {
-        handleDropOnSchedule(event);
+        return handleDropOnSchedule(event);
       }
     }
     return false;

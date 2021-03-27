@@ -44,7 +44,7 @@ export const getCellAt = (clientX: number, clientY: number) => {
 
   const cell = elements.find((elem) => elem.classList.contains(styles.cell));
 
-  if (!cell) return;
+  if (!cell) return undefined;
 
   const row = cell.parentElement;
   const position = [...row.children].indexOf(cell) - 1;
