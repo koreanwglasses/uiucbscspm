@@ -3,6 +3,9 @@ import { Course, CourseSelection } from "../model/course";
 import { CourseTile, TileEventHandler } from "./course-tile";
 import styles from "./palette.module.css";
 
+export const isPalette = (element: HTMLElement) =>
+  element.classList.contains(styles.palette);
+
 export const Palette: React.FC<{
   courses: Course[];
   selectedCourses: CourseSelection[];

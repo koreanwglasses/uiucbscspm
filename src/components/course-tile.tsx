@@ -6,8 +6,8 @@ import {
 } from "react-draggable";
 import { Course } from "../model/course";
 import styles from "./course-tile.module.css";
-import paletteStyles from "./palette.module.css";
-import scheduleStyles from "./schedule.module.css";
+import { isPalette } from "./palette";
+import { isSchedule } from "./schedule";
 
 export type TileEventHandler = (event: DropEvent) => boolean;
 
@@ -15,7 +15,7 @@ export type DropEvent = {
   course: Course;
   type: "drop";
   target: "palette" | "schedule";
-  event: MouseEvent;
+  parentEvent: MouseEvent;
   data: DraggableData;
 };
 
@@ -41,20 +41,18 @@ export const CourseTile: React.FC<{
     const elements = document.elementsFromPoint(event.clientX, event.clientY);
 
     let target: "palette" | "schedule";
-    if (
-      elements.find((elem) => elem.classList.contains(paletteStyles.palette))
-    ) {
+    if (elements.find(isPalette)) {
       target = "palette";
-    } else if (
-      elements.find((elem) => elem.classList.contains(scheduleStyles.schedule))
-    ) {
+    } else if (elements.find(isSchedule)) {
       target = "schedule";
     } else {
       reset();
       return;
     }
 
-    if (!onTileEvent({ type: "drop", course, target, event, data })) {
+    if (
+      !onTileEvent({ type: "drop", course, target, parentEvent: event, data })
+    ) {
       reset();
     }
   };
