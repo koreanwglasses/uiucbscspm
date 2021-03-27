@@ -33,11 +33,17 @@ export const CourseTile: React.FC<{
     setPosition(startPosition);
   };
 
+  const handleStart: DraggableEventHandler = (e) => {
+    e.preventDefault();
+  };
+
   const handleDrag: DraggableEventHandler = (e, { deltaX, deltaY }) => {
+    e.preventDefault();
     setPosition([position[0] + deltaX, position[1] + deltaY]);
   };
 
   const handleStop: DraggableEventHandler = (event: MouseEvent, data) => {
+    event.preventDefault();
     const elements = document.elementsFromPoint(event.clientX, event.clientY);
 
     let target: "palette" | "schedule";
@@ -58,7 +64,11 @@ export const CourseTile: React.FC<{
   };
 
   return (
-    <DraggableCore onDrag={handleDrag} onStop={handleStop}>
+    <DraggableCore
+      onStart={handleStart}
+      onDrag={handleDrag}
+      onStop={handleStop}
+    >
       <div
         className={styles.tile}
         ref={containerRef}
