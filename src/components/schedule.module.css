@@ -18,6 +18,8 @@
 }
 
 .cell {
-  width: 100px;
+  width: 120px;
   padding: 10px;
+  padding-top: 14px;
+  box-sizing: border-box;
 }
