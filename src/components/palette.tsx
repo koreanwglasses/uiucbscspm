@@ -11,13 +11,25 @@ export const Palette: React.FC<{
   selectedCourses: CourseSelection[];
   onTileEvent: TileEventHandler;
 }> = ({ courses, selectedCourses, onTileEvent }) => {
+  // We only want to show the courses that have not yet been selected, so
+  // we filter them out here
+  //
+  // This is slow O(n^2), that its okay for now
+  const unselectedCourses = courses?.filter(
+    (course) =>
+      !selectedCourses.find(
+        (selectedCourse) => course.id === selectedCourse.course.id
+      )
+  );
+
   return (
     <div className={styles.palette}>
-      {courses?.length && (
-        // Be sure to pass onDropTile like I did here ┐ That's how data gets
-        // passed back up to the main application     ↓
-        <CourseTile course={courses[0]} onTileEvent={onTileEvent} />
-      )}
+      {/* We can use .map here to create a CourseTile component for each unselected course */}
+      {unselectedCourses?.map((course) => (
+        // Be sure to pass in onTileEvent and key the way it is here when you
+        // make CourseTiles
+        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
+      ))}
     </div>
   );
 };
