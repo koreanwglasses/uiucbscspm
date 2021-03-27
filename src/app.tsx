@@ -14,12 +14,16 @@ export const App: React.FC = () => {
   >([]);
 
   const handleDropOnSchedule = (event: DropEvent) => {
+    const cell = getCellAt(
+      event.parentEvent.clientX,
+      event.parentEvent.clientY
+    );
+    if (!cell) return false;
+
     const newCourseSelection: CourseSelection = {
-      ...getCellAt(event.parentEvent.clientX, event.parentEvent.clientY),
+      ...cell,
       course: event.course,
     };
-
-    if (!newCourseSelection) return false;
 
     setSelectedCourses([
       ...selectedCourses.filter(
@@ -32,11 +36,17 @@ export const App: React.FC = () => {
   };
 
   const handleDropOnPalette = (event: DropEvent) => {
+    const courseIndex = selectedCourses.findIndex(
+      (selectedCourse) => event.course.id === selectedCourse.course.id
+    );
+
+    if (courseIndex === -1) return false;
+
     setSelectedCourses([
-      ...selectedCourses.filter(
-        (selectedCourse) => selectedCourse.course.id !== event.course.id
-      ),
+      ...selectedCourses.slice(0, courseIndex),
+      ...selectedCourses.slice(courseIndex + 1),
     ]);
+
     return true;
   };
 
