@@ -31,11 +31,23 @@ export const App: React.FC = () => {
     return true;
   };
 
+  const handleDropOnPalette = (event: DropEvent) => {
+    setSelectedCourses([
+      ...selectedCourses.filter(
+        (selectedCourse) => selectedCourse.course.id !== event.course.id
+      ),
+    ]);
+    return true;
+  };
+
   const handleTileEvent: TileEventHandler = (event) => {
     if (event.type === "drop") {
       console.log(`Dropped ${event.course.id} onto ${event.target}`);
       if (event.target === "schedule") {
         return handleDropOnSchedule(event);
+      }
+      if (event.target === "palette") {
+        return handleDropOnPalette(event);
       }
     }
     return false;
