@@ -3,7 +3,7 @@ import { CourseSelection } from "./course";
 export function courseSuggestions(
   selectedCourses: CourseSelection[],
   targetCourse: CourseSelection
-) {
+): CourseSelection[] {
   // This is the top-down approach, user picks a course and we try to fill in the previous semesters with prereqs
   //determine previous semesters,year combos we can use
   //   (e.g if the target course is to be taken in Fall 2022, we have → Fall 2021, Spring 2022 left to use]
