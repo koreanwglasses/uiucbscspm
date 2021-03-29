@@ -5,7 +5,7 @@
         "description": "Social Visualiation\n\n<description>", 
         "creditHours": 3, 
         "semestersOffered": ["fall"], 
-        "concentration": ["Human and Social Impact", "Team Project"], 
+        "concentrations": ["Human and Social Impact", "Team Project"], 
         "prereqs": [], 
         "followupCourses": []
     }, 
@@ -14,7 +14,7 @@
         "name": "CS 000", 
         "creditHours": 3, 
         "semestersOffered": ["fall", "spring"], 
-        "concentration": ["core"], 
+        "concentrations": ["core"], 
         "prereqs": [], 
         "followupCourses": []
     }, 
@@ -23,7 +23,7 @@
         "name": "CS 001", 
         "creditHours": 3, 
         "semestersOffered": ["fall", "spring"], 
-        "concentration": ["Software Foundations", "Team Project"], 
+        "concentrations": ["Software Foundations", "Team Project"], 
         "prereqs": [], 
         "followupCourses": []
     }, 
@@ -32,7 +32,7 @@
         "name": "CS 002", 
         "creditHours": 3, 
         "semestersOffered": ["fall", "spring"], 
-        "concentration": ["Algorithms and Models"], 
+        "concentrations": ["Algorithms and Models"], 
         "prereqs": [], 
         "followupCourses": []
     }, 
@@ -41,7 +41,7 @@
         "name": "CS 003", 
         "creditHours": 3, 
         "semestersOffered": ["fall", "spring"], 
-        "concentration": ["Intelligence and Big Data"], 
+        "concentrations": ["Intelligence and Big Data"], 
         "prereqs": [], 
         "followupCourses": []
     }, 
@@ -50,28 +50,28 @@
         "name": "CS 004", 
         "creditHours": 3, 
         "semestersOffered": ["fall", "spring"],
-        "concentration": ["Media"], 
+        "concentrations": ["Media"], 
         "prereqs": [], 
         "followupCourses": []
     }, 
     {
         "id": "CS005", 
         "name": "CS 005", "creditHours": 3, "semestersOffered": ["fall", "spring"], 
-        "concentration": ["Scientific"], "prereqs": [], "followupCourses": []
+        "concentrations": ["Scientific"], "prereqs": [], "followupCourses": []
     }, 
     {
         "id": "CS006", "name": "CS 006", "creditHours": 3, "semestersOffered": ["fall", "spring"], 
-        "concentration": ["Distributed Systems"], "prereqs": [], "followupCourses": []
+        "concentrations": ["Distributed Systems"], "prereqs": [], "followupCourses": []
     }, 
     {
         "id": "CS007", "name": "CS 007", "creditHours": 3, "semestersOffered": ["fall", "spring"], 
-        "concentration": ["Machines"], "prereqs": [], "followupCourses": []
+        "concentrations": ["Machines"], "prereqs": [], "followupCourses": []
     }, 
     {
         "id": "CS008", "name": "CS 008", "creditHours": 3, "semestersOffered": ["fall", "spring"], 
-        "concentration": [], "prereqs": [], "followupCourses": []
+        "concentrations": [], "prereqs": [], "followupCourses": []
     }, {
         "id": "CS009", "name": "CS 009", "creditHours": 3, "semestersOffered": ["fall", "spring"], 
-        "concentration": [], "prereqs": [], "followupCourses": []
+        "concentrations": [], "prereqs": [], "followupCourses": []
     }
 ]

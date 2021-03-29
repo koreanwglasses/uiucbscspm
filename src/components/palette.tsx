@@ -23,50 +23,50 @@ export const Palette: React.FC<{
   );
 
   const coreCourses = unselectedCourses?.filter(
-    (course) => course.requirementsSatisfied.includes("core")
+    (course) => course.concentrations?.includes("core")
   );
 
   const softwareCourses = unselectedCourses?.filter(
-    (course) => course.requirementsSatisfied.includes("Software Foundations")
+    (course) => course.concentrations?.includes("Software Foundations")
   );
 
   const algoCourses = unselectedCourses?.filter(
-    (course) => course.requirementsSatisfied.includes("Algorithms and Models")
+    (course) => course.concentrations?.includes("Algorithms and Models")
   );
 
   const dataCourses = unselectedCourses?.filter(
-    (course) => course.requirementsSatisfied.includes("Intelligence and Big Data")
+    (course) => course.concentrations?.includes("Intelligence and Big Data")
   );
 
   const humanCourses = unselectedCourses?.filter(
-    (course) => course.requirementsSatisfied.includes("Human and Social Impact")
+    (course) => course.concentrations?.includes("Human and Social Impact")
   );
 
   const mediaCourses = unselectedCourses?.filter(
-    (course) => course.requirementsSatisfied.includes("Media")
+    (course) => course.concentrations?.includes("Media")
   );
 
   const scientificCourses = unselectedCourses?.filter(
-    (course) => course.requirementsSatisfied.includes("Scientific")
+    (course) => course.concentrations?.includes("Scientific")
   );
 
   const distributedCourses = unselectedCourses?.filter(
-    (course) => course.requirementsSatisfied.includes("Distributed Systems")
+    (course) => course.concentrations?.includes("Distributed Systems")
   );
 
   const machineCourses = unselectedCourses?.filter(
-    (course) => course.requirementsSatisfied.includes("Machines")
+    (course) => course.concentrations?.includes("Machines")
   );
 
   const teamCourses = unselectedCourses?.filter(
-    (course) => course.requirementsSatisfied.includes("Team Project")
+    (course) => course.concentrations?.includes("Team Project")
   );
 
   return (
     <div className={styles.palette}>
       <h1>Palette</h1>
-      {/* We can use .map here to create a CourseTile component for each unselected course
-      {unselectedCourses?.map((course) => (
+      {/* We can use .map here to create a CourseTile component for each unselected course */}
+      {/* {unselectedCourses?.map((course) => (
         // Be sure to pass in onTileEvent and key the way it is here when you
         // make CourseTiles
         <CourseTile course={course} onTileEvent={onTileEvent} key={course.id}/>
