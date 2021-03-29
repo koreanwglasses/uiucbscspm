@@ -29,7 +29,7 @@ export const Palette: React.FC<{
       {unselectedCourses?.map((course) => (
         // Be sure to pass in onTileEvent and key the way it is here when you
         // make CourseTiles
-        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
+        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id}/>
       ))}
     </div>
   );

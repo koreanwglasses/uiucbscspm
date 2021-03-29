@@ -8,5 +8,15 @@
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
+  },
+  {
+    "id": "CS467_4",
+    "name": "CS 467",
+    "description": "Social Visualiation\n\n<description>",
+    "creditHours": 4,
+    "semestersOffered": ["fall"],
+    "requirementsSatisfied": [],
+    "prereqs": [],
+    "followupCourses": []
   }
 ]
