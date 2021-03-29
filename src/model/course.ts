@@ -12,7 +12,7 @@ export type Course = {
   description?: string;
   creditHours: number;
   semestersOffered: ("spring" | "fall")[];
-  concentration?: string;
+  concentrations?: string[];
   /**
    * An array of requirement “tags” used to determine if a set
    * of courses meets certain requirements
