@@ -22,7 +22,8 @@ export type DropEvent = {
 export const CourseTile: React.FC<{
   course: Course;
   onTileEvent: TileEventHandler;
-}> = ({ course, onTileEvent = () => false }) => {
+  disabled?: boolean;
+}> = ({ course, onTileEvent = () => false, disabled = false }) => {
   const containerRef = React.useRef<HTMLDivElement>();
   const startPosition = [0, 0] as [number, number];
   const [position, setPosition] = React.useState<[number, number]>(
@@ -34,15 +35,18 @@ export const CourseTile: React.FC<{
   };
 
   const handleStart: DraggableEventHandler = (e) => {
+    if (disabled) return;
     e.preventDefault();
   };
 
   const handleDrag: DraggableEventHandler = (e, { deltaX, deltaY }) => {
+    if (disabled) return;
     e.preventDefault();
     setPosition([position[0] + deltaX, position[1] + deltaY]);
   };
 
   const handleStop: DraggableEventHandler = (event: MouseEvent, data) => {
+    if (disabled) return;
     event.preventDefault();
     const elements = document.elementsFromPoint(event.clientX, event.clientY);
 
@@ -72,7 +76,11 @@ export const CourseTile: React.FC<{
       <div
         className={styles.tile}
         ref={containerRef}
-        style={{ transform: `translate(${position[0]}px, ${position[1]}px)` }}
+        style={{
+          transform: `translate(${position[0]}px, ${position[1]}px)`,
+          opacity: disabled ? 0.25 : 1,
+          cursor: disabled ? "default" : "pointer",
+        }}
       >
         {course.name}
       </div>
