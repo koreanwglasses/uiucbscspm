@@ -21,22 +21,6 @@ def get_js_soup(url, driver):
     soup = BeautifulSoup(res_html,'html.parser') # beautiful soup object to be used for parsing html content
     return soup
 
-# tidies extracted text
-
-
-
-''' More tidying
-Sometimes the text extracted HTML webpage may contain javascript code and some style elements. 
-This function removes script and style tags from HTML so that extracted text does not contain them.
-'''
-
-def remove_script(soup):
-    for script in soup(["script", "style", "href"]):
-        script.decompose()
-    return soup
-
-
-
 
 courses_url = 'http://catalog.illinois.edu/courses-of-instruction/cs/'
 
@@ -53,6 +37,7 @@ def scrape_course(courses_url, driver):  # This function return a list of all th
 
 
 termlinks = scrape_course(courses_url, driver)
+
 
 # This function return a list of what terms the course has offered
 def scrape_term_offered(termlink, driver):
@@ -78,12 +63,15 @@ def scrape_term_offered(termlink, driver):
     terms.insert(0, course_name)
     # print(terms)
     return terms
+
+
 '''
 # Writing to csv file, uncomment them when need to rewrite
 writer = csv.writer(open("terms.csv", "w", newline=''))
 for link in termlinks:
     writer.writerow(scrape_term_offered(link, driver))
 '''
+
 
 def scrape_info(courses_url, driver):
     info = []
@@ -150,6 +138,7 @@ def scrape_info(courses_url, driver):
     return info
 
 
+'''
 infos = scrape_info(courses_url, driver)
 
 # Writing to csv file, uncomment them when need to rewrite
@@ -157,29 +146,4 @@ writer = csv.writer(open("info.csv", "w", newline=''))
 for info in infos:
     writer.writerow(info)
     print('writing')
-
-'''
-# Scrape each content url and write the content to a csv file
-# Each row is one massmail, each column is one paragraph
-def scrape_content(content_url, driver):
-    content = []
-
-    soup = get_js_soup(content_url, driver)
-    
-    for paragraph in soup.find_all('p'):
-        content.append(str(paragraph))
-
-    return content
-
-
-
-
-
-writer = csv.writer(open("massmails.csv", "w", newline=''))
-
-print('writing', end='')
-for link in contentlinks:
-    print('-', end='')
-    writer.writerow(scrape_content(link, driver))
-    #print(scrape_content(link, driver)) 
 '''
