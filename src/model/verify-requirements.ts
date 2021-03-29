@@ -1,4 +1,4 @@
-import { CourseSelection } from "./course";
+import { Course, CourseSelection } from "./course";
 
 /**
  * Returns a list of requirements that are satisfied
@@ -12,10 +12,10 @@ export function verifyRequirements(
 
   //<String, String[]>
   //maps "semester/year" to list of courses
-  let mapper = new Map();
+  let mapper = new Map<string, Course[]>();
 
   //contains all keys used in the map
-  let keyspace : String[]
+  let keyspace : string[]
 
   // enhanced for loop this into this format
   //    {“semester/year” → [courses]}
@@ -252,7 +252,7 @@ export function verifyRequirements(
   ]);
 
 
-  var REVERSE_LOOKUP = new Map();
+  var REVERSE_LOOKUP = new Map<string, Map<string, boolean>[]>();
 
 
   for (let key of FOCUS_ALGO.keys()) {

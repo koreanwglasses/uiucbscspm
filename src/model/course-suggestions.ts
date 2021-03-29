@@ -55,7 +55,7 @@ export function courseSuggestions(
         });
         
         //need conversion between prereqs as a string and a Course object
-        temp = temp2
+        // temp = temp2
 
         
 
