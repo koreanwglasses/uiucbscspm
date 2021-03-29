@@ -1,1 +1,77 @@
-[{"id": "CS467_3", "name": "CS 467", "description": "Social Visualiation\n\n<description>", "creditHours": 3, "semestersOffered": ["fall"], "requirementsSatisfied": [], "prereqs": [], "followupCourses": []}, {"id": "CS000", "name": "CS 000", "creditHours": 3, "semestersOffered": ["fall", "spring"], "requirementsSatisfied": [], "prereqs": [], "followupCourses": []}, {"id": "CS001", "name": "CS 001", "creditHours": 3, "semestersOffered": ["fall", "spring"], "requirementsSatisfied": [], "prereqs": [], "followupCourses": []}, {"id": "CS002", "name": "CS 002", "creditHours": 3, "semestersOffered": ["fall", "spring"], "requirementsSatisfied": [], "prereqs": [], "followupCourses": []}, {"id": "CS003", "name": "CS 003", "creditHours": 3, "semestersOffered": ["fall", "spring"], "requirementsSatisfied": [], "prereqs": [], "followupCourses": []}, {"id": "CS004", "name": "CS 004", "creditHours": 3, "semestersOffered": ["fall", "spring"], "requirementsSatisfied": [], "prereqs": [], "followupCourses": []}, {"id": "CS005", "name": "CS 005", "creditHours": 3, "semestersOffered": ["fall", "spring"], "requirementsSatisfied": [], "prereqs": [], "followupCourses": []}, {"id": "CS006", "name": "CS 006", "creditHours": 3, "semestersOffered": ["fall", "spring"], "requirementsSatisfied": [], "prereqs": [], "followupCourses": []}, {"id": "CS007", "name": "CS 007", "creditHours": 3, "semestersOffered": ["fall", "spring"], "requirementsSatisfied": [], "prereqs": [], "followupCourses": []}, {"id": "CS008", "name": "CS 008", "creditHours": 3, "semestersOffered": ["fall", "spring"], "requirementsSatisfied": [], "prereqs": [], "followupCourses": []}, {"id": "CS009", "name": "CS 009", "creditHours": 3, "semestersOffered": ["fall", "spring"], "requirementsSatisfied": [], "prereqs": [], "followupCourses": []}]
+[
+    {
+        "id": "CS467_3", 
+        "name": "CS 467", 
+        "description": "Social Visualiation\n\n<description>", 
+        "creditHours": 3, 
+        "semestersOffered": ["fall"], 
+        "concentrations": ["Human and Social Impact", "Team Project"], 
+        "prereqs": [], 
+        "followupCourses": []
+    }, 
+    {
+        "id": "CS000", 
+        "name": "CS 000", 
+        "creditHours": 3, 
+        "semestersOffered": ["fall", "spring"], 
+        "concentrations": ["core"], 
+        "prereqs": [], 
+        "followupCourses": []
+    }, 
+    {
+        "id": "CS001", 
+        "name": "CS 001", 
+        "creditHours": 3, 
+        "semestersOffered": ["fall", "spring"], 
+        "concentrations": ["Software Foundations", "Team Project"], 
+        "prereqs": [], 
+        "followupCourses": []
+    }, 
+    {
+        "id": "CS002", 
+        "name": "CS 002", 
+        "creditHours": 3, 
+        "semestersOffered": ["fall", "spring"], 
+        "concentrations": ["Algorithms and Models"], 
+        "prereqs": [], 
+        "followupCourses": []
+    }, 
+    {
+        "id": "CS003", 
+        "name": "CS 003", 
+        "creditHours": 3, 
+        "semestersOffered": ["fall", "spring"], 
+        "concentrations": ["Intelligence and Big Data"], 
+        "prereqs": [], 
+        "followupCourses": []
+    }, 
+    {
+        "id": "CS004", 
+        "name": "CS 004", 
+        "creditHours": 3, 
+        "semestersOffered": ["fall", "spring"],
+        "concentrations": ["Media"], 
+        "prereqs": [], 
+        "followupCourses": []
+    }, 
+    {
+        "id": "CS005", 
+        "name": "CS 005", "creditHours": 3, "semestersOffered": ["fall", "spring"], 
+        "concentrations": ["Scientific"], "prereqs": [], "followupCourses": []
+    }, 
+    {
+        "id": "CS006", "name": "CS 006", "creditHours": 3, "semestersOffered": ["fall", "spring"], 
+        "concentrations": ["Distributed Systems"], "prereqs": [], "followupCourses": []
+    }, 
+    {
+        "id": "CS007", "name": "CS 007", "creditHours": 3, "semestersOffered": ["fall", "spring"], 
+        "concentrations": ["Machines"], "prereqs": [], "followupCourses": []
+    }, 
+    {
+        "id": "CS008", "name": "CS 008", "creditHours": 3, "semestersOffered": ["fall", "spring"], 
+        "concentrations": [], "prereqs": [], "followupCourses": []
+    }, {
+        "id": "CS009", "name": "CS 009", "creditHours": 3, "semestersOffered": ["fall", "spring"], 
+        "concentrations": [], "prereqs": [], "followupCourses": []
+    }
+]
