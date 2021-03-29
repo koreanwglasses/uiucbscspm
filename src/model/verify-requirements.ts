@@ -6,8 +6,41 @@ import { CourseSelection } from "./course";
 export function verifyRequirements(
   selectedCourses: CourseSelection[]
 ): string[] {
+
+
+
+
+  //<String, String[]>
+  //maps "semester/year" to list of courses
+  let mapper = new Map();
+
+  //contains all keys used in the map
+  let keyspace : String[]
+
   // enhanced for loop this into this format
   //    {“semester/year” → [courses]}
+
+  selectedCourses.forEach(element => {
+    var course = element.course
+    var sem = element.semester
+    var year = element.year
+
+    var combin = sem + "/" + year
+
+    if (keyspace.indexOf(combin) == -1) {
+      keyspace.push(combin)
+    }
+
+    if (mapper.has(combin)) {
+      mapper.get(combin).push(course)
+    }
+    else {
+      mapper.set(combin, [])
+      mapper.get(combin).push(course)
+    }
+  }); //end of enhanced for loop
+
+
   /* Generate list of “grad requirements”
         - General requirements:
             -CS 125, 126, 173, 225, 233, 241, 357, 361, 374, 421
@@ -16,7 +49,342 @@ export function verifyRequirements(
             -Focus areas [at least 3 courses in one subcategory]
 -General Advanced Electives [minimum of 6.0 credit hours needed]    
     */
-  // confirm credit hours, courses match → find “a” valid mapping
-  // track all reqs fulfilled by mapping courses, return this list
-  throw new Error("method not implemented");
+
+  // grad requirements go here, these are bool flags
+  //define the "basic requirements" rule here
+
+  //must meet all fields in pt1, and one field in pt2
+  var BASIC_REQUIREMENTS_test_pt1 = new Map([
+    ["CS125",  false],
+    ["CS173",  false],
+    ["CS210",  false],
+    ["CS225",  false],
+    ["CS233",  false],
+    ["CS241",  false],
+    ["CS357",  false],
+    ["CS361",  false],
+    ["CS374",  false],
+    ["CS421",  false] 
+  ]);
+
+  var BASIC_REQUIREMENTS_test_pt2 = new Map([
+    ["CS126", false],
+    ["CS242", false],
+  ]);
+
+  //for adv requirements, we need a min of 6 courses, 18 credit hours min, and other reqs
+
+  //problem is, at least 2 courses -> at least 6 hours, are any 400s level course
+  //we can suggest at least 12 hours are met? but cannot enforce the full 18 here
+
+  
+  //get one of these true
+  //TODO: find out how these are flagged as course titles - 498 is wonky
+  // CS498 sections: Virtual Reality, Internet of Things , ISE - IoT Software Engineering
+  var TEAM_PROJ_test = new Map([
+    ["CS427", false],
+    ["CS428", false],
+    ["CS429", false], 
+    ["CS465", false],
+    ["CS467", false],
+    ["CS493", false], 
+    ["CS494", false],
+    ["CS497", false]
+  ]);
+  
+  
+  //add a flag set per focus area
+
+  //for SOFT - CS_498 (Art and Science of Web Prog.), 498 (Logic), 498 (Applied Cryptography), 498 (Software Testing) to add
+  // also add CS_598 (Verification), 598 (Languages)
+  var FOCUS_SOFTWARE = new Map([
+    ["CS422", false],
+    ["CS426", false], 
+    ["CS427", false], 
+    ["CS428", false],
+    ["CS429", false],
+    ["CS476", false], 
+    ["CS477", false], 
+    ["CS492", false],
+    ["CS493", false],
+    ["CS494", false],
+    ["CS522", false], 
+    ["CS524", false], 
+    ["CS526", false], 
+    ["CS527", false], 
+    ["CS528", false], 
+    ["CS576", false], 
+  ]);
+
+  //add these: 498 (Logic), 498 (Parallel Algorithms), 498 (Computational Geometry), 598 (Crypto)
+  var FOCUS_ALGO = new Map([
+    ["CS413", false],
+    ["CS473", false], 
+    ["CS475", false], 
+    ["CS476", false], 
+    ["CS477", false], 
+    ["CS481", false], 
+    ["CS482", false], 
+    ["CS571", false], 
+    ["CS572", false], 
+    ["CS573", false], 
+    ["CS574", false], 
+    ["CS575", false], 
+    ["CS576", false], 
+    ["CS579", false], 
+    ["CS583", false], 
+    ["CS584", false], 
+  ]);
+
+  //add these:
+  //498 (Data Visualization), 498 (Deep Learning), 498 (Applied Machine Learning), 498 (Social & Info. Networks),
+  //498 (Cyber Dystopia), 498 (Data Science & Analytics), 598 (Machine Learning & Signal Proc.)
+  var FOCUS_INTELL = new Map([
+    ["CS410", false], 
+    ["CS411", false], 
+    ["CS412", false], 
+    ["CS414", false], 
+    ["CS440", false], 
+    ["CS443", false], 
+    ["CS445", false], 
+    ["CS446", false], 
+    ["CS447", false], 
+    ["CS466", false], 
+    ["CS467", false], 
+    ["CS510", false], 
+    ["CS511", false], 
+    ["CS512", false], 
+    ["CS543", false], 
+    ["CS544", false], 
+    ["CS546", false], 
+    ["CS548", false], 
+    ["CS566", false], 
+    ["CS576", false], 
+  ]);
+
+  //add these:
+  //498 (Art and Science of Web Prog.), 498 (Computational Advertising), 498 (Data Visualization)
+  //498 (Applied Machine Learning), 498 (HCI), 498 (Social & Information Networks), CS 498 (Virtual Reality),
+  //498 (Cyber Dystopia), 498 (Cyber Physical Systems), 498 (Data Science & Analytics), 498 (Smart Cities),
+  //498 (Learning and Computer Science), 498 (Online Learning Sys), 498 (Mobile Interactive Design),
+  var FOCUS_HUMAN = new Map([
+    ["CS460", false], 
+    ["CS461", false], 
+    ["CS463", false], 
+    ["CS465", false], 
+    ["CS467", false], 
+    ["CS468", false],
+    ["CS563", false], 
+    ["CS565", false],
+  ]);
+
+  //add these:
+  //498 (Art and Science of Web Prog.), 498 (Computational Advertising), 498 (Virtual Reality)
+  //498 (Data Visualization), 498 (Audio Computing Lab),
+  //598 (Machine Learning & Signal Proc.)
+  var FOCUS_MEDIA = new Map([
+    ["CS414", false], 
+    ["CS418", false], 
+    ["CS419", false], 
+    ["CS445", false], 
+    ["CS465", false], 
+    ["CS467", false], 
+    ["CS468", false], 
+    ["CS519", false], 
+    ["CS565", false], 
+  ]);
+
+  //add this: 498 (Parallel Algorithms), 
+  var FOCUS_SCI = new Map([
+    ["CS419", false], 
+    ["CS450", false], 
+    ["CS457", false], 
+    ["CS466", false], 
+    ["CS482", false], 
+    ["CS483", false], 
+    ["CS484", false], 
+    ["CS519", false], 
+    ["CS554", false], 
+    ["CS555", false], 
+    ["CS556", false], 
+    ["CS558", false],
+  ]);
+
+  //add these:
+  //498 (Wireless Network Labs),  498 (Digital Forensics), 498 (Digital Forensics II), 498 (Applied Cryptography),
+  //498 (Cyber Physical Systems), 498 (Internet of Things), 498 (Smart Cities)
+  var FOCUS_DIST = new Map([
+    ["CS423", false], 
+    ["CS424", false], 
+    ["CS425", false], 
+    ["CS431", false], 
+    ["CS436", false], 
+    ["CS438", false], 
+    ["CS439", false], 
+    ["CS460", false], 
+    ["CS461", false], 
+    ["CS463", false], 
+    ["CS483", false], 
+    ["CS484", false], 
+    ["CS523", false], 
+    ["CS524", false], 
+    ["CS525", false], 
+    ["CS538", false], 
+    ["CS563", false],
+  ]);
+
+  //add these:
+  //498 (Internet of Things), 498 (Digital Forensics), 498 (Digital Forensics II), 
+  //598 (Parallel)
+  var FOCUS_MACHINES = new Map([
+    ["CS423", false],
+    ["CS424", false],
+    ["CS426", false], 
+    ["CS431", false], 
+    ["CS433", false], 
+    ["CS484", false], 
+    ["CS523", false], 
+    ["CS526", false], 
+    ["CS533", false], 
+    ["CS536", false], 
+    ["CS541", false],
+    ["CS584", false],
+  ]);
+
+
+  var REVERSE_LOOKUP = new Map();
+
+
+  for (let key of FOCUS_ALGO.keys()) {
+    if (REVERSE_LOOKUP.has(key))
+      REVERSE_LOOKUP.get(key).push(FOCUS_ALGO)
+    else {
+      REVERSE_LOOKUP.set(key, [])
+      REVERSE_LOOKUP.get(key).push(FOCUS_ALGO)
+    }
+
+  }
+
+  for (let key of FOCUS_DIST.keys()) {
+    REVERSE_LOOKUP.set(key, FOCUS_DIST)
+  }
+  for (let key of FOCUS_HUMAN.keys()) {
+    REVERSE_LOOKUP.set(key, FOCUS_HUMAN)
+  }
+  for (let key of FOCUS_INTELL.keys()) {
+    REVERSE_LOOKUP.set(key, FOCUS_INTELL)
+  }
+  for (let key of FOCUS_MACHINES.keys()) {
+    REVERSE_LOOKUP.set(key, FOCUS_MACHINES)
+  }
+  for (let key of FOCUS_MEDIA.keys()) {
+    REVERSE_LOOKUP.set(key, FOCUS_MEDIA)
+  }
+  for (let key of FOCUS_SCI.keys()) {
+    REVERSE_LOOKUP.set(key, FOCUS_SCI)
+  }
+  for (let key of FOCUS_SOFTWARE.keys()) {
+    REVERSE_LOOKUP.set(key, FOCUS_SOFTWARE)
+  }
+
+
+
+  //var ADVANCED_REQUIREMENTS = TEAM_PROJ && (one of these focuses --> at least 3 courses)
+
+
+  var credits_total = 0
+  var cs_elective_course_total = 0
+  let to_check : Map<String, boolean>[]
+  // for each key
+  keyspace.forEach(key => {
+    // get the list of classes associated with it
+    var temp_list = mapper.get(key)
+
+    // for each class
+    temp_list.forEach(element => {
+      //manually check each dict/flag
+      var course_name = element.name
+      var credits = element.creditHours
+
+      //check each map for the course name as a key -> set flag to true if it exists
+      if (BASIC_REQUIREMENTS_test_pt1.has(course_name)) {
+        BASIC_REQUIREMENTS_test_pt1.set(course_name, true)
+      }
+      else if (BASIC_REQUIREMENTS_test_pt2.has(course_name)) {
+        BASIC_REQUIREMENTS_test_pt2.set(course_name, true)
+      }
+      //if neither of these, it's an elective course
+
+      if (TEAM_PROJ_test.has(course_name)) {
+        TEAM_PROJ_test.set(course_name, true)
+      }
+
+      if (REVERSE_LOOKUP.has(course_name)) {
+        REVERSE_LOOKUP.get(course_name).set(course_name, true)
+        to_check.push(REVERSE_LOOKUP.get(course_name))
+        credits_total += credits
+        cs_elective_course_total += 1
+      }
+
+    });
+  });
+
+  //last stage - return list of fulfilled requirements
+  var list_of_reqs_met = []
+
+
+  var basic_flag = true
+
+  for (let value of BASIC_REQUIREMENTS_test_pt1.values()) {
+    if (value == false) {
+      basic_flag = false
+    }
+  }
+
+  var pt2_count = 0
+  if (basic_flag != false) {
+    for (let value of BASIC_REQUIREMENTS_test_pt2.values()) {
+      if (value == true)
+        pt2_count += 1
+    }
+  }
+
+  if (basic_flag && (pt2_count >= 1)) {
+    list_of_reqs_met.push("Basic requirement")
+  }
+
+  
+  //for advanced reqs, one team project + one focus [3 courses in it]
+  var TEAM_PROJ_flag = false;
+  for (let value of TEAM_PROJ_test.values()) {
+    if (value == true) {
+      TEAM_PROJ_flag = true;
+      break
+    }
+  }
+
+  var FOCUS_flag = false;
+  to_check.forEach(element => {
+    var count = 0
+    for (let value of element.values()) {
+      if (value == true) {
+        count += 1
+      }
+    }
+    if (count >= 3) {
+      FOCUS_flag = true
+    }
+  });
+
+  if (FOCUS_flag && TEAM_PROJ_flag && credits_total >= 18 && cs_elective_course_total >= 6) {
+    list_of_reqs_met.push("Advanced requirement")
+  }
+  
+  //split off requirements into smaller focuses/team project to add to list
+  //check if list of focuses can replace maps
+  //ignore 498s for now
+
+  return list_of_reqs_met;
+
+  //throw new Error("method not implemented");
 }
