@@ -4,11 +4,11 @@ import styles from "./app.module.css";
 import { DropEvent, TileEventHandler } from "./components/course-tile";
 import { Palette } from "./components/palette";
 import { getCellAt, Schedule } from "./components/schedule";
-import { useCourses } from "./hooks/use-courses";
-import { Course, CourseSelection } from "./model/course";
+import { CourseSelection } from "./model/course";
+import { CourseDatabase } from "./model/course-database";
 
 export const App: React.FC = () => {
-  const courses = useCourses();
+  const courses = CourseDatabase.getInstance().getAllCourses();
   const [selectedCourses, setSelectedCourses] = React.useState<
     CourseSelection[]
   >([]);
