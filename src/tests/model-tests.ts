@@ -33,7 +33,7 @@ import { verifyRequirements } from "../model/verify-requirements";
     console.log(">>> courseSuggestions returned:");
     console.log(result);
   } catch (e) {
-    console.error(">>> courseSuggestions failed! Error:");
+    console.error(">>> courseSuggestions failed!");
     console.error(e);
   }
 
