@@ -262,29 +262,83 @@ export function verifyRequirements(
       REVERSE_LOOKUP.set(key, [])
       REVERSE_LOOKUP.get(key).push(FOCUS_ALGO)
     }
-
   }
 
   for (let key of FOCUS_DIST.keys()) {
-    REVERSE_LOOKUP.set(key, FOCUS_DIST)
+    if (REVERSE_LOOKUP.has(key))
+      REVERSE_LOOKUP.get(key).push(FOCUS_DIST)
+    else {
+      REVERSE_LOOKUP.set(key, [])
+      REVERSE_LOOKUP.get(key).push(FOCUS_DIST)
+    }
   }
+
+
   for (let key of FOCUS_HUMAN.keys()) {
-    REVERSE_LOOKUP.set(key, FOCUS_HUMAN)
+    if (REVERSE_LOOKUP.has(key))
+      REVERSE_LOOKUP.get(key).push(FOCUS_HUMAN)
+    else {
+      REVERSE_LOOKUP.set(key, [])
+      REVERSE_LOOKUP.get(key).push(FOCUS_HUMAN)
+    }
   }
+
+
   for (let key of FOCUS_INTELL.keys()) {
-    REVERSE_LOOKUP.set(key, FOCUS_INTELL)
+    if (REVERSE_LOOKUP.has(key))
+      REVERSE_LOOKUP.get(key).push(FOCUS_INTELL)
+    else {
+      REVERSE_LOOKUP.set(key, [])
+      REVERSE_LOOKUP.get(key).push(FOCUS_INTELL)
+    }
   }
+
+
   for (let key of FOCUS_MACHINES.keys()) {
-    REVERSE_LOOKUP.set(key, FOCUS_MACHINES)
+    if (REVERSE_LOOKUP.has(key))
+      REVERSE_LOOKUP.get(key).push(FOCUS_MACHINES)
+    else {
+      REVERSE_LOOKUP.set(key, [])
+      REVERSE_LOOKUP.get(key).push(FOCUS_MACHINES)
+    }
   }
+
+
   for (let key of FOCUS_MEDIA.keys()) {
-    REVERSE_LOOKUP.set(key, FOCUS_MEDIA)
+    if (REVERSE_LOOKUP.has(key))
+      REVERSE_LOOKUP.get(key).push(FOCUS_MEDIA)
+    else {
+      REVERSE_LOOKUP.set(key, [])
+      REVERSE_LOOKUP.get(key).push(FOCUS_MEDIA)
+    }
   }
+
   for (let key of FOCUS_SCI.keys()) {
-    REVERSE_LOOKUP.set(key, FOCUS_SCI)
+    if (REVERSE_LOOKUP.has(key))
+      REVERSE_LOOKUP.get(key).push(FOCUS_SCI)
+    else {
+      REVERSE_LOOKUP.set(key, [])
+      REVERSE_LOOKUP.get(key).push(FOCUS_SCI)
+    }
   }
+
+
   for (let key of FOCUS_SOFTWARE.keys()) {
-    REVERSE_LOOKUP.set(key, FOCUS_SOFTWARE)
+    if (REVERSE_LOOKUP.has(key))
+      REVERSE_LOOKUP.get(key).push(FOCUS_SOFTWARE)
+    else {
+      REVERSE_LOOKUP.set(key, [])
+      REVERSE_LOOKUP.get(key).push(FOCUS_SOFTWARE)
+    }
+  }
+
+  for (let key of TEAM_PROJ_test.keys()) {
+    if (REVERSE_LOOKUP.has(key))
+      REVERSE_LOOKUP.get(key).push(TEAM_PROJ_test)
+    else {
+      REVERSE_LOOKUP.set(key, [])
+      REVERSE_LOOKUP.get(key).push(TEAM_PROJ_test)
+    }
   }
 
 
@@ -315,13 +369,14 @@ export function verifyRequirements(
       }
       //if neither of these, it's an elective course
 
-      if (TEAM_PROJ_test.has(course_name)) {
-        TEAM_PROJ_test.set(course_name, true)
-      }
-
       if (REVERSE_LOOKUP.has(course_name)) {
-        REVERSE_LOOKUP.get(course_name).set(course_name, true)
-        to_check.push(REVERSE_LOOKUP.get(course_name))
+        var list_of_targets = REVERSE_LOOKUP.get(course_name)
+
+        list_of_targets.forEach(reqs_satisfied => {
+          reqs_satisfied.set(course_name, true)
+          to_check.push(reqs_satisfied)
+        });
+
         credits_total += credits
         cs_elective_course_total += 1
       }
