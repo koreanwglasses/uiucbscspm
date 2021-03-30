@@ -28,7 +28,7 @@ with open(path_info, 'r') as f:
                'requirementsSatisfied': [], 'prereqs': row[3].strip('[').strip(']').strip("'").split("', '"),
                'followupCourses': []}
         if dic['prereqs'] == ['']:
-            dic['prereqs'] == []
+            dic['prereqs'].pop(0)
         Courses.append(dic)
 
 with open(path_terms, 'r') as t:
