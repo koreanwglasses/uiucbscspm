@@ -67,6 +67,14 @@ for course in Courses:
     if course_num in machines:
         course['requirementsSatisfied'].append('Machines')
 
+# Generate the followupCourses list
+for course in Courses:
+    for other_course in Courses:
+        if course['name'] in other_course['prereqs']:
+            if other_course['name'] not in course['followupCourses']:
+                course['followupCourses'].append(other_course['name'])
+
+
 
 with open(os.path.join(SCRIPT_DIR, "courses.json"), "w") as c:
     json.dump(Courses, c)
