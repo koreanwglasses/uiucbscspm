@@ -25,7 +25,8 @@ with open(path_info, 'r') as f:
     reader = csv.reader(f)
     for row in reader:  # Each row is info of one course
         dic = {'id': row[0], 'name': row[1], 'description': row[2], 'creditHours': int(row[4]), 'semestersOffered':[],
-               'requirementsSatisfied': [], 'prereqs': row[3].strip('[').strip(']').strip("'").split("', '"),
+               'concentrations': [], 'requirementsSatisfied': [],
+               'prereqs': row[3].strip('[').strip(']').strip("'").split("', '"),
                'followupCourses': []}
         if dic['prereqs'] == ['']:
             dic['prereqs'].pop(0)
@@ -45,27 +46,27 @@ with open(path_terms, 'r') as t:
 
 # print(Courses)
 
-# Requirement satisfied
+# Concentrations
 for course in Courses:
     course_num = int(course['name'].split('CS')[1])
     if course_num in team_project:
-        course['requirementsSatisfied'].append('Team Project')
+        course['concentrations'].append('Team Project')
     if course_num in software_foundations:
-        course['requirementsSatisfied'].append('Software Foundations')
+        course['concentrations'].append('Software Foundations')
     if course_num in algorithm_and_models:
-        course['requirementsSatisfied'].append('Algorithms and Models of Computation')
+        course['concentrations'].append('Algorithms and Models of Computation')
     if course_num in intelligence_and_big_data:
-        course['requirementsSatisfied'].append('Intelligence and Big Data')
+        course['concentrations'].append('Intelligence and Big Data')
     if course_num in human_and_social_impact:
-        course['requirementsSatisfied'].append('Human and Social Impact')
+        course['concentrations'].append('Human and Social Impact')
     if course_num in media:
-        course['requirementsSatisfied'].append('Media')
+        course['concentrations'].append('Media')
     if course_num in scientific_parallel:
-        course['requirementsSatisfied'].append('Scientific, Parallel, and High Performance Computing')
+        course['concentrations'].append('Scientific, Parallel, and High Performance Computing')
     if course_num in distributed_systems:
-        course['requirementsSatisfied'].append('Distributed Systems, Networking, and Security')
+        course['concentrations'].append('Distributed Systems, Networking, and Security')
     if course_num in machines:
-        course['requirementsSatisfied'].append('Machines')
+        course['concentrations'].append('Machines')
 
 # Generate the followupCourses list
 for course in Courses:
