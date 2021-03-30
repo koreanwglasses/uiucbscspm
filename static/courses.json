@@ -5,6 +5,7 @@
     "description": "Freshman Orientation\n\nIntroduction to Computer Science as a field and career for computer science majors. Overview of the field and specific examples of problem areas and methods of solution.\n",
     "creditHours": 1,
     "semestersOffered": ["Fall"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -15,6 +16,7 @@
     "description": "Intro Computing: Engrg & Sci\n\nFundamental principles, concepts, and methods of computing, with emphasis on applications in the physical sciences and engineering. Basic problem solving and programming techniques; fundamental algorithms and data structures; use of computers in solving engineering and scientific problems. Intended for engineering and science majors. Prerequisite: MATH 220 or MATH 221. This course satisfies the General Education Criteria for:Quantitative Reasoning II",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall", "Summer"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["MATH220", "MATH221"],
     "followupCourses": ["CS357", "CS450"]
@@ -25,6 +27,7 @@
     "description": "Little Bits to Big Ideas\n\nSame as INFO 102. See INFO 102.\n",
     "creditHours": 4,
     "semestersOffered": ["Spring", "Fall"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -35,6 +38,7 @@
     "description": "Intro Computing: Non-Tech\n\nComputing as an essential tool of academic and professional activities. Functions and interrelationships of computer system components: hardware, systems and applications software, and networks. Widely used application packages such as spreadsheets and databases. Concepts and practice of programming for the solution of simple problems in different application areas. Intended for non-science and non-engineering majors. Prerequisite: MATH 112. This course satisfies the General Education Criteria for:Quantitative Reasoning I",
     "creditHours": 3,
     "semestersOffered": ["Summer", "Spring", "Fall"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["MATH112"],
     "followupCourses": ["CS357"]
@@ -45,6 +49,7 @@
     "description": "Data Science Discovery\n\nSame as IS 107 and STAT 107. See STAT 107.This course satisfies the General Education Criteria for:Quantitative Reasoning I",
     "creditHours": 4,
     "semestersOffered": ["Spring", "Fall"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -55,6 +60,7 @@
     "description": "Introduction to Computer Science I\n\nBasic concepts in computing and fundamental techniques for solving computational problems. Intended as a first course for computer science majors and others with a deep interest in computing. Credit is not given for both CS 124 and CS 125. Prerequisite: Three years of high school mathematics or MATH 112.\n",
     "creditHours": 3,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["MATH112"],
     "followupCourses": ["CS128", "CS173"]
@@ -65,6 +71,7 @@
     "description": "Introduction to Computer Science\n\nBasic concepts in computing and fundamental techniques for solving computational problems. Intended as a first course for computer science majors and others with a deep interest in computing. Credit is not given for both CS 125 and CS 124. Prerequisite: Three years of high school mathematics or MATH 112. This course satisfies the General Education Criteria for:Quantitative Reasoning I",
     "creditHours": 4,
     "semestersOffered": ["Summer", "Spring", "Fall"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["MATH112"],
     "followupCourses": ["CS126", "CS173", "CS233", "CS357", "CS450"]
@@ -75,6 +82,7 @@
     "description": "Software Design Studio\n\nFundamental principles and techniques of software development. Design, documentation, testing, and debugging software, with a significant emphasis on code review. Credit is not given for both CS 242 and CS 126. Prerequisite: CS 125. For majors only.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["CS125"],
     "followupCourses": ["CS225"]
@@ -85,6 +93,7 @@
     "description": "Introduction to Computer Science II\n\nContinuation of CS 124. More advanced concepts in computing and techniques and approaches for solving computational problems. Prerequisite: CS 124.\n",
     "creditHours": 3,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["CS124"],
     "followupCourses": ["CS222", "CS225", "CS233"]
@@ -95,6 +104,7 @@
     "description": "Discrete Structures\n\nDiscrete mathematical structures frequently encountered in the study of Computer Science. Sets, propositions, Boolean algebra, induction, recursion, relations, functions, and graphs. Credit is not given for both CS 173 and MATH 213. Prerequisite: One of CS 124, CS 125, ECE 220; one of MATH 220, MATH 221.\n",
     "creditHours": 3,
     "semestersOffered": ["Summer", "Spring", "Fall"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["CS124", "CS125", "ECE220", "MATH220", "MATH221"],
     "followupCourses": ["CS225", "CS233", "CS374", "CS474"]
@@ -105,6 +115,7 @@
     "description": "Freshman Honors\n\nOffered for honors credit in conjunction with other 100-level computer science courses taken concurrently. A special examination may be required for admission to this course. May be repeated. Prerequisite: Concurrent registration in another 100-level computer science course (see Schedule).\n",
     "creditHours": 1,
     "semestersOffered": ["Spring", "Fall", "Summer"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -115,6 +126,7 @@
     "description": "Undergraduate Open Seminar in Computer Science\n\nTopics vary. Approved for Letter and S/U grading. May be repeated.\n",
     "creditHours": 0,
     "semestersOffered": ["Summer", "Spring", "Fall", "Winter"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -125,6 +137,7 @@
     "description": "Undergraduate Open Seminar in Computer Science\n\nTopics vary. Approved for Letter and S/U grading. May be repeated.\n",
     "creditHours": 1,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -135,6 +148,7 @@
     "description": "Undergraduate Open Seminar in Computer Science\n\nTopics vary. Approved for Letter and S/U grading. May be repeated.\n",
     "creditHours": 2,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -145,6 +159,7 @@
     "description": "Undergraduate Open Seminar in Computer Science\n\nTopics vary. Approved for Letter and S/U grading. May be repeated.\n",
     "creditHours": 3,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -155,6 +170,7 @@
     "description": "Undergraduate Open Seminar in Computer Science\n\nTopics vary. Approved for Letter and S/U grading. May be repeated.\n",
     "creditHours": 4,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -165,6 +181,7 @@
     "description": "Undergraduate Open Seminar in Computer Science\n\nTopics vary. Approved for Letter and S/U grading. May be repeated.\n",
     "creditHours": 5,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -175,6 +192,7 @@
     "description": "Ethical & Professional Issues\n\nEthics for the computing profession. Ethical decision-making; licensing; intellectual property, freedom of information, and privacy. Credit is not given for both CS 210 and either CS 211 or ECE 316. Prerequisite: CS 225. Junior standing required.\n",
     "creditHours": 2,
     "semestersOffered": ["Spring", "Fall"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["CS225"],
     "followupCourses": ["CS464"]
@@ -185,6 +203,7 @@
     "description": "Ethical and Professional Conduct\n\nNavigating the complex ethical and professional landscape of the computing professional: privacy, intellectual property, cybersecurity, and freedom of speech. Hands-on exercises, assignments, and discussions in which students analyze current events from perspectives in both philosophical and professional ethics. Writing professionally and technically in several writing assignments requiring peer review, workshops, and multiple rounds of editing and revising. Credit is not given for both CS 211 and CS 210 or ECE 316. Prerequisite: CS 225.\n",
     "creditHours": 3,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["CS225"],
     "followupCourses": ["CS464"]
@@ -195,6 +214,7 @@
     "description": "Software Design Lab\n\nDesign and implementation of novel software solutions. Problem identification and definition; idea generation and evaluation; and software implementation, testing, and deployment. Emphasizes software development best practices\u2014including framework selection, code review, documentation, appropriate library usage, project management, continuous integration and testing, and teamwork. Prerequisite: CS 128 or CS 225. Restricted to majors in Computer Science undergraduate curricula only.\n",
     "creditHours": 1,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["CS128", "CS225"],
     "followupCourses": []
@@ -205,6 +225,7 @@
     "description": "Data Structures\n\nData abstractions: elementary data structures (lists, stacks, queues, and trees) and their implementation using an object-oriented programming language. Solutions to a variety of computational problems such as search on graphs and trees. Elementary analysis of algorithms. Credit is not given for both CS 225 and CS 277. Prerequisite: CS 126 or CS 128 or ECE 220; One of CS 173, MATH 213, MATH 347, MATH 412 or MATH 413. This course satisfies the General Education Criteria for:Quantitative Reasoning II",
     "creditHours": 4,
     "semestersOffered": ["Spring", "Fall", "Summer"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [
       "CS126",
@@ -251,6 +272,7 @@
     "description": "Computer Architecture\n\nFundamentals of computer architecture: digital logic design, working up from the logic gate level to understand the function of a simple computer; machine-level programming to understand implementation of high-level languages; performance models of modern computer architectures to enable performance optimization of software; hardware primitives for parallelism and security. Prerequisite: CS 125 or CS 128 and CS 173; credit or concurrent enrollment in CS 225.\n",
     "creditHours": 4,
     "semestersOffered": ["Spring", "Fall", "Summer"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["CS125", "CS128", "CS173", "CS225"],
     "followupCourses": ["CS241", "CS421", "CS433"]
@@ -261,6 +283,7 @@
     "description": "Introduction to Computer Systems\n\nBasics of computer systems. Number representations, assembly/machine language, abstract models of processors (fetch/execute, memory hierarchy), processes/process control, simple memory management, file I/O and directories, network programming, usage of cloud services. Prerequisite: CS 225.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["CS225"],
     "followupCourses": ["CS421", "CS435"]
@@ -271,6 +294,7 @@
     "description": "System Programming\n\nBasics of system programming, including POSIX processes, process control, inter-process communication, synchronization, signals, simple memory management, file I/O and directories, shell programming, socket network programming, RPC programming in distributed systems, basic security mechanisms, and standard tools for systems programming such as debugging tools. Credit is not given for both CS 241 and ECE 391. Prerequisite: CS 225 and CS 233.\n",
     "creditHours": 4,
     "semestersOffered": ["Spring", "Fall", "Summer"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["CS225", "CS233"],
     "followupCourses": [
@@ -295,6 +319,7 @@
     "description": "Programming Studio\n\nIntensive programming lab intended to strengthen skills in programming. Prerequisite: CS 241.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["CS241"],
     "followupCourses": []
@@ -305,6 +330,7 @@
     "description": "Innovation Illinois: From Accessible Design to Supercomputing Cultures\n\nSame as IS 265 and MACS 265. See MACS 265.\n",
     "creditHours": 3,
     "semestersOffered": ["Fall"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -315,6 +341,7 @@
     "description": "Algorithms and Data Structures for Data Science\n\nIntroduction to elementary concepts in algorithms and classical data structures with a focus on their applications in Data Science. Topics include algorithm analysis (ex: Big-O notation), elementary data structures (ex: lists, stacks, queues, trees, and graphs), basics of discrete algorithm design principles (ex: greedy, divide and conquer, dynamic programming), and discussion of discrete and continuous optimization. Credit is not given for both CS 277 and CS 225. Prerequisite: STAT 207; one of MATH 220, MATH 221, MATH 234. CS 277 cannot be taken concurrently with CS 225.\n",
     "creditHours": 4,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["STAT207", "MATH220", "MATH221", "MATH234", "CS277", "CS225"],
     "followupCourses": ["CS277"]
@@ -325,6 +352,7 @@
     "description": "Honors Course\n\nGroup projects for honors credit in computer science. Sections of this course are offered in conjunction with other 200-level computer science courses taken concurrently. A special examination may be required for admission to this course. May be repeated. Prerequisite: Concurrent registration in another 200-level computer science course (see Schedule).\n",
     "creditHours": 1,
     "semestersOffered": ["Spring", "Fall", "Summer"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -335,6 +363,7 @@
     "description": "Modeling and Learning in Data Science\n\nIntroduction to the use of classical approaches in data modeling and machine learning in the context of solving data-centric problems. A broad coverage of fundamental models is presented, including linear models, unsupervised learning, supervised learning, and deep learning. A significant emphasis is placed on the application of the models in Python and the interpretability of the results. Prerequisite: STAT 207; one of MATH 225, MATH 415, MATH 416, ASRM 406.\n",
     "creditHours": 4,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["STAT207", "MATH225", "MATH415", "MATH416", "ASRM406"],
     "followupCourses": []
@@ -345,6 +374,7 @@
     "description": "Numerical Methods I\n\nFundamentals of numerical methods for students in science and engineering; floating-point computation, systems of linear equations, approximation of functions and integrals, the single nonlinear equation, and the numerical solution of ordinary differential equations; various applications in science and engineering; programming exercises and use of high quality mathematical library routines. Same as MATH 357. Credit is not given for CS 357 if credit for CS 450 has been earned. (Counts for advanced hours in LAS). Prerequisite: One of CS 101, CS 105, CS 125 or ECE 220; MATH 241; one of MATH 225, MATH 257, MATH 415, MATH 416 or ASRM 406.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall", "Summer"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [
       "CS101",
@@ -366,6 +396,7 @@
     "description": "Probability & Statistics for Computer Science\n\nIntroduction to probability theory and statistics with applications to computer science. Topics include: visualizing datasets, summarizing data, basic descriptive statistics, conditional probability, independence, Bayes theorem, random variables, joint and conditional distributions, expectation, variance and covariance, central limit theorem. Markov inequality, Chebyshev inequality, law of large numbers, Markov chains, simulation, the PageRank algorithm, populations and sampling, sample mean, standard error, maximum likelihood estimation, Bayes estimation, hypothesis testing, confidence intervals, linear regression, principal component analysis, classification, and decision trees. Same as STAT 361. Credit is not given for both CS 361 and ECE 313. Prerequisite: MATH 220 or MATH 221; credit or concurrent registration in one of MATH 225, MATH 257, MATH 415, MATH 416 or ASRM 406. For majors only.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [
       "MATH220",
@@ -384,6 +415,7 @@
     "description": "Introduction to Algorithms & Models of Computation\n\nAnalysis of algorithms, major paradigms of algorithm design including recursive algorithms, divide-and-conquer algorithms, dynamic programming, greedy algorithms, and graph algorithms. Formal models of computation including finite automata and Turing machines. Limitations of computation arising from fundamental notions of algorithm and from complexity-theoretic constraints. Reductions, undecidability and NP-completeness. Same as ECE 374. Prerequisite: One of CS 173, MATH 213; CS 225.\n",
     "creditHours": 4,
     "semestersOffered": ["Spring", "Fall"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["CS173", "MATH213", "CS225"],
     "followupCourses": [
@@ -405,6 +437,7 @@
     "description": "Individual Study\n\nMay be repeated. Prerequisite: Consent of instructor.\n",
     "creditHours": 1,
     "semestersOffered": ["Summer", "Spring", "Fall"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -415,6 +448,7 @@
     "description": "Individual Study\n\nMay be repeated. Prerequisite: Consent of instructor.\n",
     "creditHours": 2,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -425,6 +459,7 @@
     "description": "Individual Study\n\nMay be repeated. Prerequisite: Consent of instructor.\n",
     "creditHours": 3,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -435,6 +470,7 @@
     "description": "Special Topics\n\nSubject offerings of new and developing areas of knowledge in computer science intended to augment the existing curriculum. See Class Schedule or departmental course information for topics and prerequisites. May be repeated in the same or separate terms if topics vary.\n",
     "creditHours": 1,
     "semestersOffered": ["Spring", "Fall"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -445,6 +481,7 @@
     "description": "Special Topics\n\nSubject offerings of new and developing areas of knowledge in computer science intended to augment the existing curriculum. See Class Schedule or departmental course information for topics and prerequisites. May be repeated in the same or separate terms if topics vary.\n",
     "creditHours": 2,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -455,6 +492,7 @@
     "description": "Special Topics\n\nSubject offerings of new and developing areas of knowledge in computer science intended to augment the existing curriculum. See Class Schedule or departmental course information for topics and prerequisites. May be repeated in the same or separate terms if topics vary.\n",
     "creditHours": 3,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -465,6 +503,7 @@
     "description": "Special Topics\n\nSubject offerings of new and developing areas of knowledge in computer science intended to augment the existing curriculum. See Class Schedule or departmental course information for topics and prerequisites. May be repeated in the same or separate terms if topics vary.\n",
     "creditHours": 4,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -475,6 +514,7 @@
     "description": "Cryptography\n\nSame as ECE 407. See ECE 407.\n",
     "creditHours": 3,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -485,6 +525,7 @@
     "description": "Cryptography\n\nSame as ECE 407. See ECE 407.\n",
     "creditHours": 4,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -495,7 +536,8 @@
     "description": "Text Information Systems\n\nTheory, design, and implementation of text-based information systems. Text analysis, retrieval models (e.g., Boolean, vector space, probabilistic), text categorization, text filtering, clustering, retrieval system design and implementation, and applications to web information management. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225.\n",
     "creditHours": 3,
     "semestersOffered": ["Fall", "Spring", "Summer"],
-    "requirementsSatisfied": ["Intelligence and Big Data"],
+    "concentrations": ["Intelligence and Big Data"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS225"],
     "followupCourses": ["CS510"]
   },
@@ -505,7 +547,8 @@
     "description": "Text Information Systems\n\nTheory, design, and implementation of text-based information systems. Text analysis, retrieval models (e.g., Boolean, vector space, probabilistic), text categorization, text filtering, clustering, retrieval system design and implementation, and applications to web information management. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": ["Intelligence and Big Data"],
+    "concentrations": ["Intelligence and Big Data"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS225"],
     "followupCourses": ["CS510"]
   },
@@ -515,7 +558,8 @@
     "description": "Database Systems\n\nExamination of the logical organization of databases: the entity-relationship model; the hierarchical, network, and relational data models and their languages. Functional dependencies and normal forms. Design, implementation, and optimization of query languages; security and integrity; concurrency control, and distributed database systems. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225.\n",
     "creditHours": 3,
     "semestersOffered": ["Summer", "Spring", "Fall"],
-    "requirementsSatisfied": ["Intelligence and Big Data"],
+    "concentrations": ["Intelligence and Big Data"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS225"],
     "followupCourses": ["CS511"]
   },
@@ -525,7 +569,8 @@
     "description": "Database Systems\n\nExamination of the logical organization of databases: the entity-relationship model; the hierarchical, network, and relational data models and their languages. Functional dependencies and normal forms. Design, implementation, and optimization of query languages; security and integrity; concurrency control, and distributed database systems. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": ["Intelligence and Big Data"],
+    "concentrations": ["Intelligence and Big Data"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS225"],
     "followupCourses": ["CS511"]
   },
@@ -535,7 +580,8 @@
     "description": "Introduction to Data Mining\n\nConcepts, techniques, and systems of data warehousing and data mining. Design and implementation of data warehouse and on-line analytical processing (OLAP) systems; data mining concepts, methods, systems, implementations, and applications. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall", "Summer"],
-    "requirementsSatisfied": ["Intelligence and Big Data"],
+    "concentrations": ["Intelligence and Big Data"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS225"],
     "followupCourses": ["CS510", "CS512", "CS514"]
   },
@@ -545,7 +591,8 @@
     "description": "Introduction to Data Mining\n\nConcepts, techniques, and systems of data warehousing and data mining. Design and implementation of data warehouse and on-line analytical processing (OLAP) systems; data mining concepts, methods, systems, implementations, and applications. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": ["Intelligence and Big Data"],
+    "concentrations": ["Intelligence and Big Data"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS225"],
     "followupCourses": ["CS510", "CS512", "CS514"]
   },
@@ -555,7 +602,8 @@
     "description": "Intro to Combinatorics\n\nSame as MATH 413. See MATH 413.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": ["Algorithms and Models of Computation"],
+    "concentrations": ["Algorithms and Models of Computation"],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -565,7 +613,8 @@
     "description": "Intro to Combinatorics\n\nSame as MATH 413. See MATH 413.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": ["Algorithms and Models of Computation"],
+    "concentrations": ["Algorithms and Models of Computation"],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -575,7 +624,8 @@
     "description": "Multimedia Systems\n\nOrganization and structure of modern multimedia systems; audio and video encoding; quality of service concepts; scheduling algorithms for multimedia within OS and networks multimedia protocols over high-speed networks; synchronization schemes, user-interface design; multimedia teleservices. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 241 or ECE 391.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring"],
-    "requirementsSatisfied": ["Intelligence and Big Data", "Media"],
+    "concentrations": ["Intelligence and Big Data", "Media"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS241", "ECE391"],
     "followupCourses": []
   },
@@ -585,7 +635,8 @@
     "description": "Multimedia Systems\n\nOrganization and structure of modern multimedia systems; audio and video encoding; quality of service concepts; scheduling algorithms for multimedia within OS and networks multimedia protocols over high-speed networks; synchronization schemes, user-interface design; multimedia teleservices. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 241 or ECE 391.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": ["Intelligence and Big Data", "Media"],
+    "concentrations": ["Intelligence and Big Data", "Media"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS241", "ECE391"],
     "followupCourses": []
   },
@@ -595,6 +646,7 @@
     "description": "Data Visualization\n\nElements of databases, computer graphics and perceptual psychology combined to utilize the human visual system to improve user understanding of large datasets. Topics include appropriate and effective selection and construction of charts, organization of dashboards, and design for user engagement and interaction. 3 undergraduate hours. 4 graduate hours. Prerequisite: CS 225.\n",
     "creditHours": 3,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["CS225"],
     "followupCourses": []
@@ -605,6 +657,7 @@
     "description": "Data Visualization\n\nElements of databases, computer graphics and perceptual psychology combined to utilize the human visual system to improve user understanding of large datasets. Topics include appropriate and effective selection and construction of charts, organization of dashboards, and design for user engagement and interaction. 3 undergraduate hours. 4 graduate hours. Prerequisite: CS 225.\n",
     "creditHours": 4,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["CS225"],
     "followupCourses": []
@@ -615,6 +668,7 @@
     "description": "Virtual Reality\n\nProvides both a deep understanding of the fundamentals of virtual reality (VR) and practical experience implementing VR systems. Topics covered include visual and audio display technology, tracking, human perception and psychophysics, building user interfaces for VR, and analyzing VR experiences. 3 undergraduate hours. 4 graduate hours. Prerequisite: CS 225.\n",
     "creditHours": 3,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["CS225"],
     "followupCourses": []
@@ -625,6 +679,7 @@
     "description": "Virtual Reality\n\nProvides both a deep understanding of the fundamentals of virtual reality (VR) and practical experience implementing VR systems. Topics covered include visual and audio display technology, tracking, human perception and psychophysics, building user interfaces for VR, and analyzing VR experiences. 3 undergraduate hours. 4 graduate hours. Prerequisite: CS 225.\n",
     "creditHours": 4,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["CS225"],
     "followupCourses": []
@@ -635,7 +690,8 @@
     "description": "Interactive Computer Graphics\n\nBasic mathematical tools and computational techniques for modeling, rendering, and animating 3-D scenes. Same as CSE 427. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225; One of MATH 225, MATH 257, MATH 415, MATH 416 or ASRM 406; MATH 241.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": ["Media"],
+    "concentrations": ["Media"],
+    "requirementsSatisfied": [],
     "prereqs": [
       "CS225",
       "MATH225",
@@ -653,7 +709,8 @@
     "description": "Interactive Computer Graphics\n\nBasic mathematical tools and computational techniques for modeling, rendering, and animating 3-D scenes. Same as CSE 427. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225; One of MATH 225, MATH 257, MATH 415, MATH 416 or ASRM 406; MATH 241.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": ["Media"],
+    "concentrations": ["Media"],
+    "requirementsSatisfied": [],
     "prereqs": [
       "CS225",
       "MATH225",
@@ -671,10 +728,11 @@
     "description": "Production Computer Graphics\n\nAdvanced methods for representing, displaying, and rendering two-, three-, and four-dimensional scenes. General algebraic curves and surfaces, splines, Gaussian and bump-function representation, fractals, particle systems, constructive solid geometry methods, lighting models, radiosity, advanced ray-tracing methods, surface texturing animation techniques, data visualization methods. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 418.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Media",
       "Scientific, Parallel, and High Performance Computing"
     ],
+    "requirementsSatisfied": [],
     "prereqs": ["CS418"],
     "followupCourses": []
   },
@@ -684,10 +742,11 @@
     "description": "Production Computer Graphics\n\nAdvanced methods for representing, displaying, and rendering two-, three-, and four-dimensional scenes. General algebraic curves and surfaces, splines, Gaussian and bump-function representation, fractals, particle systems, constructive solid geometry methods, lighting models, radiosity, advanced ray-tracing methods, surface texturing animation techniques, data visualization methods. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 418.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Media",
       "Scientific, Parallel, and High Performance Computing"
     ],
+    "requirementsSatisfied": [],
     "prereqs": ["CS418"],
     "followupCourses": []
   },
@@ -697,6 +756,7 @@
     "description": "Parallel Progrmg: Sci & Engrg\n\nFundamental issues in design and development of parallel programs for various types of parallel computers. Various programming models according to both machine type and application area. Cost models, debugging, and performance evaluation of parallel programs with actual application examples. Same as CSE 402 and ECE 492. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225.\n",
     "creditHours": 3,
     "semestersOffered": ["Fall", "Spring"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["CS225"],
     "followupCourses": []
@@ -707,6 +767,7 @@
     "description": "Parallel Progrmg: Sci & Engrg\n\nFundamental issues in design and development of parallel programs for various types of parallel computers. Various programming models according to both machine type and application area. Cost models, debugging, and performance evaluation of parallel programs with actual application examples. Same as CSE 402 and ECE 492. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225.\n",
     "creditHours": 4,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["CS225"],
     "followupCourses": []
@@ -717,6 +778,7 @@
     "description": "Programming Languages & Compilers\n\nStructure of programming languages and their implementation. Basic language design principles; abstract data types; functional languages; type systems; object-oriented languages. Basics of lexing, parsing, syntax-directed translation, semantic analysis, and code generation. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 233 or CS 240; CS 374; one of MATH 225, MATH 257, MATH 415, MATH 416, ASRM 406.\n",
     "creditHours": 3,
     "semestersOffered": ["Summer", "Spring", "Fall"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [
       "CS233",
@@ -736,6 +798,7 @@
     "description": "Programming Languages & Compilers\n\nStructure of programming languages and their implementation. Basic language design principles; abstract data types; functional languages; type systems; object-oriented languages. Basics of lexing, parsing, syntax-directed translation, semantic analysis, and code generation. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 233 or CS 240; CS 374; one of MATH 225, MATH 257, MATH 415, MATH 416, ASRM 406.\n",
     "creditHours": 4,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [
       "CS233",
@@ -755,7 +818,8 @@
     "description": "Programming Language Design\n\nExploration of major language design paradigms using imperative and functional programming as unifying themes. Tools include both practical language processor construction and theoretical models. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 421.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": ["Software Foundations"],
+    "concentrations": ["Software Foundations"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS421"],
     "followupCourses": ["CS522", "CS524"]
   },
@@ -765,7 +829,8 @@
     "description": "Programming Language Design\n\nExploration of major language design paradigms using imperative and functional programming as unifying themes. Tools include both practical language processor construction and theoretical models. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 421.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": ["Software Foundations"],
+    "concentrations": ["Software Foundations"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS421"],
     "followupCourses": ["CS522", "CS524"]
   },
@@ -775,10 +840,11 @@
     "description": "Operating Systems Design\n\nOrganization and structure of modern operating systems and concurrent programming concepts. Deadlock, virtual memory, processor scheduling, and disk systems. Performance, security, and protection. Same as CSE 423. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 241 or ECE 391.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Distributed Systems, Networking, and Security",
       "Machines"
     ],
+    "requirementsSatisfied": [],
     "prereqs": ["CS241", "ECE391"],
     "followupCourses": ["CS523", "CS525"]
   },
@@ -788,10 +854,11 @@
     "description": "Operating Systems Design\n\nOrganization and structure of modern operating systems and concurrent programming concepts. Deadlock, virtual memory, processor scheduling, and disk systems. Performance, security, and protection. Same as CSE 423. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 241 or ECE 391.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Distributed Systems, Networking, and Security",
       "Machines"
     ],
+    "requirementsSatisfied": [],
     "prereqs": ["CS241", "ECE391"],
     "followupCourses": ["CS523", "CS525"]
   },
@@ -801,10 +868,11 @@
     "description": "Real-Time Systems\n\nSupervisory control aspects of Cyber Physical Systems (CPS): fundamentals of reliability analysis, real-time scheduling, simple feedback control, software fault tolerance architecture, wireless networking and energy saving, principles of safety critical system engineering. Student groups design and demonstrate supervisory control architecture for a robot. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 241.\n",
     "creditHours": 3,
     "semestersOffered": ["Fall", "Spring"],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Distributed Systems, Networking, and Security",
       "Machines"
     ],
+    "requirementsSatisfied": [],
     "prereqs": ["CS241"],
     "followupCourses": []
   },
@@ -814,10 +882,11 @@
     "description": "Real-Time Systems\n\nSupervisory control aspects of Cyber Physical Systems (CPS): fundamentals of reliability analysis, real-time scheduling, simple feedback control, software fault tolerance architecture, wireless networking and energy saving, principles of safety critical system engineering. Student groups design and demonstrate supervisory control architecture for a robot. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 241.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Distributed Systems, Networking, and Security",
       "Machines"
     ],
+    "requirementsSatisfied": [],
     "prereqs": ["CS241"],
     "followupCourses": []
   },
@@ -827,7 +896,8 @@
     "description": "Distributed Systems\n\nProtocols, specification techniques, global states and their determination, reliable broadcast, transactions and commitment, security, and real-time systems. Same as ECE 428. 3 or 4 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 241 or ECE 391.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall", "Summer"],
-    "requirementsSatisfied": ["Distributed Systems, Networking, and Security"],
+    "concentrations": ["Distributed Systems, Networking, and Security"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS241", "ECE391"],
     "followupCourses": ["CS523", "CS525"]
   },
@@ -837,7 +907,8 @@
     "description": "Distributed Systems\n\nProtocols, specification techniques, global states and their determination, reliable broadcast, transactions and commitment, security, and real-time systems. Same as ECE 428. 3 or 4 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 241 or ECE 391.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": ["Distributed Systems, Networking, and Security"],
+    "concentrations": ["Distributed Systems, Networking, and Security"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS241", "ECE391"],
     "followupCourses": ["CS523", "CS525"]
   },
@@ -847,7 +918,8 @@
     "description": "Compiler Construction\n\nCompiler structure, syntax analysis, syntax-directed translation, automatically constructed recognizers, semantic analysis, code generation, intermediate language, optimization techniques. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 421.\n",
     "creditHours": 3,
     "semestersOffered": ["Fall", "Spring"],
-    "requirementsSatisfied": ["Software Foundations", "Machines"],
+    "concentrations": ["Software Foundations", "Machines"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS421"],
     "followupCourses": ["CS522", "CS526"]
   },
@@ -857,7 +929,8 @@
     "description": "Compiler Construction\n\nCompiler structure, syntax analysis, syntax-directed translation, automatically constructed recognizers, semantic analysis, code generation, intermediate language, optimization techniques. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 421.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": ["Software Foundations", "Machines"],
+    "concentrations": ["Software Foundations", "Machines"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS421"],
     "followupCourses": ["CS522", "CS526"]
   },
@@ -867,7 +940,8 @@
     "description": "Software Engineering I\n\nSoftware process, analysis and design. Software development paradigms, system engineering, function-based analysis and design, and object-oriented analysis and design. Course will use team-projects for hands-on exercises. Same as CSE 426. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 241.\n",
     "creditHours": 3,
     "semestersOffered": ["Fall"],
-    "requirementsSatisfied": ["Team Project", "Software Foundations"],
+    "concentrations": ["Team Project", "Software Foundations"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS241"],
     "followupCourses": ["CS428", "CS429", "CS528"]
   },
@@ -877,7 +951,8 @@
     "description": "Software Engineering I\n\nSoftware process, analysis and design. Software development paradigms, system engineering, function-based analysis and design, and object-oriented analysis and design. Course will use team-projects for hands-on exercises. Same as CSE 426. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 241.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": ["Team Project", "Software Foundations"],
+    "concentrations": ["Team Project", "Software Foundations"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS241"],
     "followupCourses": ["CS428", "CS429", "CS528"]
   },
@@ -887,7 +962,8 @@
     "description": "Software Engineering II\n\nContinuation of CS 427. Software development, management, and maintenance. Project and configuration management, collaborative development models, software quality assurance, interoperability domain engineering and software reuse, and software re-engineering. Same as CSE 429. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 427.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring"],
-    "requirementsSatisfied": ["Team Project", "Software Foundations"],
+    "concentrations": ["Team Project", "Software Foundations"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS427"],
     "followupCourses": ["CS527"]
   },
@@ -897,7 +973,8 @@
     "description": "Software Engineering II\n\nContinuation of CS 427. Software development, management, and maintenance. Project and configuration management, collaborative development models, software quality assurance, interoperability domain engineering and software reuse, and software re-engineering. Same as CSE 429. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 427.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": ["Team Project", "Software Foundations"],
+    "concentrations": ["Team Project", "Software Foundations"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS427"],
     "followupCourses": ["CS527"]
   },
@@ -907,7 +984,8 @@
     "description": "Software Engineering II, ACP\n\nContinuation of CS 427. Identical to CS 428 except for the additional writing component. See CS 428. 3 undergraduate hours. 3 graduate hours. Prerequisite: CS 427.This course satisfies the General Education Criteria for:Advanced Composition",
     "creditHours": 3,
     "semestersOffered": ["Spring"],
-    "requirementsSatisfied": ["Team Project", "Software Foundations"],
+    "concentrations": ["Team Project", "Software Foundations"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS427"],
     "followupCourses": ["CS527"]
   },
@@ -917,10 +995,11 @@
     "description": "Embedded Systems\n\nA survey of sampled data systems and embedded architecture; key concepts in common embedded system applications; signal processing and control; embedded microprocessor and device interface; time-critical I/O handling; data communications; real-time operating systems and techniques for the development and analysis of embedded real-time software; hands-on laboratory projects. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 241 or ECE 391.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Distributed Systems, Networking, and Security",
       "Machines"
     ],
+    "requirementsSatisfied": [],
     "prereqs": ["CS241", "ECE391"],
     "followupCourses": []
   },
@@ -930,10 +1009,11 @@
     "description": "Embedded Systems\n\nA survey of sampled data systems and embedded architecture; key concepts in common embedded system applications; signal processing and control; embedded microprocessor and device interface; time-critical I/O handling; data communications; real-time operating systems and techniques for the development and analysis of embedded real-time software; hands-on laboratory projects. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 241 or ECE 391.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Distributed Systems, Networking, and Security",
       "Machines"
     ],
+    "requirementsSatisfied": [],
     "prereqs": ["CS241", "ECE391"],
     "followupCourses": []
   },
@@ -943,7 +1023,8 @@
     "description": "Computer System Organization\n\nComputer hardware design and analysis and interface with software. Advanced processor design, including superscalar, out-of-order issue, branch prediction, and speculation. Memory hierarchy design, including advanced cache optimizations, main memory, and virtual memory. Principles of multiprocessor design, including shared-memory, cache coherence, synchronization, and consistency. Other advanced topics depending on time; e.g., GPUs and accelerators, warehouse computers and data centers, security. Same as CSE 422. 3 undergraduate hours. 4 graduate hours. Prerequisite: CS 233.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": ["Machines"],
+    "concentrations": ["Machines"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS233"],
     "followupCourses": ["CS523", "CS533"]
   },
@@ -953,7 +1034,8 @@
     "description": "Computer System Organization\n\nComputer hardware design and analysis and interface with software. Advanced processor design, including superscalar, out-of-order issue, branch prediction, and speculation. Memory hierarchy design, including advanced cache optimizations, main memory, and virtual memory. Principles of multiprocessor design, including shared-memory, cache coherence, synchronization, and consistency. Other advanced topics depending on time; e.g., GPUs and accelerators, warehouse computers and data centers, security. Same as CSE 422. 3 undergraduate hours. 4 graduate hours. Prerequisite: CS 233.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": ["Machines"],
+    "concentrations": ["Machines"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS233"],
     "followupCourses": ["CS523", "CS533"]
   },
@@ -963,6 +1045,7 @@
     "description": "Mobile Computing & Application\n\nSame as ECE 434. See ECE 434.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -973,6 +1056,7 @@
     "description": "Mobile Computing & Application\n\nSame as ECE 434. See ECE 434.\n",
     "creditHours": 4,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -983,6 +1067,7 @@
     "description": "Cloud Networking\n\nProvides a foundational view of computer networks with a focus on enabling modern large-scale cloud computing. The first part of this course studies the principles upon which the Internet and other networks are built, and how those principles translate into deployed protocols. The second part covers how those principles are applied in network infrastructure for modern clouds, enabling deployment of virtual networks on shared infrastructure, efficient transfer of big data and low latency communication, and federation of applications across countries and continents. 3 undergraduate hours. 4 graduate hours. Credit is not given for both CS 435 and CS 438/ECE 438. Prerequisite: One of CS 240, CS 241 or ECE 391.\n",
     "creditHours": 3,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["CS240", "CS241", "ECE391"],
     "followupCourses": []
@@ -993,6 +1078,7 @@
     "description": "Cloud Networking\n\nProvides a foundational view of computer networks with a focus on enabling modern large-scale cloud computing. The first part of this course studies the principles upon which the Internet and other networks are built, and how those principles translate into deployed protocols. The second part covers how those principles are applied in network infrastructure for modern clouds, enabling deployment of virtual networks on shared infrastructure, efficient transfer of big data and low latency communication, and federation of applications across countries and continents. 3 undergraduate hours. 4 graduate hours. Credit is not given for both CS 435 and CS 438/ECE 438. Prerequisite: One of CS 240, CS 241 or ECE 391.\n",
     "creditHours": 4,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["CS240", "CS241", "ECE391"],
     "followupCourses": []
@@ -1003,7 +1089,8 @@
     "description": "Computer Networking Laboratory\n\nDesign, application, analysis, and deployment of communication protocols and system software behind modern cloud/compute/network infrastructures. Students learn the internals of modern system infrastructures, including operating system networking kernels, cloud application service code, and firewall and router configuration. Students will gain experience with widely-used and production-grade code and systems, such as Cisco IOS, the Linux networking stack, and Amazon Web Services. This class links theory with practice to prepare students to confidently carry out tasks they will commonly encounter in industry, such as building an enterprise network, deploying a large-scale cloud service, or implementing a new network protocol. Same as ECE 435. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 241 or ECE 391.\n",
     "creditHours": 3,
     "semestersOffered": ["Fall", "Spring"],
-    "requirementsSatisfied": ["Distributed Systems, Networking, and Security"],
+    "concentrations": ["Distributed Systems, Networking, and Security"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS241", "ECE391"],
     "followupCourses": []
   },
@@ -1013,7 +1100,8 @@
     "description": "Computer Networking Laboratory\n\nDesign, application, analysis, and deployment of communication protocols and system software behind modern cloud/compute/network infrastructures. Students learn the internals of modern system infrastructures, including operating system networking kernels, cloud application service code, and firewall and router configuration. Students will gain experience with widely-used and production-grade code and systems, such as Cisco IOS, the Linux networking stack, and Amazon Web Services. This class links theory with practice to prepare students to confidently carry out tasks they will commonly encounter in industry, such as building an enterprise network, deploying a large-scale cloud service, or implementing a new network protocol. Same as ECE 435. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 241 or ECE 391.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": ["Distributed Systems, Networking, and Security"],
+    "concentrations": ["Distributed Systems, Networking, and Security"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS241", "ECE391"],
     "followupCourses": []
   },
@@ -1023,7 +1111,8 @@
     "description": "Communication Networks\n\nLayered architectures and the OSI Reference Model; design issues and protocols in the transport, network, and data link layers; architectures and control algorithms of local-area, point-to-point, and satellite networks; standards in networks access protocols; models of network interconnection; overview of networking and communication software. Same as ECE 438. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 241 or ECE 391; one of ECE 313, MATH 461, MATH 463.\n",
     "creditHours": 3,
     "semestersOffered": ["Fall", "Spring", "Summer"],
-    "requirementsSatisfied": ["Distributed Systems, Networking, and Security"],
+    "concentrations": ["Distributed Systems, Networking, and Security"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS241", "ECE391", "ECE313", "MATH461", "MATH463"],
     "followupCourses": ["CS525", "CS538"]
   },
@@ -1033,7 +1122,8 @@
     "description": "Communication Networks\n\nLayered architectures and the OSI Reference Model; design issues and protocols in the transport, network, and data link layers; architectures and control algorithms of local-area, point-to-point, and satellite networks; standards in networks access protocols; models of network interconnection; overview of networking and communication software. Same as ECE 438. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 241 or ECE 391; one of ECE 313, MATH 461, MATH 463.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": ["Distributed Systems, Networking, and Security"],
+    "concentrations": ["Distributed Systems, Networking, and Security"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS241", "ECE391", "ECE313", "MATH461", "MATH463"],
     "followupCourses": ["CS525", "CS538"]
   },
@@ -1043,7 +1133,8 @@
     "description": "Wireless Networks\n\nSame as ECE 439. See ECE 439.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": ["Distributed Systems, Networking, and Security"],
+    "concentrations": ["Distributed Systems, Networking, and Security"],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -1053,7 +1144,8 @@
     "description": "Wireless Networks\n\nSame as ECE 439. See ECE 439.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": ["Distributed Systems, Networking, and Security"],
+    "concentrations": ["Distributed Systems, Networking, and Security"],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -1063,7 +1155,8 @@
     "description": "Artificial Intelligence\n\nMajor topics in and directions of research in artificial intelligence: basic problem solving techniques, knowledge representation and computer inference, machine learning, natural language understanding, computer vision, robotics, and societal impacts. Same as ECE 448. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": ["Intelligence and Big Data"],
+    "concentrations": ["Intelligence and Big Data"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS225"],
     "followupCourses": ["CS548"]
   },
@@ -1073,7 +1166,8 @@
     "description": "Artificial Intelligence\n\nMajor topics in and directions of research in artificial intelligence: basic problem solving techniques, knowledge representation and computer inference, machine learning, natural language understanding, computer vision, robotics, and societal impacts. Same as ECE 448. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": ["Intelligence and Big Data"],
+    "concentrations": ["Intelligence and Big Data"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS225"],
     "followupCourses": ["CS548"]
   },
@@ -1083,6 +1177,7 @@
     "description": "Applied Machine Learning\n\nTechniques of machine learning to various signal problems: regression, including linear regression, multiple regression, regression forest and nearest neighbors regression; classification with various methods, including logistic regression, support vector machines, nearest neighbors, simple boosting and decision forests; clustering with various methods, including basic agglomerative clustering and k-means; resampling methods, including cross-validation and the bootstrap; model selection methods, including AIC, stepwise selection and the lasso; hidden Markov models; model estimation in the presence of missing variables; and neural networks, including deep networks. The course will focus on tool-oriented and problem-oriented exposition. Application areas include computer vision, natural language, interpreting accelerometer data, and understanding audio data. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225 and CS 361.\n",
     "creditHours": 3,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["CS225", "CS361"],
     "followupCourses": []
@@ -1093,6 +1188,7 @@
     "description": "Applied Machine Learning\n\nTechniques of machine learning to various signal problems: regression, including linear regression, multiple regression, regression forest and nearest neighbors regression; classification with various methods, including logistic regression, support vector machines, nearest neighbors, simple boosting and decision forests; clustering with various methods, including basic agglomerative clustering and k-means; resampling methods, including cross-validation and the bootstrap; model selection methods, including AIC, stepwise selection and the lasso; hidden Markov models; model estimation in the presence of missing variables; and neural networks, including deep networks. The course will focus on tool-oriented and problem-oriented exposition. Application areas include computer vision, natural language, interpreting accelerometer data, and understanding audio data. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225 and CS 361.\n",
     "creditHours": 4,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["CS225", "CS361"],
     "followupCourses": []
@@ -1103,11 +1199,8 @@
     "description": "Computational Photography\n\nComputer vision techniques to enhance, manipulate, and create media from photo collections, such as panoramic stitching, face morphing, texture synthesis, blending, and 3D reconstruction. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225, MATH 225, and MATH 231.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": [
-      "Team Project",
-      "Intelligence and Big Data",
-      "Media"
-    ],
+    "concentrations": ["Team Project", "Intelligence and Big Data", "Media"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS225", "MATH225", "MATH231"],
     "followupCourses": []
   },
@@ -1117,11 +1210,8 @@
     "description": "Computational Photography\n\nComputer vision techniques to enhance, manipulate, and create media from photo collections, such as panoramic stitching, face morphing, texture synthesis, blending, and 3D reconstruction. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225, MATH 225, and MATH 231.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": [
-      "Team Project",
-      "Intelligence and Big Data",
-      "Media"
-    ],
+    "concentrations": ["Team Project", "Intelligence and Big Data", "Media"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS225", "MATH225", "MATH231"],
     "followupCourses": []
   },
@@ -1131,7 +1221,8 @@
     "description": "Machine Learning\n\nPrinciples and applications of machine learning. Main paradigms and techniques, including discriminative and generative methods, reinforcement learning: linear regression, logistic regression, support vector machines, deep nets, structured methods, dimensionality reduction, k-means, Gaussian mixtures, expectation maximization, Markov decision processes, and Q-learning. Application areas such as natural language and text understanding, speech recognition, computer vision, data mining, and adaptive computer systems, among others. Same as ECE 449. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225; One of MATH 225, MATH 257, MATH 415, MATH 416 or ASRM 406; One of CS 361, ECE 313, MATH 461 or STAT 400.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": ["Intelligence and Big Data"],
+    "concentrations": ["Intelligence and Big Data"],
+    "requirementsSatisfied": [],
     "prereqs": [
       "CS225",
       "MATH225",
@@ -1152,7 +1243,8 @@
     "description": "Machine Learning\n\nPrinciples and applications of machine learning. Main paradigms and techniques, including discriminative and generative methods, reinforcement learning: linear regression, logistic regression, support vector machines, deep nets, structured methods, dimensionality reduction, k-means, Gaussian mixtures, expectation maximization, Markov decision processes, and Q-learning. Application areas such as natural language and text understanding, speech recognition, computer vision, data mining, and adaptive computer systems, among others. Same as ECE 449. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225; One of MATH 225, MATH 257, MATH 415, MATH 416 or ASRM 406; One of CS 361, ECE 313, MATH 461 or STAT 400.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": ["Intelligence and Big Data"],
+    "concentrations": ["Intelligence and Big Data"],
+    "requirementsSatisfied": [],
     "prereqs": [
       "CS225",
       "MATH225",
@@ -1173,7 +1265,8 @@
     "description": "Natural Language Processing\n\nPart-of-speech tagging, parsing, semantic analysis and machine translation. Relevant linguistics concepts from morphology (word formation) and lexical semantics (the meaning of words) to syntax (sentence structure) and compositional semantics (the meaning of sentences). 3 undergraduate hours. 3 or 4 graduate hours. Credit is not given for both CS 447 and LING 406. Prerequisite: CS 374.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": ["Intelligence and Big Data"],
+    "concentrations": ["Intelligence and Big Data"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS374"],
     "followupCourses": ["CS546"]
   },
@@ -1183,7 +1276,8 @@
     "description": "Natural Language Processing\n\nPart-of-speech tagging, parsing, semantic analysis and machine translation. Relevant linguistics concepts from morphology (word formation) and lexical semantics (the meaning of words) to syntax (sentence structure) and compositional semantics (the meaning of sentences). 3 undergraduate hours. 3 or 4 graduate hours. Credit is not given for both CS 447 and LING 406. Prerequisite: CS 374.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": ["Intelligence and Big Data"],
+    "concentrations": ["Intelligence and Big Data"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS374"],
     "followupCourses": ["CS546"]
   },
@@ -1193,6 +1287,7 @@
     "description": "Audio Computing Laboratory\n\nComputational foundations of modern audio applications: theory of audio processing for implementation of applications such as room and 3D/virtual audio rendering, pitch manipulations and autotuning, denoising for communications and forensics, audio classification, music information retrieval based on audio, rudimentary speech recognition, speech and audio coding, applications of machine learning to audio scene recognition, audio restoration, missing data recovery, and many more. This will be a lab-like course in which students collectively implement a variety of core audio operations that are commonplace today. Students will be required to bring to class their laptops and headphones to participate in lab exercises. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 241 or ECE 391; one of MATH 225, MATH 257, MATH 415, MATH 416 or ASRM 406.\n",
     "creditHours": 3,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [
       "CS241",
@@ -1211,6 +1306,7 @@
     "description": "Audio Computing Laboratory\n\nComputational foundations of modern audio applications: theory of audio processing for implementation of applications such as room and 3D/virtual audio rendering, pitch manipulations and autotuning, denoising for communications and forensics, audio classification, music information retrieval based on audio, rudimentary speech recognition, speech and audio coding, applications of machine learning to audio scene recognition, audio restoration, missing data recovery, and many more. This will be a lab-like course in which students collectively implement a variety of core audio operations that are commonplace today. Students will be required to bring to class their laptops and headphones to participate in lab exercises. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 241 or ECE 391; one of MATH 225, MATH 257, MATH 415, MATH 416 or ASRM 406.\n",
     "creditHours": 4,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [
       "CS241",
@@ -1229,9 +1325,8 @@
     "description": "Numerical Analysis\n\nLinear system solvers, optimization techniques, interpolation and approximation of functions, solving systems of nonlinear equations, eigenvalue problems, least squares, and quadrature; numerical handling of ordinary and partial differential equations. Same as CSE 401, ECE 491, and MATH 450. 3 undergraduate hours. 3 or 4 graduate hours. Credit is not given for both CS 450 and CS 457. Prerequisite: One of CS 101 or CS 125; one of CS 357, MATH 257, MATH 415, or MATH 416; MATH 285.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall", "Summer"],
-    "requirementsSatisfied": [
-      "Scientific, Parallel, and High Performance Computing"
-    ],
+    "concentrations": ["Scientific, Parallel, and High Performance Computing"],
+    "requirementsSatisfied": [],
     "prereqs": [
       "CS101",
       "CS125",
@@ -1249,9 +1344,8 @@
     "description": "Numerical Analysis\n\nLinear system solvers, optimization techniques, interpolation and approximation of functions, solving systems of nonlinear equations, eigenvalue problems, least squares, and quadrature; numerical handling of ordinary and partial differential equations. Same as CSE 401, ECE 491, and MATH 450. 3 undergraduate hours. 3 or 4 graduate hours. Credit is not given for both CS 450 and CS 457. Prerequisite: One of CS 101 or CS 125; one of CS 357, MATH 257, MATH 415, or MATH 416; MATH 285.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": [
-      "Scientific, Parallel, and High Performance Computing"
-    ],
+    "concentrations": ["Scientific, Parallel, and High Performance Computing"],
+    "requirementsSatisfied": [],
     "prereqs": [
       "CS101",
       "CS125",
@@ -1269,9 +1363,8 @@
     "description": "Numerical Methods II\n\nContinuation of CS 357. Orthogonalization methods for least squares, Krylov subspace methods, non-linear equations and optimization in multiple dimensions, initial and boundary value problems for ordinary and partial differential equations. 3 undergraduate hours. No graduate credit. Credit is not given for both CS 457 and CS 450. Prerequisite: CS 357.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring"],
-    "requirementsSatisfied": [
-      "Scientific, Parallel, and High Performance Computing"
-    ],
+    "concentrations": ["Scientific, Parallel, and High Performance Computing"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS357"],
     "followupCourses": ["CS554", "CS555"]
   },
@@ -1281,10 +1374,11 @@
     "description": "Security Laboratory\n\nOperating systems security: access control, least privilege mechanism and malware techniques. Network security: firewalls, sniffing, tunnels, intrusion detection, AAA and worm structure. System security: forensics security architectures, and attack/defend exercises. Complements CS 461 via hands-on project. Same as ECE 419. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 461.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring"],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Human and Social Impact",
       "Distributed Systems, Networking, and Security"
     ],
+    "requirementsSatisfied": [],
     "prereqs": ["CS461"],
     "followupCourses": []
   },
@@ -1294,10 +1388,11 @@
     "description": "Security Laboratory\n\nOperating systems security: access control, least privilege mechanism and malware techniques. Network security: firewalls, sniffing, tunnels, intrusion detection, AAA and worm structure. System security: forensics security architectures, and attack/defend exercises. Complements CS 461 via hands-on project. Same as ECE 419. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 461.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Human and Social Impact",
       "Distributed Systems, Networking, and Security"
     ],
+    "requirementsSatisfied": [],
     "prereqs": ["CS461"],
     "followupCourses": []
   },
@@ -1307,10 +1402,11 @@
     "description": "Computer Security I\n\nFundamental principles of computer and communications security and information assurance: ethics, privacy, notions of threat, vulnerabilities, and risk in systems, information warfare, malicious software, data secrecy and integrity issues, network security, trusted computing, mandatory and discretionary access controls, certification and accreditation of systems against security standards. Security mechanisms: authentication, auditing, intrusion detection, access control, cryptography, security protocols, key distribution. Same as ECE 422. 4 undergraduate hours. 4 graduate hours. Prerequisite: CS 241 or ECE 391.\n",
     "creditHours": 4,
     "semestersOffered": ["Spring", "Fall", "Summer"],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Human and Social Impact",
       "Distributed Systems, Networking, and Security"
     ],
+    "requirementsSatisfied": [],
     "prereqs": ["CS241", "ECE391"],
     "followupCourses": ["CS460", "CS463", "CS563"]
   },
@@ -1320,10 +1416,11 @@
     "description": "Computer Security II\n\nProgram security, trusted base, privacy, anonymity, non-interference, information flow, confinement, advanced auditing, forensics, intrusion detection, key management and distribution, policy composition and analysis, formal approaches to specification and verification of secure systems and protocols, and topics in applied cryptography. Same as ECE 424. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 461. Recommended: CS 475.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Human and Social Impact",
       "Distributed Systems, Networking, and Security"
     ],
+    "requirementsSatisfied": [],
     "prereqs": ["CS461", "CS475"],
     "followupCourses": ["CS562", "CS563"]
   },
@@ -1333,10 +1430,11 @@
     "description": "Computer Security II\n\nProgram security, trusted base, privacy, anonymity, non-interference, information flow, confinement, advanced auditing, forensics, intrusion detection, key management and distribution, policy composition and analysis, formal approaches to specification and verification of secure systems and protocols, and topics in applied cryptography. Same as ECE 424. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 461. Recommended: CS 475.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Human and Social Impact",
       "Distributed Systems, Networking, and Security"
     ],
+    "requirementsSatisfied": [],
     "prereqs": ["CS461", "CS475"],
     "followupCourses": ["CS562", "CS563"]
   },
@@ -1346,6 +1444,7 @@
     "description": "Topics in Societal and Ethical Impacts of Computer Technology\n\nTopics selected from key current areas of impact of computer technology on aspects of society and ethics such as: freedom versus the rule of law in cyberspace; social discourse; privacy; livelihoods and automation; fairness; security; political change; business models; technology divide. 3 undergraduate hours. No graduate credit. May be repeated if topics vary. Credit is not given towards a degree from multiple offerings of this course, if those offerings have significant overlap, as determined by the CS department. Prerequisite: CS 225. One of CS 210 or CS 211 or ECE 316 or PHIL 316. One of CS 361 or STAT 400 or STAT 200. Restricted to students with senior standing.\n",
     "creditHours": 3,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [
       "CS225",
@@ -1365,11 +1464,8 @@
     "description": "User Interface Design\n\nA project-focused course covering fundamental principles of user interface design, implementation, and evaluation. Small teams work on a term-long project that involves: analysis of the problem domain, user skills, and tasks; iterative prototyping of interfaces to address user needs; conducting several forms of evaluation such as cognitive walkthroughs and usability tests; implementation of the final prototype. Non-technical majors may enroll as non-programmers who participate in all aspects of the projects with the possible exception of implementation. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall", "Summer"],
-    "requirementsSatisfied": [
-      "Team Project",
-      "Human and Social Impact",
-      "Media"
-    ],
+    "concentrations": ["Team Project", "Human and Social Impact", "Media"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS225"],
     "followupCourses": ["CS565"]
   },
@@ -1379,11 +1475,8 @@
     "description": "User Interface Design\n\nA project-focused course covering fundamental principles of user interface design, implementation, and evaluation. Small teams work on a term-long project that involves: analysis of the problem domain, user skills, and tasks; iterative prototyping of interfaces to address user needs; conducting several forms of evaluation such as cognitive walkthroughs and usability tests; implementation of the final prototype. Non-technical majors may enroll as non-programmers who participate in all aspects of the projects with the possible exception of implementation. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": [
-      "Team Project",
-      "Human and Social Impact",
-      "Media"
-    ],
+    "concentrations": ["Team Project", "Human and Social Impact", "Media"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS225"],
     "followupCourses": ["CS565"]
   },
@@ -1393,10 +1486,11 @@
     "description": "Introduction to Bioinformatics\n\nAlgorithmic approaches in bioinformatics: (i) biological problems that can be solved computationally (e.g., discovering genes, and interactions among different genes and proteins); (ii) algorithmic techniques with wide applicability in solving these problems (e.g., dynamic programming and probabilistic methods); (iii) practical issues in translating the basic algorithmic ideas into accurate and efficient tools that biologists may use. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Intelligence and Big Data",
       "Scientific, Parallel, and High Performance Computing"
     ],
+    "requirementsSatisfied": [],
     "prereqs": ["CS225"],
     "followupCourses": ["CS582"]
   },
@@ -1406,10 +1500,11 @@
     "description": "Introduction to Bioinformatics\n\nAlgorithmic approaches in bioinformatics: (i) biological problems that can be solved computationally (e.g., discovering genes, and interactions among different genes and proteins); (ii) algorithmic techniques with wide applicability in solving these problems (e.g., dynamic programming and probabilistic methods); (iii) practical issues in translating the basic algorithmic ideas into accurate and efficient tools that biologists may use. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Intelligence and Big Data",
       "Scientific, Parallel, and High Performance Computing"
     ],
+    "requirementsSatisfied": [],
     "prereqs": ["CS225"],
     "followupCourses": ["CS582"]
   },
@@ -1419,12 +1514,13 @@
     "description": "Social Visualization\n\nVisualizing social interaction in networked spaces: investigation of patterns in networked communications systems such as messaging (email, instant messaging), social networking sites and collaborative sites; social network theory and visualizations; exploration of how to move beyond existing visualization techniques; visualizing the network identity over compilations of online data. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Team Project",
       "Intelligence and Big Data",
       "Human and Social Impact",
       "Media"
     ],
+    "requirementsSatisfied": [],
     "prereqs": ["CS225"],
     "followupCourses": []
   },
@@ -1434,12 +1530,13 @@
     "description": "Social Visualization\n\nVisualizing social interaction in networked spaces: investigation of patterns in networked communications systems such as messaging (email, instant messaging), social networking sites and collaborative sites; social network theory and visualizations; exploration of how to move beyond existing visualization techniques; visualizing the network identity over compilations of online data. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Team Project",
       "Intelligence and Big Data",
       "Human and Social Impact",
       "Media"
     ],
+    "requirementsSatisfied": [],
     "prereqs": ["CS225"],
     "followupCourses": []
   },
@@ -1449,7 +1546,8 @@
     "description": "Tech and Advertising Campaigns\n\nSame as ADV 492. See ADV 492.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": ["Human and Social Impact", "Media"],
+    "concentrations": ["Human and Social Impact", "Media"],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -1459,7 +1557,8 @@
     "description": "Algorithms\n\nDesign and analysis techniques, approximation algorithms, randomized algorithms and amortized analysis, and advanced topics such as network flow, linear programming, and dynamic data structures, among others. Same as CSE 414 and MATH 473. 4 undergraduate hours. 4 graduate hours. Prerequisite: CS 374, and one of CS 361, MATH 461, or STAT 400.\n",
     "creditHours": 4,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": ["Algorithms and Models of Computation"],
+    "concentrations": ["Algorithms and Models of Computation"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS374", "CS361", "MATH461", "STAT400"],
     "followupCourses": ["CS544", "CS574", "CS579", "CS580"]
   },
@@ -1469,6 +1568,7 @@
     "description": "Logic in Computer Science\n\nAn introduction to mathematical logic from the perspective of computer science, emphasizing both computable aspects of logic, especially automated reasoning, as well as applications of logic to computer science in artificial intelligence, databases, formal methods, and theoretical computer science. Prepares students to use logic as a formal tool to solve problems in computer science and AI. Topics include: syntax, semantics and proofs for propositional and first order logic, the decidable logics and efficient realizations in terms of SAT/SMT solvers, decision and semi-decision procedures for first order logic and several first order logic theories, finite model theory and descriptive complexity. Additional topics include: connections between logic and machine learning, higher order logics, applications of logic to program verification, applications of logic in knowledge representation, proof complexity, modal and temporal logic, Courcelle\u2019s theorem and its applications in parameterized complexity, logic and its role in automatic program synthesis, connections between logic and database query languages. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 173, CS 225, CS 374.\n",
     "creditHours": 3,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["CS173", "CS225", "CS374"],
     "followupCourses": []
@@ -1479,6 +1579,7 @@
     "description": "Logic in Computer Science\n\nAn introduction to mathematical logic from the perspective of computer science, emphasizing both computable aspects of logic, especially automated reasoning, as well as applications of logic to computer science in artificial intelligence, databases, formal methods, and theoretical computer science. Prepares students to use logic as a formal tool to solve problems in computer science and AI. Topics include: syntax, semantics and proofs for propositional and first order logic, the decidable logics and efficient realizations in terms of SAT/SMT solvers, decision and semi-decision procedures for first order logic and several first order logic theories, finite model theory and descriptive complexity. Additional topics include: connections between logic and machine learning, higher order logics, applications of logic to program verification, applications of logic in knowledge representation, proof complexity, modal and temporal logic, Courcelle\u2019s theorem and its applications in parameterized complexity, logic and its role in automatic program synthesis, connections between logic and database query languages. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 173, CS 225, CS 374.\n",
     "creditHours": 4,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["CS173", "CS225", "CS374"],
     "followupCourses": []
@@ -1489,7 +1590,8 @@
     "description": "Formal Models of Computation\n\nFinite automata and regular languages; pushdown automata and context-free languages; Turing machines and recursively enumerable sets; linear-bounded automata and context-sensitive languages; computability and the halting problem; undecidable problems; recursive functions; Chomsky hierarchy; computational complexity. Same as MATH 475. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 374.\n",
     "creditHours": 3,
     "semestersOffered": ["Fall", "Spring"],
-    "requirementsSatisfied": ["Algorithms and Models of Computation"],
+    "concentrations": ["Algorithms and Models of Computation"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS374"],
     "followupCourses": ["CS463", "CS524", "CS579"]
   },
@@ -1499,7 +1601,8 @@
     "description": "Formal Models of Computation\n\nFinite automata and regular languages; pushdown automata and context-free languages; Turing machines and recursively enumerable sets; linear-bounded automata and context-sensitive languages; computability and the halting problem; undecidable problems; recursive functions; Chomsky hierarchy; computational complexity. Same as MATH 475. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 374.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": ["Algorithms and Models of Computation"],
+    "concentrations": ["Algorithms and Models of Computation"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS374"],
     "followupCourses": ["CS463", "CS524", "CS579"]
   },
@@ -1509,10 +1612,11 @@
     "description": "Program Verification\n\nFormal methods for demonstrating correctness and other properties of programs. Invariant assertions; Hoare axiomatics; well-founded orderings for proving termination; structural induction; computational induction; data structures; parallel programs; overview of predicate calculus. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225; CS 374 or MATH 414.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Software Foundations",
       "Algorithms and Models of Computation"
     ],
+    "requirementsSatisfied": [],
     "prereqs": ["CS225", "CS374", "MATH414"],
     "followupCourses": ["CS524"]
   },
@@ -1522,10 +1626,11 @@
     "description": "Program Verification\n\nFormal methods for demonstrating correctness and other properties of programs. Invariant assertions; Hoare axiomatics; well-founded orderings for proving termination; structural induction; computational induction; data structures; parallel programs; overview of predicate calculus. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225; CS 374 or MATH 414.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Software Foundations",
       "Algorithms and Models of Computation"
     ],
+    "requirementsSatisfied": [],
     "prereqs": ["CS225", "CS374", "MATH414"],
     "followupCourses": ["CS524"]
   },
@@ -1535,10 +1640,11 @@
     "description": "Formal Software Development Methods\n\nMathematical models, languages, and methods for software specification, development, and verification. Same as ECE 478. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225; CS 374 or MATH 414.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Software Foundations",
       "Algorithms and Models of Computation"
     ],
+    "requirementsSatisfied": [],
     "prereqs": ["CS225", "CS374", "MATH414"],
     "followupCourses": []
   },
@@ -1548,10 +1654,11 @@
     "description": "Formal Software Development Methods\n\nMathematical models, languages, and methods for software specification, development, and verification. Same as ECE 478. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225; CS 374 or MATH 414.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Software Foundations",
       "Algorithms and Models of Computation"
     ],
+    "requirementsSatisfied": [],
     "prereqs": ["CS225", "CS374", "MATH414"],
     "followupCourses": []
   },
@@ -1561,7 +1668,8 @@
     "description": "Advanced Topics in Stochastic Processes & Applications\n\nSame as IE 410. See IE 410.\n",
     "creditHours": 3,
     "semestersOffered": ["Fall"],
-    "requirementsSatisfied": ["Algorithms and Models of Computation"],
+    "concentrations": ["Algorithms and Models of Computation"],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -1571,7 +1679,8 @@
     "description": "Advanced Topics in Stochastic Processes & Applications\n\nSame as IE 410. See IE 410.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": ["Algorithms and Models of Computation"],
+    "concentrations": ["Algorithms and Models of Computation"],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -1581,10 +1690,11 @@
     "description": "Simulation\n\nSame as IE 413. See IE 413.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring"],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Algorithms and Models of Computation",
       "Scientific, Parallel, and High Performance Computing"
     ],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -1594,10 +1704,11 @@
     "description": "Simulation\n\nSame as IE 413. See IE 413.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Algorithms and Models of Computation",
       "Scientific, Parallel, and High Performance Computing"
     ],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -1607,10 +1718,11 @@
     "description": "Applied Parallel Programming\n\nSame as CSE 408 and ECE 408. See ECE 408.\n",
     "creditHours": 4,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Scientific, Parallel, and High Performance Computing",
       "Distributed Systems, Networking, and Security"
     ],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -1620,11 +1732,12 @@
     "description": "Parallel Programming\n\nTechniques for the programming of all classes of parallel computers and devices including shared memory and distributed memory multiprocessors, SIMD processors and co-processors, and special purpose devices. Key concepts in parallel programming such as reactive and transformational programming, speculation, speedup, isoefficiency, and load balancing. Synchronization primitives, libraries and languages for parallel programming such as OpenMP and MPI, performance monitoring, program tuning, analysis and programming of numerical and symbolic parallel algorithms. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 241.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Scientific, Parallel, and High Performance Computing",
       "Distributed Systems, Networking, and Security",
       "Machines"
     ],
+    "requirementsSatisfied": [],
     "prereqs": ["CS241"],
     "followupCourses": []
   },
@@ -1634,11 +1747,12 @@
     "description": "Parallel Programming\n\nTechniques for the programming of all classes of parallel computers and devices including shared memory and distributed memory multiprocessors, SIMD processors and co-processors, and special purpose devices. Key concepts in parallel programming such as reactive and transformational programming, speculation, speedup, isoefficiency, and load balancing. Synchronization primitives, libraries and languages for parallel programming such as OpenMP and MPI, performance monitoring, program tuning, analysis and programming of numerical and symbolic parallel algorithms. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 241.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Scientific, Parallel, and High Performance Computing",
       "Distributed Systems, Networking, and Security",
       "Machines"
     ],
+    "requirementsSatisfied": [],
     "prereqs": ["CS241"],
     "followupCourses": []
   },
@@ -1648,6 +1762,7 @@
     "description": "Seminar\n\nSeminar on topics of current interest as announced in the Class Schedule. 0 to 4 undergraduate hours. 0 to 4 graduate hours. Approved for S/U grading only. May be repeated in the same or separate terms if topics vary to a maximum of 4 hours. Prerequisite: As specified for each topic offering, see Class Schedule or departmental course description.\n",
     "creditHours": 0,
     "semestersOffered": ["Spring", "Fall"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -1658,6 +1773,7 @@
     "description": "Seminar\n\nSeminar on topics of current interest as announced in the Class Schedule. 0 to 4 undergraduate hours. 0 to 4 graduate hours. Approved for S/U grading only. May be repeated in the same or separate terms if topics vary to a maximum of 4 hours. Prerequisite: As specified for each topic offering, see Class Schedule or departmental course description.\n",
     "creditHours": 1,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -1668,6 +1784,7 @@
     "description": "Seminar\n\nSeminar on topics of current interest as announced in the Class Schedule. 0 to 4 undergraduate hours. 0 to 4 graduate hours. Approved for S/U grading only. May be repeated in the same or separate terms if topics vary to a maximum of 4 hours. Prerequisite: As specified for each topic offering, see Class Schedule or departmental course description.\n",
     "creditHours": 2,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -1678,6 +1795,7 @@
     "description": "Seminar\n\nSeminar on topics of current interest as announced in the Class Schedule. 0 to 4 undergraduate hours. 0 to 4 graduate hours. Approved for S/U grading only. May be repeated in the same or separate terms if topics vary to a maximum of 4 hours. Prerequisite: As specified for each topic offering, see Class Schedule or departmental course description.\n",
     "creditHours": 3,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -1688,6 +1806,7 @@
     "description": "Seminar\n\nSeminar on topics of current interest as announced in the Class Schedule. 0 to 4 undergraduate hours. 0 to 4 graduate hours. Approved for S/U grading only. May be repeated in the same or separate terms if topics vary to a maximum of 4 hours. Prerequisite: As specified for each topic offering, see Class Schedule or departmental course description.\n",
     "creditHours": 4,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -1698,7 +1817,8 @@
     "description": "Senior Project I\n\nFirst part of a project course in computer science. Students work in teams to solve typical commercial or industrial problems. Work involves planning, design, and implementation. Extensive oral and written work is required both on-campus and possibly off-campus at sponsors' locations. CS 492 must be taken as a sequence with either CS 493 or CS 494. 3 undergraduate hours. No graduate credit. Credit is not given for both CS 492 and a project course in another engineering department for the same project. Prerequisite: For Computer Science majors with senior standing.\n",
     "creditHours": 3,
     "semestersOffered": ["Fall", "Spring"],
-    "requirementsSatisfied": ["Software Foundations"],
+    "concentrations": ["Software Foundations"],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": ["CS493", "CS494"]
   },
@@ -1708,7 +1828,8 @@
     "description": "Senior Project II, ACP\n\nContinuation of CS 492. Identical to CS 494 except for an additional writing component. See CS 494. 3 undergraduate hours. No graduate credit. Credit is not given for both CS 493 and a project course in another engineering department for the same project. Prerequisite: CS 492.This course satisfies the General Education Criteria for:Advanced Composition",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": ["Team Project", "Software Foundations"],
+    "concentrations": ["Team Project", "Software Foundations"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS492"],
     "followupCourses": []
   },
@@ -1718,7 +1839,8 @@
     "description": "Senior Project II\n\nContinuation of CS 492. 3 undergraduate hours. No graduate credit. Credit is not given for both CS 494 and a project course in another engineering department for the same project. Prerequisite: CS 492.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": ["Team Project", "Software Foundations"],
+    "concentrations": ["Team Project", "Software Foundations"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS492"],
     "followupCourses": []
   },
@@ -1728,7 +1850,8 @@
     "description": "CS Team Project\n\nStudent teams work with CS faculty to complete a significant project requiring advanced knowledge of CS principles. Project topics vary. 1 to 3 undergraduate hours. No graduate credit. May be repeated in the same term up to 6 hours, if topics vary; may be repeated in separate terms. Prerequisite: For majors only; junior or senior standing required.\n",
     "creditHours": 1,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": ["Team Project"],
+    "concentrations": ["Team Project"],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -1738,7 +1861,8 @@
     "description": "CS Team Project\n\nStudent teams work with CS faculty to complete a significant project requiring advanced knowledge of CS principles. Project topics vary. 1 to 3 undergraduate hours. No graduate credit. May be repeated in the same term up to 6 hours, if topics vary; may be repeated in separate terms. Prerequisite: For majors only; junior or senior standing required.\n",
     "creditHours": 2,
     "semestersOffered": [],
-    "requirementsSatisfied": ["Team Project"],
+    "concentrations": ["Team Project"],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -1748,7 +1872,8 @@
     "description": "CS Team Project\n\nStudent teams work with CS faculty to complete a significant project requiring advanced knowledge of CS principles. Project topics vary. 1 to 3 undergraduate hours. No graduate credit. May be repeated in the same term up to 6 hours, if topics vary; may be repeated in separate terms. Prerequisite: For majors only; junior or senior standing required.\n",
     "creditHours": 3,
     "semestersOffered": [],
-    "requirementsSatisfied": ["Team Project"],
+    "concentrations": ["Team Project"],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -1758,7 +1883,7 @@
     "description": "Special Topics\n\nSubject offerings of new and developing areas of knowledge in computer science intended to augment the existing curriculum. See Class Schedule or departmental course information for topics and prerequisites. 1 to 4 undergraduate hours. 1 to 4 graduate hours. May be repeated in the same or separate terms if topics vary.\n",
     "creditHours": 1,
     "semestersOffered": ["Summer", "Spring", "Fall"],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Team Project",
       "Software Foundations",
       "Algorithms and Models of Computation",
@@ -1769,6 +1894,7 @@
       "Distributed Systems, Networking, and Security",
       "Machines"
     ],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -1778,7 +1904,7 @@
     "description": "Special Topics\n\nSubject offerings of new and developing areas of knowledge in computer science intended to augment the existing curriculum. See Class Schedule or departmental course information for topics and prerequisites. 1 to 4 undergraduate hours. 1 to 4 graduate hours. May be repeated in the same or separate terms if topics vary.\n",
     "creditHours": 2,
     "semestersOffered": [],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Team Project",
       "Software Foundations",
       "Algorithms and Models of Computation",
@@ -1789,6 +1915,7 @@
       "Distributed Systems, Networking, and Security",
       "Machines"
     ],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -1798,7 +1925,7 @@
     "description": "Special Topics\n\nSubject offerings of new and developing areas of knowledge in computer science intended to augment the existing curriculum. See Class Schedule or departmental course information for topics and prerequisites. 1 to 4 undergraduate hours. 1 to 4 graduate hours. May be repeated in the same or separate terms if topics vary.\n",
     "creditHours": 3,
     "semestersOffered": [],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Team Project",
       "Software Foundations",
       "Algorithms and Models of Computation",
@@ -1809,6 +1936,7 @@
       "Distributed Systems, Networking, and Security",
       "Machines"
     ],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -1818,7 +1946,7 @@
     "description": "Special Topics\n\nSubject offerings of new and developing areas of knowledge in computer science intended to augment the existing curriculum. See Class Schedule or departmental course information for topics and prerequisites. 1 to 4 undergraduate hours. 1 to 4 graduate hours. May be repeated in the same or separate terms if topics vary.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Team Project",
       "Software Foundations",
       "Algorithms and Models of Computation",
@@ -1829,6 +1957,7 @@
       "Distributed Systems, Networking, and Security",
       "Machines"
     ],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -1838,6 +1967,7 @@
     "description": "Senior Thesis\n\nResearch and thesis development experience in computer science underguidance of a faculty member. Literature search, oral presentation, analysis and implementation, paper preparation, and completion of a written thesis. 3 undergraduate hours. No graduate credit. May be repeated to a maximum of 6 hours. Prerequisite: Consent of instructor.This course satisfies the General Education Criteria for:Advanced Composition",
     "creditHours": 3,
     "semestersOffered": ["Summer", "Spring", "Fall"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -1848,6 +1978,7 @@
     "description": "Current Topics in Computing Education Research\n\nCurrent research topics and theories in Computers and Education with an emphasis on learning theories such as constructivism, behaviorism, cognitivism, knowledge-in-pieces, test-potentiated learning, and transfer of learning. These theories will be applied to understanding how students learn computing topics such as programming and theoretical computing. These topics will be applied through the design of ethically responsible educational research studies. The course will culminate in students writing a research proposal or conference-style research paper based upon pilot data. 4 graduate hours. No professional credit. May be repeated if topics vary. Credit towards a degree from multiple offerings of this course is not given if those offerings have significant overlap, as determined by the CS department.\n",
     "creditHours": 4,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -1858,6 +1989,7 @@
     "description": "Manycore Parallel Algorithms\n\nSame as ECE 508. See ECE 508.\n",
     "creditHours": 4,
     "semestersOffered": ["Spring"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -1868,7 +2000,8 @@
     "description": "Advanced Information Retrieval\n\nAdvanced concepts, models, and algorithms in information retrieval and major recent developments in the field, including historical milestones in information retrieval research, evaluation methodology, vector space retrieval model, probabilistic retrieval models, learning to rank algorithms, probabilistic topic models, information retrieval systems, text analytics, and topics of research frontiers in information retrieval. 4 graduate hours. No professional credit. Prerequisite: One of CS 410, CS 412, CS 446 or LING 406.\n",
     "creditHours": 4,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": ["Intelligence and Big Data"],
+    "concentrations": ["Intelligence and Big Data"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS410", "CS412", "CS446", "LING406"],
     "followupCourses": []
   },
@@ -1878,7 +2011,8 @@
     "description": "Advanced Data Management\n\nAdvanced concepts in data management and information system design and implementation, and recent developments in the field. 1) Relational roots, objects and extensibility, query languages, data indexing, query processing, transaction processing, benchmarks, and 2) semi-structured data and unstructured data, information extraction, information integration, web search and mining, and other emerging directions in the field. Prerequisite: CS 411.\n",
     "creditHours": 4,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": ["Intelligence and Big Data"],
+    "concentrations": ["Intelligence and Big Data"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS411"],
     "followupCourses": []
   },
@@ -1888,7 +2022,8 @@
     "description": "Data Mining Principles\n\nAn advanced course on principles and algorithms of data mining. Data cleaning and integration; descriptive and predictive mining; mining frequent, sequential, and structured patterns; clustering, outlier analysis and fraud detection; stream data, web, text, and biomedical data mining; security and privacy in data mining; research frontiers. Prerequisite: CS 412.\n",
     "creditHours": 4,
     "semestersOffered": ["Spring"],
-    "requirementsSatisfied": ["Intelligence and Big Data"],
+    "concentrations": ["Intelligence and Big Data"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS412"],
     "followupCourses": []
   },
@@ -1898,6 +2033,7 @@
     "description": "Theory & Practice of Data Cleaning\n\nSame as IS 537. See IS 537.\n",
     "creditHours": 4,
     "semestersOffered": ["Summer", "Fall", "Spring"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -1908,6 +2044,7 @@
     "description": "Advanced Topics in Network Science\n\nWe shall discuss classic and recent research in network analysis. Advanced topics include individual decision-making models, game theory, mechanism design, social choice, social signal design, diffusion of behavior on a network, choice architecture, network models, network mining algorithms and applications. 4 graduate hours. No professional credit. May be repeated if topics vary. Credit is not given towards a degree from multiple offerings of this course, if those offerings have significant overlap, as determined by the CS department. Prerequisite: CS 412, CS 446. Additional prerequisites or corequisites may be specified each term. See section information.\n",
     "creditHours": 4,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["CS412", "CS446"],
     "followupCourses": []
@@ -1918,10 +2055,11 @@
     "description": "Scientific Visualization\n\nVisualization techniques useful in analysis of engineering and scientific data. Physical models; methods of computational science; two- and three-dimensional data types; visual representation schemes for scalar, vector, and tensor data; isosurface and volume visualization methods; visual monitoring; interactive steering. Same as CSE 527. Prerequisite: CS 418.\n",
     "creditHours": 4,
     "semestersOffered": ["Fall", "Spring"],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Media",
       "Scientific, Parallel, and High Performance Computing"
     ],
+    "requirementsSatisfied": [],
     "prereqs": ["CS418"],
     "followupCourses": []
   },
@@ -1931,6 +2069,7 @@
     "description": "Advanced Topics in Programming Systems\n\nAdvanced topics in building and verifying software systems, selected from areas of current research such as: model checking and automated verification, testing and automated test generation, program synthesis, runtime verification, machine learning and its applications in the design of verified systems, formal analysis of machine learning algorithms, principles of programming languages and type systems. 4 graduate hours. No professional credit. May be repeated if topics vary. Credit is not given towards a degree from multiple offerings of this course if those offerings have significant overlap, as determined by the CS department. Prerequisite: CS 374, CS 421. Additional prerequisites or corequisites may be specified each term. See section information.\n",
     "creditHours": 4,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["CS374", "CS421"],
     "followupCourses": []
@@ -1941,7 +2080,8 @@
     "description": "Programming Language Semantics\n\nTheory of programming languages including functional programming, meta-circular interpreters, typed, untyped and polymorphic lambda-calculi, and denotational semantics. Prerequisite: CS 422 and CS 426.\n",
     "creditHours": 4,
     "semestersOffered": ["Fall", "Spring"],
-    "requirementsSatisfied": ["Software Foundations"],
+    "concentrations": ["Software Foundations"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS422", "CS426"],
     "followupCourses": []
   },
@@ -1951,10 +2091,11 @@
     "description": "Advanced Operating Systems\n\nAdvanced concepts in operating system design and coverage of recent research directions. Resource management for parallel and distributed systems. Interaction between operating system design and computer architectures. Process management, virtual memory, interprocess communication, context switching, parallel and distributed file system designs, persistent objects, process and data migration, load balancing, security, protection. Term projects. Prerequisite: CS 423, CS 425, and CS 433.\n",
     "creditHours": 4,
     "semestersOffered": ["Fall", "Spring"],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Distributed Systems, Networking, and Security",
       "Machines"
     ],
+    "requirementsSatisfied": [],
     "prereqs": ["CS423", "CS425", "CS433"],
     "followupCourses": []
   },
@@ -1964,10 +2105,11 @@
     "description": "Concurrent Progrmg Languages\n\nTheory of concurrency and concurrent programming languages. Formal models of concurrent computation such as process algebras, nets, and actors; high level concurrent programming languages and their operational semantics; methods for reasoning about correctness and complexity of concurrent programs. Prerequisite: CS 422; CS 475 or CS 476.\n",
     "creditHours": 4,
     "semestersOffered": ["Fall", "Spring"],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Software Foundations",
       "Distributed Systems, Networking, and Security"
     ],
+    "requirementsSatisfied": [],
     "prereqs": ["CS422", "CS475", "CS476"],
     "followupCourses": []
   },
@@ -1977,7 +2119,8 @@
     "description": "Advanced Distributed Systems\n\nPeer-to-peer systems, sensor networks, and fundamental theoretical distributed computing. Review of classical work in each area, and application of design methodologies to explore overlaps across them. Emphasis on protocol design, systems issues, and theory. Reading selections are roughly two-third classical to one-third contemporary. Students write critiques, make presentations, and create a conference paper in a systematic manner. Prerequisite: One of CS 423, CS 425, CS 438.\n",
     "creditHours": 4,
     "semestersOffered": ["Spring"],
-    "requirementsSatisfied": ["Distributed Systems, Networking, and Security"],
+    "concentrations": ["Distributed Systems, Networking, and Security"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS423", "CS425", "CS438"],
     "followupCourses": []
   },
@@ -1987,7 +2130,8 @@
     "description": "Advanced Compiler Construction\n\nIncremental and interactive compiling, error correction, code optimization, models of code generators. Prerequisite: CS 426.\n",
     "creditHours": 4,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": ["Software Foundations", "Machines"],
+    "concentrations": ["Software Foundations", "Machines"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS426"],
     "followupCourses": []
   },
@@ -1997,7 +2141,8 @@
     "description": "Topics in Software Engineering\n\nFault-tolerant software, software architecture, software patterns, multi-media software, and knowledge-based approaches to software engineering. Case studies. Prerequisite: CS 428 or CS 429.\n",
     "creditHours": 4,
     "semestersOffered": ["Fall", "Spring"],
-    "requirementsSatisfied": ["Software Foundations"],
+    "concentrations": ["Software Foundations"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS428", "CS429"],
     "followupCourses": []
   },
@@ -2007,7 +2152,8 @@
     "description": "Obj-Oriented Progrmg & Design\n\nPrinciples of object-oriented design; design patterns; use and design of frameworks; reflection, refractoring, use of unit tests as specifications. Prerequisite: CS 427.\n",
     "creditHours": 4,
     "semestersOffered": ["Summer", "Spring"],
-    "requirementsSatisfied": ["Software Foundations"],
+    "concentrations": ["Software Foundations"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS427"],
     "followupCourses": []
   },
@@ -2017,7 +2163,8 @@
     "description": "Parallel Computer Architecture\n\nTheoretical aspects of parallel and pipeline computation; time and processor bounds on classes of computations; data alignment network speed and cost bounds; conflict-free access memories; overall computer system ideas. Same as CSE 522. Prerequisite: CS 433.\n",
     "creditHours": 4,
     "semestersOffered": ["Spring"],
-    "requirementsSatisfied": ["Machines"],
+    "concentrations": ["Machines"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS433"],
     "followupCourses": []
   },
@@ -2027,7 +2174,8 @@
     "description": "Fault-Tolerant Dig Syst Design\n\nSame as ECE 542. See ECE 542.\n",
     "creditHours": 4,
     "semestersOffered": ["Fall", "Spring"],
-    "requirementsSatisfied": ["Machines"],
+    "concentrations": ["Machines"],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -2037,7 +2185,8 @@
     "description": "Advanced Computer Networks\n\nAdvanced concepts in computer networks, including congestion control, quality of service, naming, routing, wireless networks, Internet architecture, measurement, network security, and selected recent research directions. Prerequisite: CS 438.\n",
     "creditHours": 4,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": ["Distributed Systems, Networking, and Security"],
+    "concentrations": ["Distributed Systems, Networking, and Security"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS438"],
     "followupCourses": []
   },
@@ -2047,6 +2196,7 @@
     "description": "Distributed Algorithms\n\nSame as ECE 526. See ECE 526.\n",
     "creditHours": 4,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2057,6 +2207,7 @@
     "description": "Deep Learning Theory\n\nA rigorous mathematical course covering foundational analyses of the approximation, optimization, and generalization properties of Deep Neural Networks. Topics include: constructive and non-constructive approximations with one hidden layer; benefits of depth; optimization in the NTK regime; maximum margin optimization outside the NTK regime; Rademacher complexity, VC dimensino, and covering number bounds for ReLU networks. Evaluation is primarily based on homeworks, with a smaller project component. The course goal is to prepare students perform their own research in the field. 4 graduate hours. No professional credit. Prerequisite: Basic linear algebra, probability, proof-writing, and statistics required. Real analysis recommended.\n",
     "creditHours": 4,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2067,7 +2218,8 @@
     "description": "Computer Systems Analysis\n\nSame as ECE 541. See ECE 541.\n",
     "creditHours": 4,
     "semestersOffered": ["Fall"],
-    "requirementsSatisfied": ["Machines"],
+    "concentrations": ["Machines"],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -2077,6 +2229,7 @@
     "description": "Statistical Reinforcement Learning\n\nTheory of reinforcement learning, with a focus on sample complexity analyses. Specific topics include MDP basics, finite-sample analyses of online (i.e., exploration) and offline (i.e., batch) RL with a tabular representation, finite-sample analyses of online and offline RL with function approximation, state abstraction theory, off-policy evaluation (importance sampling), and policy gradient. The course goal is to provide a comprehensive understanding of the statistical properties of RL under various settings (e.g., online vs offline), preparing the students for doing research in the area. 4 graduate hours. No professional credit. Prerequisite: Calculus, linear algebra, probability and statistics, and basic concepts of machine learning. Familiarity with (at least one of) the following topics is highly recommended: stochastic processes, numerical analysis, and theoretical computer science.\n",
     "creditHours": 4,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2087,7 +2240,8 @@
     "description": "Computer Vision\n\nSame as ECE 549. See ECE 549.\n",
     "creditHours": 4,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": ["Intelligence and Big Data"],
+    "concentrations": ["Intelligence and Big Data"],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -2097,7 +2251,8 @@
     "description": "Optimiz in Computer Vision\n\nApplications of continuous and discrete optimization to problems in computer vision and machine learning, with particular emphasis on large-scale algorithms and effective approximations: gradient-based learning; Newton's method and variants, applied to structure from motion problems; the augmented Lagrangian method and variants; interior-point methods; SMO and other specialized algorithms for support vector machines; flows and cuts as examples of primal-dual methods; dynamics programming, hidden Markov models, and parsing: 0-1 quadratic forms, max-cut, and Markov random-fields solutions. Prerequisite: CS 450 and CS 473.\n",
     "creditHours": 4,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": ["Intelligence and Big Data"],
+    "concentrations": ["Intelligence and Big Data"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS450", "CS473"],
     "followupCourses": []
   },
@@ -2107,6 +2262,7 @@
     "description": "Machine Learning for Signal Processing\n\nFundamentals of machine learning and signal processing as they pertain to the development of machines that can understand complex real-world signals, such as speech, images, movies, music, biological and mechanical readings, etc. Hands-on examples of how to decompose, analyze, classify, detect and consolidate signals, and examine various commonplace operations such as finding faces from camera feeds, organizing personal music collections, designing speech dialog systems and understanding movie content. 4 graduate hours. No professional credit. Prerequisite: MATH 415; CS 361 or MATH 461 or STAT 400.\n",
     "creditHours": 4,
     "semestersOffered": ["Fall"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["MATH415", "CS361", "MATH461", "STAT400"],
     "followupCourses": []
@@ -2117,7 +2273,8 @@
     "description": "Advanced Topics in Natural Language Processing\n\nAdvanced topics in natural language processing, ranging from general techniques such as deep learning for NLP to specific topics such as information extraction, knowledge acquisition, dialogue systems, language grounding, and natural language generation. Review of classic as well as state-of-the-art techniques and remaining challenges, and exploration of recent proposals for meeting these challenges. Intended for graduate students doing research in natural language processing. 4 graduate hours. No professional credit. May be repeated in separate terms up to 16 hours, if topics vary. Credit towards a degree from multiple offerings of this course is not given if those offerings have significant overlap, as determined by the CS department. Prerequisite: CS 447 and CS 446 or equivalent background.\n",
     "creditHours": 4,
     "semestersOffered": ["Spring"],
-    "requirementsSatisfied": ["Intelligence and Big Data"],
+    "concentrations": ["Intelligence and Big Data"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS447", "CS446"],
     "followupCourses": []
   },
@@ -2127,6 +2284,7 @@
     "description": "Deep Learning\n\nSame as IE 534. See IE 534.\n",
     "creditHours": 4,
     "semestersOffered": ["Spring", "Fall"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2137,7 +2295,8 @@
     "description": "Models of Cognitive Processes\n\nFormal models and concepts in automated cognition; integrating machine learning and prior knowledge; current approaches and detailed analyses of the role of reasoning in the learning process; computational complexity and fundamental tradeoffs between expressiveness and tractability; implications for state-of-the-art artificial intelligence areas such as automated planning, the semantic web, relational learning, structured prediction, latent models, structure learning, theory formation, etc.; philosophical and psychological aspects of integrating analytic and empirical evidence. Same as ECE 548. Prerequisite: CS 440 or CS 446.\n",
     "creditHours": 4,
     "semestersOffered": ["Fall", "Spring"],
-    "requirementsSatisfied": ["Intelligence and Big Data"],
+    "concentrations": ["Intelligence and Big Data"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS440", "CS446"],
     "followupCourses": []
   },
@@ -2147,6 +2306,7 @@
     "description": "Seminar in Cognitive Science\n\nSame as PSYC 514, ANTH 514, EPSY 551, LING 570, and PHIL 514. See PSYC 514.\n",
     "creditHours": 2,
     "semestersOffered": ["Fall", "Spring"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2157,6 +2317,7 @@
     "description": "Seminar in Cognitive Science\n\nSame as PSYC 514, ANTH 514, EPSY 551, LING 570, and PHIL 514. See PSYC 514.\n",
     "creditHours": 4,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2167,9 +2328,8 @@
     "description": "Parallel Numerical Algorithms\n\nNumerical algorithms for parallel computers: parallel algorithms in numerical linear algebra (dense and sparse solvers for linear systems and the algebraic eigenvalue problem), numerical handling of ordinary and partial differential equations, and numerical optimization techniques. Same as CSE 512. Prerequisite: One of CS 450, CS 457, CS 555.\n",
     "creditHours": 4,
     "semestersOffered": ["Fall", "Spring"],
-    "requirementsSatisfied": [
-      "Scientific, Parallel, and High Performance Computing"
-    ],
+    "concentrations": ["Scientific, Parallel, and High Performance Computing"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS450", "CS457", "CS555"],
     "followupCourses": []
   },
@@ -2179,9 +2339,8 @@
     "description": "Numerical Methods for PDEs\n\nNumerical techniques for initial and boundary value problems in partial differential equations. Finite difference and finite element discretization techniques, direct and iterative solution methods for discrete problems, and programming techniques and usage of software packages. Same as CSE 510 and MATH 552. 4 graduate hours. No professional credit. Prerequisite: CS 450 or CS 457.\n",
     "creditHours": 4,
     "semestersOffered": ["Spring"],
-    "requirementsSatisfied": [
-      "Scientific, Parallel, and High Performance Computing"
-    ],
+    "concentrations": ["Scientific, Parallel, and High Performance Computing"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS450", "CS457"],
     "followupCourses": ["CS554"]
   },
@@ -2191,9 +2350,8 @@
     "description": "Iterative & Multigrid Methods\n\nComprehensive treatment of algebraic and multigrid iterative methods to solve systems of equations, primarily linear equations arising from discretization of partial differential equations. Same as CSE 511.\n",
     "creditHours": 4,
     "semestersOffered": ["Fall", "Spring"],
-    "requirementsSatisfied": [
-      "Scientific, Parallel, and High Performance Computing"
-    ],
+    "concentrations": ["Scientific, Parallel, and High Performance Computing"],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -2203,9 +2361,8 @@
     "description": "Topics in Numerical Analysis\n\nAdvanced topics in numerical analysis selected from areas of current research. Same as CSE 513. May be repeated. Prerequisite: As specified for each topic offering, see Schedule or departmental course description.\n",
     "creditHours": 4,
     "semestersOffered": ["Fall"],
-    "requirementsSatisfied": [
-      "Scientific, Parallel, and High Performance Computing"
-    ],
+    "concentrations": ["Scientific, Parallel, and High Performance Computing"],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -2215,6 +2372,7 @@
     "description": "Advanced Topics in Security, Privacy, and Machine Learning\n\nAdvanced topics in security and privacy problems in machine learning systems, selected from areas of current research such as: adversarial machine learning, differential privacy, game theory enabled defenses, robust learning methods, machine learning based cybercrime analysis, network intrusion detection, and malware analysis, and machine learning interpretation techniques. 4 graduate hours. No professional credit. May be repeated if topics vary. Credit is not given towards a degree from multiple offerings of this course if those offerings have significant overlap, as determined by the CS department. Prerequisite: CS 446 and CS 463 or equivalent courses, by consent of instructor. Additional prerequisites or corequisites may be specified each term. See section information.\n",
     "creditHours": 4,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["CS446", "CS463"],
     "followupCourses": []
@@ -2225,10 +2383,11 @@
     "description": "Advanced Computer Security\n\nCurrent research trends in computer and network security. Privacy, tamper-resistance, unwanted traffic, monitoring and surveillance, and critical infrastructure protection. Subtopics will vary depending upon current research trends. Students work in teams in close coordination with the course instructor to develop one of the topics in depth by carrying out background research and an exploratory project. Same as ECE 524. Prerequisite: CS 461 or CS 463.\n",
     "creditHours": 4,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Human and Social Impact",
       "Distributed Systems, Networking, and Security"
     ],
+    "requirementsSatisfied": [],
     "prereqs": ["CS461", "CS463"],
     "followupCourses": []
   },
@@ -2238,7 +2397,8 @@
     "description": "Human-Computer Interaction\n\nIn-depth coverage of advanced topics in human-computer interaction (HCI). Applied models of human performance and attention, design tools for creative design tasks, interruptions and peripheral displays, gestures, and bimanual input, and usability evaluation techniques. Students complete a research-oriented term project of their choosing. Prerequisite: CS 465.\n",
     "creditHours": 4,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": ["Human and Social Impact", "Media"],
+    "concentrations": ["Human and Social Impact", "Media"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS465"],
     "followupCourses": []
   },
@@ -2248,7 +2408,8 @@
     "description": "Combinatorial Mathematics\n\nSame as MATH 580. See MATH 580.\n",
     "creditHours": 4,
     "semestersOffered": ["Fall"],
-    "requirementsSatisfied": ["Algorithms and Models of Computation"],
+    "concentrations": ["Algorithms and Models of Computation"],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -2258,7 +2419,8 @@
     "description": "Extremal Graph Theory\n\nSame as MATH 581. See MATH 581.\n",
     "creditHours": 4,
     "semestersOffered": ["Fall", "Spring"],
-    "requirementsSatisfied": ["Algorithms and Models of Computation"],
+    "concentrations": ["Algorithms and Models of Computation"],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -2268,7 +2430,8 @@
     "description": "Algorithms\n\nNP-completeness, design and analysis techniques, approximation algorithms, randomized algorithms, combinatorial optimization, linear programming. Intended for graduate students in Computer Science. Same as CSE 515. 4 graduate hours. No professional credit.\n",
     "creditHours": 4,
     "semestersOffered": ["Fall", "Spring"],
-    "requirementsSatisfied": ["Algorithms and Models of Computation"],
+    "concentrations": ["Algorithms and Models of Computation"],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": ["CS583"]
   },
@@ -2278,7 +2441,8 @@
     "description": "Randomized Algorithms\n\nBasic and advanced concepts in the design and analysis of randomized algorithms. Sampling; concentration inequalities such as Chernoff-Hoeffding bounds; probabilistic method; random walks, dimension reduction; entropy; martingales and Azuma's inequality; derandomization. Randomized algorithms for sorting and searching; graphs; geometric problems. Basics of pseudorandomness and randomized complexity classes. Prerequisite: CS 473; MATH 461 or STAT 400.\n",
     "creditHours": 4,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": ["Algorithms and Models of Computation"],
+    "concentrations": ["Algorithms and Models of Computation"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS473", "MATH461", "STAT400"],
     "followupCourses": []
   },
@@ -2288,7 +2452,8 @@
     "description": "Methods of Combinatorics\n\nSame as MATH 584. See MATH 584.\n",
     "creditHours": 4,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": ["Algorithms and Models of Computation"],
+    "concentrations": ["Algorithms and Models of Computation"],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -2298,11 +2463,12 @@
     "description": "Topics in Automated Deduction\n\nAdvanced topics in computer-aided methods for formal deduction, selected from areas of current research, such as: resolution theorem proving strategies, special relations, equational reasoning, unification theory, rewrite systems, mathematical induction, program derivation, hybrid inference systems, and programming with logic. May be repeated in separate terms. Prerequisite: As specified for each topic offering, see Schedule or departmental course description.\n",
     "creditHours": 2,
     "semestersOffered": ["Fall", "Spring"],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Software Foundations",
       "Algorithms and Models of Computation",
       "Intelligence and Big Data"
     ],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -2312,11 +2478,12 @@
     "description": "Topics in Automated Deduction\n\nAdvanced topics in computer-aided methods for formal deduction, selected from areas of current research, such as: resolution theorem proving strategies, special relations, equational reasoning, unification theory, rewrite systems, mathematical induction, program derivation, hybrid inference systems, and programming with logic. May be repeated in separate terms. Prerequisite: As specified for each topic offering, see Schedule or departmental course description.\n",
     "creditHours": 3,
     "semestersOffered": [],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Software Foundations",
       "Algorithms and Models of Computation",
       "Intelligence and Big Data"
     ],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -2326,11 +2493,12 @@
     "description": "Topics in Automated Deduction\n\nAdvanced topics in computer-aided methods for formal deduction, selected from areas of current research, such as: resolution theorem proving strategies, special relations, equational reasoning, unification theory, rewrite systems, mathematical induction, program derivation, hybrid inference systems, and programming with logic. May be repeated in separate terms. Prerequisite: As specified for each topic offering, see Schedule or departmental course description.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Software Foundations",
       "Algorithms and Models of Computation",
       "Intelligence and Big Data"
     ],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -2340,7 +2508,8 @@
     "description": "Computational Complexity\n\nTuring machines; determinism and non-determinism; time and space hierarchy theorems; speed-up and tape compression; Blum axioms; structure of complexity classes NP, P, NL, L, and PSPACE; complete problems; randomness and complexity classes RP, RL, and BPP; alternation, polynomial-time hierarchy; circuit complexity, parallel complexity, NC, and RNC; relativized computational complexity; time-space trade-offs. Same as ECE 579. Prerequisite: CS 473 or CS 475.\n",
     "creditHours": 4,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": ["Algorithms and Models of Computation"],
+    "concentrations": ["Algorithms and Models of Computation"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS473", "CS475"],
     "followupCourses": []
   },
@@ -2350,6 +2519,7 @@
     "description": "Topics in Algorithmic Game Theory\n\nA theoretical CS course covering advances in algorithmic game theory. This includes study of strategic, computational, learning, dynamic, and fairness aspects of games and markets (organizations that involves rational and strategic agents). In particular, topics will include computation and complexity of equilibria, mechanism design, fair-division, dynamics in games and markets, price-of-anarchy etc.. These topics arise from applications such as online marketplaces (like Lyft, Uber, eBay, sponsored search, TaskRabbit), social networks, recommendation systems, kidney exchange, spectrum auction, etc., and thereby will prepare students for related research and/or industry jobs. 4 graduate hours. No professional credit. Prerequisite: CS 473.\n",
     "creditHours": 4,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["CS473"],
     "followupCourses": []
@@ -2360,6 +2530,7 @@
     "description": "Algorithmic Genomic Biology\n\nThe purpose of the course is to give each student enough background and training in the area of algorithmic genomic biology so that each will be able to do research in this area, and publish papers. The main focus of the course is phylogeny (evolutionary tree) estimation, multiple sequence alignment, and genome-scale phylogenetics, which are problems that present very interesting challenges from a computational and statistical standpoint. Time permitting, we will also discuss computational problems in microbiome analysis, protein function and structure prediction, genome assembly, and even historical linguistics. Students will learn the mathematical and computational foundations in these areas, read the current literature, and do a team research project. The course is designed for doctoral students in computer science, computer engineering, bioengineering, mathematics, and statistics, and does not depend on any prior background in biology. The technical material will depend on discrete algorithms, graph theory, simulations, and probabilistic analysis of algorithms. 4 graduate hours. No professional credit. Prerequisite: CS 374 and CS 361/STAT 361, or consent of instructor.\n",
     "creditHours": 4,
     "semestersOffered": ["Fall", "Spring"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["CS374", "CS361"],
     "followupCourses": []
@@ -2370,6 +2541,7 @@
     "description": "Machine Learning for Bioinformatics\n\nThis graduate course on bioinformatics introduces a selection of topics in computational biology and bioinformatics, with special emphasis on current problems in regulatory genomics and systems biology. Computational approaches discussed will focus on Machine Learning techniques such as Bayesian inference, graphical models, supervised learning and network analysis. Bioinformatics topics will be introduced through lectures by instructor and research paper presentations by students, and include regulatory sequence analysis, cistromics, epigenomics, regulatory network reconstruction, non-coding variant interpretation, and protein structure and function prediction. A research project involving real data analysis with techniques related to course content is mandatory and will help prepare students for bioinformatics research. 4 graduate hours. No professional credit. Prerequisite: CS 446; Credit or concurrent enrollment in CS 466; or consent of instructor.\n",
     "creditHours": 4,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["CS446", "CS466"],
     "followupCourses": []
@@ -2380,7 +2552,8 @@
     "description": "Approximation Algorithms\n\nApproximation algorithms for NP-hard problems. Basic and advanced techniques in approximation algorithm design: combinatorial algorithms; mathematical programming methods including linear and semi-definite programming, local search methods, and others. Algorithms for graphs and networks, constraint satisfaction, packing and scheduling. Prerequisite: CS 573 or consent of instructor.\n",
     "creditHours": 4,
     "semestersOffered": ["Spring", "Fall"],
-    "requirementsSatisfied": ["Algorithms and Models of Computation"],
+    "concentrations": ["Algorithms and Models of Computation"],
+    "requirementsSatisfied": [],
     "prereqs": ["CS573"],
     "followupCourses": []
   },
@@ -2390,10 +2563,8 @@
     "description": "Embedded System Verification\n\nSame as ECE 584. See ECE 584.\n",
     "creditHours": 4,
     "semestersOffered": ["Fall", "Spring"],
-    "requirementsSatisfied": [
-      "Algorithms and Models of Computation",
-      "Machines"
-    ],
+    "concentrations": ["Algorithms and Models of Computation", "Machines"],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -2403,6 +2574,7 @@
     "description": "Hardware Verification\n\nSame as ECE 519. See ECE 519.\n",
     "creditHours": 4,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2413,6 +2585,7 @@
     "description": "Combinatorial Optimization\n\nSame as IE 519. See IE 519.\n",
     "creditHours": 4,
     "semestersOffered": ["Spring"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2423,6 +2596,7 @@
     "description": "Autonomous Vehicle System Engineering\n\nWill introduce students to the computational principles involved in autonomous vehicles, with practical labwork on an actual vehicle. Sensing topics will include vision, lidar and sonar sensing, including state-of-the-art methods for detection, classification, and segmentation. Bayesian filtering methods will be covered in the context of both SLAM and visual tracking. Planning and control topics will cover vehicle dynamics models, state-lattice planning, sampling-based kinodynamic planning, optimal control and trajectory optimization, and some reinforcement learning. Evaluation will involve ambitious challenge projects implemented on a physical vehicle. 4 graduate hours. No professional credit. Prerequisite: CS 374, ECE 484, or equivalent.\n",
     "creditHours": 4,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": ["CS374", "ECE484"],
     "followupCourses": []
@@ -2433,6 +2607,7 @@
     "description": "Advanced Seminar\n\nSeminar on topics of current interest as announced in the Class Schedule. Approved for S/U grading only. May be repeated in the same or separate terms if topics vary. Prerequisite: As specified for each topic offering, see Class Schedule or departmental course description.\n",
     "creditHours": 0,
     "semestersOffered": ["Spring", "Fall", "Summer"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2443,6 +2618,7 @@
     "description": "Advanced Seminar\n\nSeminar on topics of current interest as announced in the Class Schedule. Approved for S/U grading only. May be repeated in the same or separate terms if topics vary. Prerequisite: As specified for each topic offering, see Class Schedule or departmental course description.\n",
     "creditHours": 1,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2453,6 +2629,7 @@
     "description": "Advanced Seminar\n\nSeminar on topics of current interest as announced in the Class Schedule. Approved for S/U grading only. May be repeated in the same or separate terms if topics vary. Prerequisite: As specified for each topic offering, see Class Schedule or departmental course description.\n",
     "creditHours": 2,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2463,6 +2640,7 @@
     "description": "Advanced Seminar\n\nSeminar on topics of current interest as announced in the Class Schedule. Approved for S/U grading only. May be repeated in the same or separate terms if topics vary. Prerequisite: As specified for each topic offering, see Class Schedule or departmental course description.\n",
     "creditHours": 3,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2473,6 +2651,7 @@
     "description": "Advanced Seminar\n\nSeminar on topics of current interest as announced in the Class Schedule. Approved for S/U grading only. May be repeated in the same or separate terms if topics vary. Prerequisite: As specified for each topic offering, see Class Schedule or departmental course description.\n",
     "creditHours": 4,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2483,6 +2662,7 @@
     "description": "Individual Study\n\nIndividual study or reading in a subject not covered in normal course offerings. May be repeated. Prerequisite: Consent of instructor.\n",
     "creditHours": 2,
     "semestersOffered": ["Fall", "Summer", "Spring"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2493,6 +2673,7 @@
     "description": "Individual Study\n\nIndividual study or reading in a subject not covered in normal course offerings. May be repeated. Prerequisite: Consent of instructor.\n",
     "creditHours": 3,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2503,6 +2684,7 @@
     "description": "Individual Study\n\nIndividual study or reading in a subject not covered in normal course offerings. May be repeated. Prerequisite: Consent of instructor.\n",
     "creditHours": 4,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2513,6 +2695,7 @@
     "description": "Individual Study\n\nIndividual study or reading in a subject not covered in normal course offerings. May be repeated. Prerequisite: Consent of instructor.\n",
     "creditHours": 5,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2523,6 +2706,7 @@
     "description": "Individual Study\n\nIndividual study or reading in a subject not covered in normal course offerings. May be repeated. Prerequisite: Consent of instructor.\n",
     "creditHours": 6,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2533,6 +2717,7 @@
     "description": "Individual Study\n\nIndividual study or reading in a subject not covered in normal course offerings. May be repeated. Prerequisite: Consent of instructor.\n",
     "creditHours": 7,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2543,6 +2728,7 @@
     "description": "Individual Study\n\nIndividual study or reading in a subject not covered in normal course offerings. May be repeated. Prerequisite: Consent of instructor.\n",
     "creditHours": 8,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2553,6 +2739,7 @@
     "description": "Individual Study\n\nIndividual study or reading in a subject not covered in normal course offerings. May be repeated. Prerequisite: Consent of instructor.\n",
     "creditHours": 9,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2563,6 +2750,7 @@
     "description": "Individual Study\n\nIndividual study or reading in a subject not covered in normal course offerings. May be repeated. Prerequisite: Consent of instructor.\n",
     "creditHours": 10,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2573,6 +2761,7 @@
     "description": "Individual Study\n\nIndividual study or reading in a subject not covered in normal course offerings. May be repeated. Prerequisite: Consent of instructor.\n",
     "creditHours": 11,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2583,6 +2772,7 @@
     "description": "Individual Study\n\nIndividual study or reading in a subject not covered in normal course offerings. May be repeated. Prerequisite: Consent of instructor.\n",
     "creditHours": 12,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2593,6 +2783,7 @@
     "description": "Individual Study\n\nIndividual study or reading in a subject not covered in normal course offerings. May be repeated. Prerequisite: Consent of instructor.\n",
     "creditHours": 13,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2603,6 +2794,7 @@
     "description": "Individual Study\n\nIndividual study or reading in a subject not covered in normal course offerings. May be repeated. Prerequisite: Consent of instructor.\n",
     "creditHours": 14,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2613,6 +2805,7 @@
     "description": "Individual Study\n\nIndividual study or reading in a subject not covered in normal course offerings. May be repeated. Prerequisite: Consent of instructor.\n",
     "creditHours": 15,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2623,6 +2816,7 @@
     "description": "Individual Study\n\nIndividual study or reading in a subject not covered in normal course offerings. May be repeated. Prerequisite: Consent of instructor.\n",
     "creditHours": 16,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2633,13 +2827,14 @@
     "description": "Special Topics\n\nSubject offerings of new and developing areas of knowledge in computer science intended to augment the existing curriculum. See Class Schedule or departmental course information for topics and prerequisites. May be repeated in the same or separate terms if topics vary.\n",
     "creditHours": 2,
     "semestersOffered": ["Summer", "Spring", "Fall"],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Software Foundations",
       "Algorithms and Models of Computation",
       "Intelligence and Big Data",
       "Media",
       "Machines"
     ],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -2649,13 +2844,14 @@
     "description": "Special Topics\n\nSubject offerings of new and developing areas of knowledge in computer science intended to augment the existing curriculum. See Class Schedule or departmental course information for topics and prerequisites. May be repeated in the same or separate terms if topics vary.\n",
     "creditHours": 3,
     "semestersOffered": [],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Software Foundations",
       "Algorithms and Models of Computation",
       "Intelligence and Big Data",
       "Media",
       "Machines"
     ],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -2665,13 +2861,14 @@
     "description": "Special Topics\n\nSubject offerings of new and developing areas of knowledge in computer science intended to augment the existing curriculum. See Class Schedule or departmental course information for topics and prerequisites. May be repeated in the same or separate terms if topics vary.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "requirementsSatisfied": [
+    "concentrations": [
       "Software Foundations",
       "Algorithms and Models of Computation",
       "Intelligence and Big Data",
       "Media",
       "Machines"
     ],
+    "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
   },
@@ -2681,6 +2878,7 @@
     "description": "Thesis Research\n\nApproved for S/U grading only. May be repeated.\n",
     "creditHours": 0,
     "semestersOffered": ["Spring", "Fall", "Summer"],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2691,6 +2889,7 @@
     "description": "Thesis Research\n\nApproved for S/U grading only. May be repeated.\n",
     "creditHours": 1,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2701,6 +2900,7 @@
     "description": "Thesis Research\n\nApproved for S/U grading only. May be repeated.\n",
     "creditHours": 2,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2711,6 +2911,7 @@
     "description": "Thesis Research\n\nApproved for S/U grading only. May be repeated.\n",
     "creditHours": 3,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2721,6 +2922,7 @@
     "description": "Thesis Research\n\nApproved for S/U grading only. May be repeated.\n",
     "creditHours": 4,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2731,6 +2933,7 @@
     "description": "Thesis Research\n\nApproved for S/U grading only. May be repeated.\n",
     "creditHours": 5,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2741,6 +2944,7 @@
     "description": "Thesis Research\n\nApproved for S/U grading only. May be repeated.\n",
     "creditHours": 6,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2751,6 +2955,7 @@
     "description": "Thesis Research\n\nApproved for S/U grading only. May be repeated.\n",
     "creditHours": 7,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2761,6 +2966,7 @@
     "description": "Thesis Research\n\nApproved for S/U grading only. May be repeated.\n",
     "creditHours": 8,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2771,6 +2977,7 @@
     "description": "Thesis Research\n\nApproved for S/U grading only. May be repeated.\n",
     "creditHours": 9,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2781,6 +2988,7 @@
     "description": "Thesis Research\n\nApproved for S/U grading only. May be repeated.\n",
     "creditHours": 10,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2791,6 +2999,7 @@
     "description": "Thesis Research\n\nApproved for S/U grading only. May be repeated.\n",
     "creditHours": 11,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2801,6 +3010,7 @@
     "description": "Thesis Research\n\nApproved for S/U grading only. May be repeated.\n",
     "creditHours": 12,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2811,6 +3021,7 @@
     "description": "Thesis Research\n\nApproved for S/U grading only. May be repeated.\n",
     "creditHours": 13,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2821,6 +3032,7 @@
     "description": "Thesis Research\n\nApproved for S/U grading only. May be repeated.\n",
     "creditHours": 14,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2831,6 +3043,7 @@
     "description": "Thesis Research\n\nApproved for S/U grading only. May be repeated.\n",
     "creditHours": 15,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
@@ -2841,6 +3054,7 @@
     "description": "Thesis Research\n\nApproved for S/U grading only. May be repeated.\n",
     "creditHours": 16,
     "semestersOffered": [],
+    "concentrations": [],
     "requirementsSatisfied": [],
     "prereqs": [],
     "followupCourses": []
