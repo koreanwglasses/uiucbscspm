@@ -20,6 +20,16 @@ export const App: React.FC = () => {
     );
     if (!cell) return false;
 
+    if (
+      selectedCourses.find(
+        (selectedCourse) =>
+          selectedCourse.semester === cell.semester &&
+          selectedCourse.year === cell.year &&
+          selectedCourse.position === cell.position
+      )
+    )
+      return false;
+
     const newCourseSelection: CourseSelection = {
       ...cell,
       course: event.course,
