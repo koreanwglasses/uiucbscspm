@@ -92,6 +92,7 @@ export const CourseTile: React.FC<{
         className={styles.tile}
         ref={containerRef}
         style={{
+          position: isDragging ? "absolute" : "relative",
           transform: `translate(${position[0]}px, ${position[1]}px)`,
           opacity: disabled ? 0.25 : 1,
           cursor: disabled ? "default" : "pointer",

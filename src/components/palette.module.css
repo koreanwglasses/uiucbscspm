@@ -1,16 +1,9 @@
 .palette{
-    position: absolute; /*or fixed*/
-    right: 100px;
-}
-.bottom {
-    position: absolute; /*or fixed*/
-    right: 100px;
-    top: 2000px;
 }
 
-.top {
-    position: absolute; /*or fixed*/
-    right: 100px;
+.scrollContainer {
+  overflow-y: scroll;
+  max-height: 570px;
 }
 
 .row {
