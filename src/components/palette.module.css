@@ -1,2 +1,16 @@
-.palette {
+.palette{
 }
+
+.scrollContainer {
+  overflow-y: scroll;
+  max-height: 570px;
+}
+
+.row {
+    display: inline-table;
+    width: 140px;
+    height: min-content;
+    border-bottom-style: solid;
+    border-bottom-width: 0px;
+    border-color: none;
+  }
