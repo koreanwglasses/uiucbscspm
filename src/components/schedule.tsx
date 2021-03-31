@@ -81,7 +81,7 @@ export const Schedule: React.FC<{
 
   return (
     <div className={styles.schedule}>
-      <h1>Schedule</h1>
+      <h2>Schedule</h2>
       <div>
         {rows.map(({ semester, year, selectedCourses }) => (
           <Row

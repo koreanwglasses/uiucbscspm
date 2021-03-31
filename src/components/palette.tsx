@@ -64,7 +64,7 @@ export const Palette: React.FC<{
 
   return (
     <div className={styles.palette}>
-      <h1>Palette</h1>
+      <h2>Palette</h2>
       {/* We can use .map here to create a CourseTile component for each unselected course */}
       {/* {unselectedCourses?.map((course) => (
         // Be sure to pass in onTileEvent and key the way it is here when you
