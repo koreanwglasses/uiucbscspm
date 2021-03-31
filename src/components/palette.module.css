@@ -1,5 +1,6 @@
 .palette{
-
+    position: absolute; /*or fixed*/
+    right: 100px;
 }
 .bottom {
     position: absolute; /*or fixed*/
