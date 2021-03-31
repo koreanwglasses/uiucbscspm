@@ -75,6 +75,8 @@ export const Palette: React.FC<{
         // make CourseTiles
         <CourseTile course={course} onTileEvent={onTileEvent} key={course.id}/>
       ))} */}
+      <div className={styles.scrollContainer} >
+
       <div className={styles.row}>
         <h2>CS Core Classes</h2>
         {coreCourses?.map((course) => (
@@ -150,6 +152,8 @@ export const Palette: React.FC<{
         {otherCourses?.map((course) => (
           <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
         ))}
+      </div>
+
       </div>
     </div>
   );

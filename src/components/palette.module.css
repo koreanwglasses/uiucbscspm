@@ -1,6 +1,12 @@
 .palette{
 }
 
+.scrollContainer {
+  position: relative;
+  overflow-y: scroll;
+  max-height: 570px;
+}
+
 .row {
     display: inline-table;
     width: 140px;
