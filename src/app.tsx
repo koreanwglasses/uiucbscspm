@@ -6,6 +6,7 @@ import { Palette } from "./components/palette";
 import { getCellAt, Schedule } from "./components/schedule";
 import { CourseSelection } from "./model/course";
 import { CourseDatabase } from "./model/course-database";
+import { verifyRequirements } from "./model/verify-requirements";
 
 export const App: React.FC = () => {
   const courses = CourseDatabase.getInstance().getAllCourses();
@@ -19,6 +20,16 @@ export const App: React.FC = () => {
       event.parentEvent.clientY
     );
     if (!cell) return false;
+
+    if (
+      selectedCourses.find(
+        (selectedCourse) =>
+          selectedCourse.semester === cell.semester &&
+          selectedCourse.year === cell.year &&
+          selectedCourse.position === cell.position
+      )
+    )
+      return false;
 
     const newCourseSelection: CourseSelection = {
       ...cell,
@@ -52,7 +63,6 @@ export const App: React.FC = () => {
 
   const handleTileEvent: TileEventHandler = (event) => {
     if (event.type === "drop") {
-      console.log(`Dropped ${event.course.id} onto ${event.target}`);
       if (event.target === "schedule") {
         return handleDropOnSchedule(event);
       }
@@ -65,6 +75,8 @@ export const App: React.FC = () => {
 
   return (
     <div className={styles.container}>
+      <h1>UIUC BSCS PM</h1>
+      <p>Requirements met: {verifyRequirements(selectedCourses)}</p>
       <div className={styles.panelsContainer}>
         <div className={styles.scheduleContainer}>
           <Schedule

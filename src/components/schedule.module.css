@@ -15,10 +15,11 @@
   align-self: flex-end;
   margin: 2px;
   color: #888;
+  width: 50px;
 }
 
 .cell {
-  width: 120px;
+  min-width: 120px;
   padding: 10px;
   padding-top: 14px;
   box-sizing: border-box;
