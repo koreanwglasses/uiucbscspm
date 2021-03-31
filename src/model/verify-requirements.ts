@@ -319,7 +319,6 @@ export function verifyRequirements(
     }
   }
 
-
   //used to map a focus-map to the name of that focus --> used in the flags at the bottom
   const focus_names_map = new Map([
     [FOCUS_ALGO, "Algorithms and Models of Computation"],
@@ -329,19 +328,14 @@ export function verifyRequirements(
     [FOCUS_MACHINES, "Machines"],
     [FOCUS_MEDIA, "Media"],
     [FOCUS_SCI, "Scientific, Parallel, and High Performance Computing"],
-    [FOCUS_SOFTWARE, "Software Foundations"]
-  ])
-
-
-
-
+    [FOCUS_SOFTWARE, "Software Foundations"],
+  ]);
 
   //var ADVANCED_REQUIREMENTS = TEAM_PROJ && (one of these focuses --> at least 3 courses)
 
   let credits_total = 0;
   let cs_elective_course_total = 0;
-  var to_check = new Set<Map<string, boolean>>()
-
+  var to_check = new Set<Map<string, boolean>>();
 
   // for each key
 
@@ -419,7 +413,7 @@ export function verifyRequirements(
     }
     if (count >= 3) {
       FOCUS_flag = true;
-      list_of_reqs_met.push(focus_names_map.get(element))
+      list_of_reqs_met.push(focus_names_map.get(element));
     }
   });
 
@@ -432,10 +426,7 @@ export function verifyRequirements(
     list_of_reqs_met.push("Advanced requirement");
   }
 
-  if(TEAM_PROJ_flag)
-    list_of_reqs_met.push("Team Project requirement")
-
-
+  if (TEAM_PROJ_flag) list_of_reqs_met.push("Team Project requirement");
 
   //split off requirements into smaller focuses/team project to add to list
   //check if list of focuses can replace maps

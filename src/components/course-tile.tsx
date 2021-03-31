@@ -34,7 +34,6 @@ export const CourseTile: React.FC<{
 
   const [originalLeft, setOriginalLeft] = React.useState(0);
   const [originalTop, setOriginalTop] = React.useState(0);
-  
 
   const reset = () => {
     setPosition(startPosition);
@@ -107,7 +106,7 @@ export const CourseTile: React.FC<{
           opacity: disabled ? 0.25 : 1,
           cursor: disabled ? "default" : "pointer",
           zIndex: isDragging || showTooltip ? 1 : 0,
-          // color: 
+          // color:
         }}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}

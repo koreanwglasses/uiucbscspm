@@ -1,4 +1,4 @@
-.palette{
+.palette {
 }
 
 .scrollContainer {
@@ -7,10 +7,10 @@
 }
 
 .row {
-    display: inline-table;
-    width: 140px;
-    height: min-content;
-    border-bottom-style: solid;
-    border-bottom-width: 0px;
-    border-color: none;
-  }
+  display: inline-table;
+  width: 140px;
+  height: min-content;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-color: none;
+}
