@@ -9,6 +9,14 @@
   cursor: pointer;
   font-weight: lighter;
   position: relative;
+  margin-bottom: 4px;
+}
+
+.creditHours {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  font-size: smaller;
 }
 
 .tooltip {

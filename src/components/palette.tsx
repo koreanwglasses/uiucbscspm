@@ -120,7 +120,7 @@ export const Palette: React.FC<{
 
       </div>
 
-      <div className={styles.palette}>
+      <div className={styles.bottom}>
     
         <div className={styles.row}>
           <h2>Scientific, Parallel, and High Performance Computing</h2>

@@ -101,7 +101,8 @@ export const CourseTile: React.FC<{
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        {course.id}
+        <p className={styles.creditHours}>{course.creditHours}</p>
+        {course.name}
         {showTooltip && <Tooltip course={course} />}
       </div>
     </DraggableCore>
