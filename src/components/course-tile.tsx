@@ -32,6 +32,10 @@ export const CourseTile: React.FC<{
   const [isDragging, setIsDragging] = React.useState(false);
   const [showTooltip, setShowTooltip] = React.useState(false);
 
+  const [originalLeft, setOriginalLeft] = React.useState(0);
+  const [originalTop, setOriginalTop] = React.useState(0);
+  
+
   const reset = () => {
     setPosition(startPosition);
   };
@@ -41,6 +45,10 @@ export const CourseTile: React.FC<{
     e.preventDefault();
     setShowTooltip(false);
     setIsDragging(true);
+
+    const rect = containerRef.current.getBoundingClientRect();
+    setOriginalLeft(rect.left);
+    setOriginalTop(rect.top);
   };
 
   const handleDrag: DraggableEventHandler = (e, { deltaX, deltaY }) => {
@@ -92,7 +100,9 @@ export const CourseTile: React.FC<{
         className={styles.tile}
         ref={containerRef}
         style={{
-          position: isDragging ? "absolute" : "relative",
+          position: isDragging ? "fixed" : "relative",
+          left: isDragging ? originalLeft : 0,
+          top: isDragging ? originalTop : 0,
           transform: `translate(${position[0]}px, ${position[1]}px)`,
           opacity: disabled ? 0.25 : 1,
           cursor: disabled ? "default" : "pointer",
