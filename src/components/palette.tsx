@@ -78,77 +78,77 @@ export const Palette: React.FC<{
       <div className={styles.scrollContainer} >
 
       <div className={styles.row}>
-        <h2>CS Core Classes</h2>
+        <h3>CS Core Classes</h3>
         {coreCourses?.map((course) => (
           <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
         ))}
       </div>
           
       <div className={styles.row}>
-        <h2>Software Foundations</h2>
+        <h3>Software Foundations</h3>
         {softwareCourses?.map((course) => (
           <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
         ))}
       </div>
         
       <div className={styles.row}>
-        <h2>Algorithms and Models of Computation</h2>
+        <h3>Algorithms and Models of Computation</h3>
         {algoCourses?.map((course) => (
           <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
         ))}
       </div>
 
       <div className={styles.row}>
-        <h2>Intelligence and Big Data</h2>
+        <h3>Intelligence and Big Data</h3>
         {dataCourses?.map((course) => (
           <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
         ))}
       </div>
 
       <div className={styles.row}>
-        <h2>Human and Social Impact</h2>
+        <h3>Human and Social Impact</h3>
         {humanCourses?.map((course) => (
           <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
         ))}
       </div>
 
       <div className={styles.row}>
-        <h2>Media</h2>
+        <h3>Media</h3>
         {mediaCourses?.map((course) => (
           <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
         ))}
       </div>
     
         <div className={styles.row}>
-          <h2>Scientific, Parallel, and High Performance Computing</h2>
+          <h3>Scientific, Parallel, and High Performance Computing</h3>
           {scientificCourses?.map((course) => (
             <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
           ))}
         </div>
         
       <div className={styles.row}>
-        <h2>Distributed Systems, Networking, and Security</h2>
+        <h3>Distributed Systems, Networking, and Security</h3>
         {distributedCourses?.map((course) => (
           <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
         ))}
       </div>
 
       <div className={styles.row}>
-        <h2>Machines</h2>
+        <h3>Machines</h3>
         {machineCourses?.map((course) => (
           <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
         ))}
       </div>
 
       <div className={styles.row}>
-        <h2>Team Project</h2>
+        <h3>Team Project</h3>
         {teamCourses?.map((course) => (
           <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
         ))}
       </div>
 
       <div className={styles.row}>
-        <h2>Other</h2>
+        <h3>Other</h3>
         {otherCourses?.map((course) => (
           <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
         ))}
