@@ -340,9 +340,13 @@ export function verifyRequirements(
 
   let credits_total = 0;
   let cs_elective_course_total = 0;
-  let to_check: Set<Map<string, boolean>>
+  var to_check = new Set<Map<string, boolean>>()
+
+
   // for each key
-  keyspace.forEach((key) => {
+
+  for (let key of mapper.keys()) {
+    //keyspace.forEach((key) => {
     // get the list of classes associated with it
     const temp_list = mapper.get(key);
 
@@ -372,7 +376,7 @@ export function verifyRequirements(
         cs_elective_course_total += 1;
       }
     });
-  });
+  }
 
   //last stage - return list of fulfilled requirements
   const list_of_reqs_met = [];
