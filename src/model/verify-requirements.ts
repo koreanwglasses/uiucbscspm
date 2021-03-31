@@ -11,7 +11,7 @@ export function verifyRequirements(
   const mapper = new Map<string, Course[]>();
 
   //contains all keys used in the map
-  let keyspace: string[];
+  const keyspace: string[] = [];
 
   // enhanced for loop this into this format
   //    {“semester/year” → [courses]}
@@ -321,7 +321,7 @@ export function verifyRequirements(
 
   let credits_total = 0;
   let cs_elective_course_total = 0;
-  let to_check: Map<string, boolean>[];
+  const to_check: Map<string, boolean>[] = [];
   // for each key
   keyspace.forEach((key) => {
     // get the list of classes associated with it
