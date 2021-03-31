@@ -8,4 +8,30 @@
   background-color: white;
   cursor: pointer;
   font-weight: lighter;
+  position: relative;
+}
+
+.tooltip {
+  position: relative;
+  top: 5px;
+  left: 20px;
+  cursor: default;
+  border-style: solid;
+  border-width: 1px;
+  background-color: white;
+  font-size: small;
+  line-height: 20px;
+  width: 250px;
+  padding: 5px;
+  text-align: left;
+  pointer-events: none;
+}
+
+.tooltip h3 {
+  line-height: 30px;
+  margin: 0;
+}
+
+.tooltip p {
+  margin: 0;
 }

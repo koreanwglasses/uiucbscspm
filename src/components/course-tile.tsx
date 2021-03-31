@@ -29,6 +29,8 @@ export const CourseTile: React.FC<{
   const [position, setPosition] = React.useState<[number, number]>(
     startPosition
   );
+  const [isDragging, setIsDragging] = React.useState(false);
+  const [showTooltip, setShowTooltip] = React.useState(false);
 
   const reset = () => {
     setPosition(startPosition);
@@ -37,17 +39,22 @@ export const CourseTile: React.FC<{
   const handleStart: DraggableEventHandler = (e) => {
     if (disabled) return;
     e.preventDefault();
+    setShowTooltip(false);
+    setIsDragging(true);
   };
 
   const handleDrag: DraggableEventHandler = (e, { deltaX, deltaY }) => {
     if (disabled) return;
     e.preventDefault();
+    setShowTooltip(false);
     setPosition([position[0] + deltaX, position[1] + deltaY]);
   };
 
   const handleStop: DraggableEventHandler = (event: MouseEvent, data) => {
     if (disabled) return;
     event.preventDefault();
+    setIsDragging(false);
+
     const elements = document.elementsFromPoint(event.clientX, event.clientY);
 
     let target: "palette" | "schedule";
@@ -67,6 +74,14 @@ export const CourseTile: React.FC<{
     }
   };
 
+  const handleMouseEnter: React.MouseEventHandler = (event) => {
+    if (!event.buttons) setShowTooltip(true);
+  };
+
+  const handleMouseLeave = () => {
+    setShowTooltip(false);
+  };
+
   return (
     <DraggableCore
       onStart={handleStart}
@@ -80,10 +95,21 @@ export const CourseTile: React.FC<{
           transform: `translate(${position[0]}px, ${position[1]}px)`,
           opacity: disabled ? 0.25 : 1,
           cursor: disabled ? "default" : "pointer",
+          zIndex: isDragging || showTooltip ? 1 : 0,
         }}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
       >
         {course.name}
+        {showTooltip && <Tooltip course={course} />}
       </div>
     </DraggableCore>
   );
 };
+
+const Tooltip: React.FC<{ course: Course }> = ({ course }) => (
+  <div className={styles.tooltip}>
+    <h3>{course.name}</h3>
+    <p>{course.description}</p>
+  </div>
+);
