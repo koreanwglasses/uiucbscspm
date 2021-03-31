@@ -22,44 +22,44 @@ export const Palette: React.FC<{
       )
   );
 
-  const coreCourses = unselectedCourses?.filter(
-    (course) => course.concentrations?.includes("core")
+  const coreCourses = unselectedCourses?.filter((course) =>
+    course.concentrations?.includes("core")
   );
 
-  const softwareCourses = unselectedCourses?.filter(
-    (course) => course.concentrations?.includes("Software Foundations")
+  const softwareCourses = unselectedCourses?.filter((course) =>
+    course.concentrations?.includes("Software Foundations")
   );
 
-  const algoCourses = unselectedCourses?.filter(
-    (course) => course.concentrations?.includes("Algorithms and Models")
+  const algoCourses = unselectedCourses?.filter((course) =>
+    course.concentrations?.includes("Algorithms and Models")
   );
 
-  const dataCourses = unselectedCourses?.filter(
-    (course) => course.concentrations?.includes("Intelligence and Big Data")
+  const dataCourses = unselectedCourses?.filter((course) =>
+    course.concentrations?.includes("Intelligence and Big Data")
   );
 
-  const humanCourses = unselectedCourses?.filter(
-    (course) => course.concentrations?.includes("Human and Social Impact")
+  const humanCourses = unselectedCourses?.filter((course) =>
+    course.concentrations?.includes("Human and Social Impact")
   );
 
-  const mediaCourses = unselectedCourses?.filter(
-    (course) => course.concentrations?.includes("Media")
+  const mediaCourses = unselectedCourses?.filter((course) =>
+    course.concentrations?.includes("Media")
   );
 
-  const scientificCourses = unselectedCourses?.filter(
-    (course) => course.concentrations?.includes("Scientific")
+  const scientificCourses = unselectedCourses?.filter((course) =>
+    course.concentrations?.includes("Scientific")
   );
 
-  const distributedCourses = unselectedCourses?.filter(
-    (course) => course.concentrations?.includes("Distributed Systems")
+  const distributedCourses = unselectedCourses?.filter((course) =>
+    course.concentrations?.includes("Distributed Systems")
   );
 
-  const machineCourses = unselectedCourses?.filter(
-    (course) => course.concentrations?.includes("Machines")
+  const machineCourses = unselectedCourses?.filter((course) =>
+    course.concentrations?.includes("Machines")
   );
 
-  const teamCourses = unselectedCourses?.filter(
-    (course) => course.concentrations?.includes("Team Project")
+  const teamCourses = unselectedCourses?.filter((course) =>
+    course.concentrations?.includes("Team Project")
   );
 
   return (
@@ -73,43 +73,43 @@ export const Palette: React.FC<{
       ))} */}
       <h2>CS Core Classes</h2>
       {coreCourses?.map((course) => (
-        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id}/>
+        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
       ))}
       <h2>Software Foundations</h2>
       {softwareCourses?.map((course) => (
-        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id}/>
+        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
       ))}
       <h2>Algorithms and Models of Computation</h2>
       {algoCourses?.map((course) => (
-        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id}/>
+        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
       ))}
       <h2>Intelligence and Big Data</h2>
       {dataCourses?.map((course) => (
-        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id}/>
+        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
       ))}
       <h2>Human and Social Impact</h2>
       {humanCourses?.map((course) => (
-        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id}/>
+        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
       ))}
       <h2>Media</h2>
       {mediaCourses?.map((course) => (
-        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id}/>
+        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
       ))}
       <h2>Scientific, Parallel, and High Performance Computing</h2>
       {scientificCourses?.map((course) => (
-        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id}/>
+        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
       ))}
       <h2>Distributed Systems, Networking, and Security</h2>
       {distributedCourses?.map((course) => (
-        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id}/>
+        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
       ))}
       <h2>Machines</h2>
       {machineCourses?.map((course) => (
-        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id}/>
+        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
       ))}
       <h2>Team Project</h2>
       {teamCourses?.map((course) => (
-        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id}/>
+        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
       ))}
     </div>
   );
