@@ -1,4 +1,7 @@
 import { CourseSelection } from "./course";
+import { CourseDatabase } from "./course-database";
+import { Course } from "./course";
+
 
 export function courseSuggestions(
   selectedCourses: CourseSelection[],
@@ -9,11 +12,13 @@ export function courseSuggestions(
   //   (e.g if the target course is to be taken in Fall 2022, we have → Fall 2021, Spring 2022 left to use]
 
   //generate list ‘temp’ containing target course
-  const temp = [targetCourse.course];
-  const prereqs_left = true;
+  var temp = new Array<Course>();
+  temp.push(targetCourse.course)
+  var prereqs_left = true;
 
-  // map semester + year combo to courses to take
-  const mappings = new Map();
+  // map Course to CourseSelection
+  let mappings : Map<Course, CourseSelection>
+  mappings = new Map<Course, CourseSelection>();
 
   const currentYear = 2021;
   const currentSem = 0; //fall is odd, spring is even
@@ -31,42 +36,104 @@ export function courseSuggestions(
 
   //generate ‘target’ = semester+year combo for target course
   //loop
+
+
+  var added = new Set();
   while (prereqs_left) {
     //replace all courses in ‘temp’ with their prerequisites list
-    var added = new Set();
-    let temp2: string[];
+    
+    //temp2 will have the new list, we replace temp with temp2
+    let temp2: Course[];
+
     //for each course in temp
     temp.forEach((course) => {
       const prereq_list = course.prereqs;
 
       //for each prereq in the prereq courses
       prereq_list.forEach((prereq) => {
-        if (!added.has(prereq)) {
-          added.add(prereq);
-          temp2.push(prereq);
-          mappings.set(prereq, convert(targetSem) + " " + targetYear);
+
+        var course_form = convert_string_to_course(prereq)
+        if (!added.has(course_form)) {
+          added.add(course_form);
+          temp2.push(course_form);
+          
+
+          //generate the course, add to output schedule
+          let course_temp : CourseSelection
+          course_temp.course = course_form
+          course_temp.semester = convert_num_to_sem(targetSem)
+          course_temp.year = targetYear
+
+          mappings.set(course_form, course_temp);
         }
-      });
+        else {
+          //we already added the course, but we need it as a prereq earlier in the schedule
 
-      //need conversion between prereqs as a string and a Course object
-      // temp = temp2
-    });
-  }
+          //replace prior mappings
+          let course_temp : CourseSelection
+          course_temp.course = course_form
+          course_temp.semester = convert_num_to_sem(targetSem)
+          course_temp.year = targetYear
 
-  //remove any prerequisites that are already in selectedCourses
-  //add entire contents of ‘temp’ to schedule of ‘target’ - 1
-  //end of loop - schedule is generated
-  //check for validity
-  //if a course is duplicated across semesters, choose the earliest time it exists and remove the other instances
-  //generate a list of courses added with numbers representing time
-  //loop backwards through list, ensure all courses with prerequisites have them met with lower time numbers than the target course
+          mappings.set(course_form, course_temp);
+        }
+      }); //end of prereq adding loop
+    }); //end of course based loop
+
+    //replace temp with temp2, all prereqs added
+    temp = temp2
+
+    //adjust the semester, year variables
+    if (targetSem == 0) {
+      targetSem = 1
+      targetYear -= 1
+    }
+    else {
+      targetSem -= 1
+    }
+
+    if (targetYear < currentYear || (targetYear == currentYear && targetSem < currentSem)) {
+      //schedule is impossible!
+      let issue_output: CourseSelection[]
+      issue_output = new Array<CourseSelection>();
+      return issue_output
+    }
+
+    //recheck while loop condition here
+    if (temp.length == 0) {
+      prereqs_left = false
+    }
+  } //end of while loop
+
+
+  //TODO in future versions:
+  //Validity checks:
   //check credit hours per semester for feasibility [assuming no overloads, so 18 credit hour max]
   //return the entire list if this works, empty list if it is impossible
 
-  throw new Error("method not implemented");
+
+
+  //our final mappings contains the full set of courses needed
+  //generate the list to return here
+  let output_schedule : CourseSelection[]
+  output_schedule = new Array<CourseSelection>();
+  for (let key of mappings.keys()) {
+    output_schedule.push(mappings.get(key))
+  }
+
+  return output_schedule
+
+  //throw new Error("method not implemented");
 }
 
-function convert(semester: number): string {
-  if (semester == 0) return "Spring";
-  else return "Fall";
+function convert_num_to_sem(semester: number): string {
+  if (semester == 0) return "spring";
+  else return "fall";
+}
+
+
+
+
+function convert_string_to_course(course_title: string): Course {
+  return CourseDatabase.getInstance().getCourseByName(course_title)
 }

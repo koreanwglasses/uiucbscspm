@@ -6,12 +6,12 @@ import { Course, CourseSelection } from "./course";
 export function verifyRequirements(
   selectedCourses: CourseSelection[]
 ): string[] {
-  //<String, String[]>
+  //<string, string[]>
   //maps "semester/year" to list of courses
   const mapper = new Map<string, Course[]>();
 
   //contains all keys used in the map
-  const keyspace: string[] = [];
+  var keyspace = new Array<String>();
 
   // enhanced for loop this into this format
   //    {“semester/year” → [courses]}
@@ -243,6 +243,8 @@ export function verifyRequirements(
     ["CS584", false],
   ]);
 
+  //map a string representing a course name to a list of maps containing that course as a key
+  //ex. CS467 is a team project + humanities, so REVERSE_LOOKUP of CS467 = [TEAM_PROJ, HUMAN]
   const REVERSE_LOOKUP = new Map<string, Map<string, boolean>[]>();
 
   for (const key of FOCUS_ALGO.keys()) {
@@ -317,13 +319,34 @@ export function verifyRequirements(
     }
   }
 
+
+  //used to map a focus-map to the name of that focus --> used in the flags at the bottom
+  const focus_names_map = new Map([
+    [FOCUS_ALGO, "Algorithms and Models of Computation"],
+    [FOCUS_DIST, "Distributed Systems, Networking, and Security"],
+    [FOCUS_HUMAN, "Human and Social Impact"],
+    [FOCUS_INTELL, "Intelligence and Big Data"],
+    [FOCUS_MACHINES, "Machines"],
+    [FOCUS_MEDIA, "Media"],
+    [FOCUS_SCI, "Scientific, Parallel, and High Performance Computing"],
+    [FOCUS_SOFTWARE, "Software Foundations"]
+  ])
+
+
+
+
+
   //var ADVANCED_REQUIREMENTS = TEAM_PROJ && (one of these focuses --> at least 3 courses)
 
   let credits_total = 0;
   let cs_elective_course_total = 0;
-  const to_check: Map<string, boolean>[] = [];
+  var to_check = new Set<Map<string, boolean>>()
+
+
   // for each key
-  keyspace.forEach((key) => {
+
+  for (let key of mapper.keys()) {
+    //keyspace.forEach((key) => {
     // get the list of classes associated with it
     const temp_list = mapper.get(key);
 
@@ -346,14 +369,14 @@ export function verifyRequirements(
 
         list_of_targets.forEach((reqs_satisfied) => {
           reqs_satisfied.set(course_name, true);
-          to_check.push(reqs_satisfied);
+          to_check.add(reqs_satisfied);
         });
 
         credits_total += credits;
         cs_elective_course_total += 1;
       }
     });
-  });
+  }
 
   //last stage - return list of fulfilled requirements
   const list_of_reqs_met = [];
@@ -396,6 +419,7 @@ export function verifyRequirements(
     }
     if (count >= 3) {
       FOCUS_flag = true;
+      list_of_reqs_met.push(focus_names_map.get(element))
     }
   });
 
@@ -407,6 +431,11 @@ export function verifyRequirements(
   ) {
     list_of_reqs_met.push("Advanced requirement");
   }
+
+  if(TEAM_PROJ_flag)
+    list_of_reqs_met.push("Team Project requirement")
+
+
 
   //split off requirements into smaller focuses/team project to add to list
   //check if list of focuses can replace maps
