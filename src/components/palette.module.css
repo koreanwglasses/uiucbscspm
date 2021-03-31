@@ -2,7 +2,6 @@
 }
 
 .scrollContainer {
-  position: relative;
   overflow-y: scroll;
   max-height: 570px;
 }
