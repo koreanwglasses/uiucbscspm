@@ -12,12 +12,13 @@ export function courseSuggestions(
   //   (e.g if the target course is to be taken in Fall 2022, we have → Fall 2021, Spring 2022 left to use]
 
   //generate list ‘temp’ containing target course
-  let temp : Course[];
+  var temp = new Array<Course>();
   temp.push(targetCourse.course)
   var prereqs_left = true;
 
   // map Course to CourseSelection
   let mappings : Map<Course, CourseSelection>
+  mappings = new Map<Course, CourseSelection>();
 
   const currentYear = 2021;
   const currentSem = 0; //fall is odd, spring is even
@@ -94,6 +95,7 @@ export function courseSuggestions(
     if (targetYear < currentYear || (targetYear == currentYear && targetSem < currentSem)) {
       //schedule is impossible!
       let issue_output: CourseSelection[]
+      issue_output = new Array<CourseSelection>();
       return issue_output
     }
 
@@ -114,6 +116,7 @@ export function courseSuggestions(
   //our final mappings contains the full set of courses needed
   //generate the list to return here
   let output_schedule : CourseSelection[]
+  output_schedule = new Array<CourseSelection>();
   for (let key of mappings.keys()) {
     output_schedule.push(mappings.get(key))
   }
