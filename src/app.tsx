@@ -62,7 +62,6 @@ export const App: React.FC = () => {
 
   const handleTileEvent: TileEventHandler = (event) => {
     if (event.type === "drop") {
-      console.log(`Dropped ${event.course.id} onto ${event.target}`);
       if (event.target === "schedule") {
         return handleDropOnSchedule(event);
       }
