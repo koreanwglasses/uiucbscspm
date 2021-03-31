@@ -67,8 +67,7 @@ export const Palette: React.FC<{
   );
 
   return (
-    <div className={styles.none}>
-      <div className={styles.top}>
+    <div className={styles.palette}>
       <h2>Palette</h2>
       {/* We can use .map here to create a CourseTile component for each unselected course */}
       {/* {unselectedCourses?.map((course) => (
@@ -117,10 +116,6 @@ export const Palette: React.FC<{
           <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
         ))}
       </div>
-
-      </div>
-
-      <div className={styles.bottom}>
     
         <div className={styles.row}>
           <h2>Scientific, Parallel, and High Performance Computing</h2>
@@ -156,7 +151,6 @@ export const Palette: React.FC<{
           <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
         ))}
       </div>
-    </div>
     </div>
   );
 };
