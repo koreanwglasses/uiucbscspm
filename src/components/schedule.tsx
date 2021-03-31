@@ -83,8 +83,9 @@ export const Schedule: React.FC<{
     <div className={styles.schedule}>
       <h2>Schedule</h2>
       <div>
-        {rows.map(({ semester, year, selectedCourses }) => (
+        {rows.map(({ semester, year, selectedCourses }, i) => (
           <Row
+            key={i}
             year={year}
             semester={semester}
             selectedCourses={selectedCourses}
@@ -126,15 +127,13 @@ const Row = ({
 );
 
 const Cell = ({
-  key,
   selectedCourse,
   onTileEvent,
 }: {
-  key: number;
   selectedCourse: CourseSelection;
   onTileEvent: TileEventHandler;
 }) => (
-  <div className={styles.cell} key={key}>
+  <div className={styles.cell}>
     {selectedCourse && (
       <CourseTile
         course={selectedCourse.course}
