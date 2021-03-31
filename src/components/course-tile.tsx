@@ -23,7 +23,13 @@ export const CourseTile: React.FC<{
   course: Course;
   onTileEvent: TileEventHandler;
   disabled?: boolean;
-}> = ({ course, onTileEvent = () => false, disabled = false }) => {
+  tentative?: boolean;
+}> = ({
+  course,
+  onTileEvent = () => false,
+  disabled = false,
+  tentative = false,
+}) => {
   const containerRef = React.useRef<HTMLDivElement>();
   const startPosition = [0, 0] as [number, number];
   const [position, setPosition] = React.useState<[number, number]>(
@@ -103,7 +109,7 @@ export const CourseTile: React.FC<{
           left: isDragging ? originalLeft : 0,
           top: isDragging ? originalTop : 0,
           transform: `translate(${position[0]}px, ${position[1]}px)`,
-          opacity: disabled ? 0.25 : 1,
+          opacity: disabled || tentative ? 0.25 : 1,
           cursor: disabled ? "default" : "pointer",
           zIndex: isDragging || showTooltip ? 1 : 0,
           // color:
