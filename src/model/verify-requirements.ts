@@ -11,7 +11,7 @@ export function verifyRequirements(
   const mapper = new Map<string, Course[]>();
 
   //contains all keys used in the map
-  let keyspace: string[];
+  var keyspace = new Array<String>();
 
   // enhanced for loop this into this format
   //    {“semester/year” → [courses]}
