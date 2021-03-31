@@ -11,13 +11,12 @@ export function courseSuggestions(
   //   (e.g if the target course is to be taken in Fall 2022, we have → Fall 2021, Spring 2022 left to use]
 
   //generate list ‘temp’ containing target course
-  var temp = new Array<Course>();
+  let temp = new Array<Course>();
   temp.push(targetCourse.course);
-  var prereqs_left = true;
+  let prereqs_left = true;
 
   // map Course to CourseSelection
-  let mappings: Map<Course, CourseSelection>;
-  mappings = new Map<Course, CourseSelection>();
+  const mappings = new Map<Course, CourseSelection>();
 
   const currentYear = 2021;
   const currentSem = 0; //fall is odd, spring is even
@@ -36,7 +35,7 @@ export function courseSuggestions(
   //generate ‘target’ = semester+year combo for target course
   //loop
 
-  var added = new Set();
+  const added = new Set();
   while (prereqs_left) {
     //replace all courses in ‘temp’ with their prerequisites list
 
@@ -49,7 +48,7 @@ export function courseSuggestions(
 
       //for each prereq in the prereq courses
       prereq_list.forEach((prereq) => {
-        var course_form = convert_string_to_course(prereq);
+        const course_form = convert_string_to_course(prereq);
         if (!added.has(course_form)) {
           added.add(course_form);
           temp2.push(course_form);
@@ -91,8 +90,7 @@ export function courseSuggestions(
       (targetYear == currentYear && targetSem < currentSem)
     ) {
       //schedule is impossible!
-      let issue_output: CourseSelection[];
-      issue_output = new Array<CourseSelection>();
+      const issue_output = new Array<CourseSelection>();
       return issue_output;
     }
 
@@ -109,9 +107,8 @@ export function courseSuggestions(
 
   //our final mappings contains the full set of courses needed
   //generate the list to return here
-  let output_schedule: CourseSelection[];
-  output_schedule = new Array<CourseSelection>();
-  for (let key of mappings.keys()) {
+  const output_schedule = new Array<CourseSelection>();
+  for (const key of mappings.keys()) {
     output_schedule.push(mappings.get(key));
   }
 
