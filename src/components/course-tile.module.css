@@ -11,6 +11,13 @@
   position: relative;
 }
 
+.creditHours {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  font-size: smaller;
+}
+
 .tooltip {
   position: relative;
   top: 5px;
