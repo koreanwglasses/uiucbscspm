@@ -76,7 +76,7 @@ export const App: React.FC = () => {
   return (
     <div className={styles.container}>
       <h1>UIUC BSCS PM</h1>
-      <p>Requirements met: {verifyRequirements(selectedCourses)}</p>
+      <p>Requirements met: {verifyRequirements(selectedCourses).join(", ")}</p>
       <div className={styles.panelsContainer}>
         <div className={styles.scheduleContainer}>
           <Schedule
