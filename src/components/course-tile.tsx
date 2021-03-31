@@ -96,11 +96,12 @@ export const CourseTile: React.FC<{
           opacity: disabled ? 0.25 : 1,
           cursor: disabled ? "default" : "pointer",
           zIndex: isDragging || showTooltip ? 1 : 0,
+          // color: 
         }}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        {course.name}
+        {course.id}
         {showTooltip && <Tooltip course={course} />}
       </div>
     </DraggableCore>

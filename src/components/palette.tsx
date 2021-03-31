@@ -31,7 +31,7 @@ export const Palette: React.FC<{
   );
 
   const algoCourses = unselectedCourses?.filter((course) =>
-    course.concentrations?.includes("Algorithms and Models")
+    course.concentrations?.includes("Algorithms and Models of Computation")
   );
 
   const dataCourses = unselectedCourses?.filter((course) =>
@@ -47,11 +47,11 @@ export const Palette: React.FC<{
   );
 
   const scientificCourses = unselectedCourses?.filter((course) =>
-    course.concentrations?.includes("Scientific")
+    course.concentrations?.includes("Scientific, Parallel, and High Performance Computing")
   );
 
   const distributedCourses = unselectedCourses?.filter((course) =>
-    course.concentrations?.includes("Distributed Systems")
+    course.concentrations?.includes("Distributed Systems, Networking, and Security")
   );
 
   const machineCourses = unselectedCourses?.filter((course) =>
@@ -62,8 +62,13 @@ export const Palette: React.FC<{
     course.concentrations?.includes("Team Project")
   );
 
+  const otherCourses = unselectedCourses?.filter((course) =>
+    course.concentrations?.length === 0
+  );
+
   return (
-    <div className={styles.palette}>
+    <div className={styles.none}>
+      <div className={styles.top}>
       <h2>Palette</h2>
       {/* We can use .map here to create a CourseTile component for each unselected course */}
       {/* {unselectedCourses?.map((course) => (
@@ -71,46 +76,87 @@ export const Palette: React.FC<{
         // make CourseTiles
         <CourseTile course={course} onTileEvent={onTileEvent} key={course.id}/>
       ))} */}
-      <h2>CS Core Classes</h2>
-      {coreCourses?.map((course) => (
-        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
-      ))}
-      <h2>Software Foundations</h2>
-      {softwareCourses?.map((course) => (
-        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
-      ))}
-      <h2>Algorithms and Models of Computation</h2>
-      {algoCourses?.map((course) => (
-        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
-      ))}
-      <h2>Intelligence and Big Data</h2>
-      {dataCourses?.map((course) => (
-        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
-      ))}
-      <h2>Human and Social Impact</h2>
-      {humanCourses?.map((course) => (
-        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
-      ))}
-      <h2>Media</h2>
-      {mediaCourses?.map((course) => (
-        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
-      ))}
-      <h2>Scientific, Parallel, and High Performance Computing</h2>
-      {scientificCourses?.map((course) => (
-        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
-      ))}
-      <h2>Distributed Systems, Networking, and Security</h2>
-      {distributedCourses?.map((course) => (
-        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
-      ))}
-      <h2>Machines</h2>
-      {machineCourses?.map((course) => (
-        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
-      ))}
-      <h2>Team Project</h2>
-      {teamCourses?.map((course) => (
-        <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
-      ))}
+      <div className={styles.row}>
+        <h2>CS Core Classes</h2>
+        {coreCourses?.map((course) => (
+          <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
+        ))}
+      </div>
+          
+      <div className={styles.row}>
+        <h2>Software Foundations</h2>
+        {softwareCourses?.map((course) => (
+          <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
+        ))}
+      </div>
+        
+      <div className={styles.row}>
+        <h2>Algorithms and Models of Computation</h2>
+        {algoCourses?.map((course) => (
+          <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
+        ))}
+      </div>
+
+      <div className={styles.row}>
+        <h2>Intelligence and Big Data</h2>
+        {dataCourses?.map((course) => (
+          <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
+        ))}
+      </div>
+
+      <div className={styles.row}>
+        <h2>Human and Social Impact</h2>
+        {humanCourses?.map((course) => (
+          <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
+        ))}
+      </div>
+
+      <div className={styles.row}>
+        <h2>Media</h2>
+        {mediaCourses?.map((course) => (
+          <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
+        ))}
+      </div>
+
+      </div>
+
+      <div className={styles.palette}>
+    
+        <div className={styles.row}>
+          <h2>Scientific, Parallel, and High Performance Computing</h2>
+          {scientificCourses?.map((course) => (
+            <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
+          ))}
+        </div>
+        
+      <div className={styles.row}>
+        <h2>Distributed Systems, Networking, and Security</h2>
+        {distributedCourses?.map((course) => (
+          <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
+        ))}
+      </div>
+
+      <div className={styles.row}>
+        <h2>Machines</h2>
+        {machineCourses?.map((course) => (
+          <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
+        ))}
+      </div>
+
+      <div className={styles.row}>
+        <h2>Team Project</h2>
+        {teamCourses?.map((course) => (
+          <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
+        ))}
+      </div>
+
+      <div className={styles.row}>
+        <h2>Other</h2>
+        {otherCourses?.map((course) => (
+          <CourseTile course={course} onTileEvent={onTileEvent} key={course.id} />
+        ))}
+      </div>
+    </div>
     </div>
   );
 };

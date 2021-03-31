@@ -71,7 +71,7 @@
     "description": "Introduction to Computer Science\n\nBasic concepts in computing and fundamental techniques for solving computational problems. Intended as a first course for computer science majors and others with a deep interest in computing. Credit is not given for both CS 125 and CS 124. Prerequisite: Three years of high school mathematics or MATH 112. This course satisfies the General Education Criteria for:Quantitative Reasoning I",
     "creditHours": 4,
     "semestersOffered": ["Summer", "Spring", "Fall"],
-    "concentrations": [],
+    "concentrations": ["core"],
     "requirementsSatisfied": [],
     "prereqs": ["MATH112"],
     "followupCourses": ["CS126", "CS173", "CS233", "CS357", "CS450"]
@@ -82,7 +82,7 @@
     "description": "Software Design Studio\n\nFundamental principles and techniques of software development. Design, documentation, testing, and debugging software, with a significant emphasis on code review. Credit is not given for both CS 242 and CS 126. Prerequisite: CS 125. For majors only.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall"],
-    "concentrations": [],
+    "concentrations": ["core"],
     "requirementsSatisfied": [],
     "prereqs": ["CS125"],
     "followupCourses": ["CS225"]
@@ -104,7 +104,7 @@
     "description": "Discrete Structures\n\nDiscrete mathematical structures frequently encountered in the study of Computer Science. Sets, propositions, Boolean algebra, induction, recursion, relations, functions, and graphs. Credit is not given for both CS 173 and MATH 213. Prerequisite: One of CS 124, CS 125, ECE 220; one of MATH 220, MATH 221.\n",
     "creditHours": 3,
     "semestersOffered": ["Summer", "Spring", "Fall"],
-    "concentrations": [],
+    "concentrations": ["core"],
     "requirementsSatisfied": [],
     "prereqs": ["CS124", "CS125", "ECE220", "MATH220", "MATH221"],
     "followupCourses": ["CS225", "CS233", "CS374", "CS474"]
@@ -192,7 +192,7 @@
     "description": "Ethical & Professional Issues\n\nEthics for the computing profession. Ethical decision-making; licensing; intellectual property, freedom of information, and privacy. Credit is not given for both CS 210 and either CS 211 or ECE 316. Prerequisite: CS 225. Junior standing required.\n",
     "creditHours": 2,
     "semestersOffered": ["Spring", "Fall"],
-    "concentrations": [],
+    "concentrations": ["core"],
     "requirementsSatisfied": [],
     "prereqs": ["CS225"],
     "followupCourses": ["CS464"]
@@ -225,7 +225,7 @@
     "description": "Data Structures\n\nData abstractions: elementary data structures (lists, stacks, queues, and trees) and their implementation using an object-oriented programming language. Solutions to a variety of computational problems such as search on graphs and trees. Elementary analysis of algorithms. Credit is not given for both CS 225 and CS 277. Prerequisite: CS 126 or CS 128 or ECE 220; One of CS 173, MATH 213, MATH 347, MATH 412 or MATH 413. This course satisfies the General Education Criteria for:Quantitative Reasoning II",
     "creditHours": 4,
     "semestersOffered": ["Spring", "Fall", "Summer"],
-    "concentrations": [],
+    "concentrations": ["core"],
     "requirementsSatisfied": [],
     "prereqs": [
       "CS126",
@@ -272,7 +272,7 @@
     "description": "Computer Architecture\n\nFundamentals of computer architecture: digital logic design, working up from the logic gate level to understand the function of a simple computer; machine-level programming to understand implementation of high-level languages; performance models of modern computer architectures to enable performance optimization of software; hardware primitives for parallelism and security. Prerequisite: CS 125 or CS 128 and CS 173; credit or concurrent enrollment in CS 225.\n",
     "creditHours": 4,
     "semestersOffered": ["Spring", "Fall", "Summer"],
-    "concentrations": [],
+    "concentrations": ["core"],
     "requirementsSatisfied": [],
     "prereqs": ["CS125", "CS128", "CS173", "CS225"],
     "followupCourses": ["CS241", "CS421", "CS433"]
@@ -294,7 +294,7 @@
     "description": "System Programming\n\nBasics of system programming, including POSIX processes, process control, inter-process communication, synchronization, signals, simple memory management, file I/O and directories, shell programming, socket network programming, RPC programming in distributed systems, basic security mechanisms, and standard tools for systems programming such as debugging tools. Credit is not given for both CS 241 and ECE 391. Prerequisite: CS 225 and CS 233.\n",
     "creditHours": 4,
     "semestersOffered": ["Spring", "Fall", "Summer"],
-    "concentrations": [],
+    "concentrations": ["core"],
     "requirementsSatisfied": [],
     "prereqs": ["CS225", "CS233"],
     "followupCourses": [
@@ -374,7 +374,7 @@
     "description": "Numerical Methods I\n\nFundamentals of numerical methods for students in science and engineering; floating-point computation, systems of linear equations, approximation of functions and integrals, the single nonlinear equation, and the numerical solution of ordinary differential equations; various applications in science and engineering; programming exercises and use of high quality mathematical library routines. Same as MATH 357. Credit is not given for CS 357 if credit for CS 450 has been earned. (Counts for advanced hours in LAS). Prerequisite: One of CS 101, CS 105, CS 125 or ECE 220; MATH 241; one of MATH 225, MATH 257, MATH 415, MATH 416 or ASRM 406.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall", "Summer"],
-    "concentrations": [],
+    "concentrations": ["core"],
     "requirementsSatisfied": [],
     "prereqs": [
       "CS101",
@@ -396,7 +396,7 @@
     "description": "Probability & Statistics for Computer Science\n\nIntroduction to probability theory and statistics with applications to computer science. Topics include: visualizing datasets, summarizing data, basic descriptive statistics, conditional probability, independence, Bayes theorem, random variables, joint and conditional distributions, expectation, variance and covariance, central limit theorem. Markov inequality, Chebyshev inequality, law of large numbers, Markov chains, simulation, the PageRank algorithm, populations and sampling, sample mean, standard error, maximum likelihood estimation, Bayes estimation, hypothesis testing, confidence intervals, linear regression, principal component analysis, classification, and decision trees. Same as STAT 361. Credit is not given for both CS 361 and ECE 313. Prerequisite: MATH 220 or MATH 221; credit or concurrent registration in one of MATH 225, MATH 257, MATH 415, MATH 416 or ASRM 406. For majors only.\n",
     "creditHours": 3,
     "semestersOffered": ["Spring", "Fall"],
-    "concentrations": [],
+    "concentrations": ["core"],
     "requirementsSatisfied": [],
     "prereqs": [
       "MATH220",
@@ -415,7 +415,7 @@
     "description": "Introduction to Algorithms & Models of Computation\n\nAnalysis of algorithms, major paradigms of algorithm design including recursive algorithms, divide-and-conquer algorithms, dynamic programming, greedy algorithms, and graph algorithms. Formal models of computation including finite automata and Turing machines. Limitations of computation arising from fundamental notions of algorithm and from complexity-theoretic constraints. Reductions, undecidability and NP-completeness. Same as ECE 374. Prerequisite: One of CS 173, MATH 213; CS 225.\n",
     "creditHours": 4,
     "semestersOffered": ["Spring", "Fall"],
-    "concentrations": [],
+    "concentrations": ["core"],
     "requirementsSatisfied": [],
     "prereqs": ["CS173", "MATH213", "CS225"],
     "followupCourses": [
@@ -778,7 +778,7 @@
     "description": "Programming Languages & Compilers\n\nStructure of programming languages and their implementation. Basic language design principles; abstract data types; functional languages; type systems; object-oriented languages. Basics of lexing, parsing, syntax-directed translation, semantic analysis, and code generation. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 233 or CS 240; CS 374; one of MATH 225, MATH 257, MATH 415, MATH 416, ASRM 406.\n",
     "creditHours": 3,
     "semestersOffered": ["Summer", "Spring", "Fall"],
-    "concentrations": [],
+    "concentrations": ["core"],
     "requirementsSatisfied": [],
     "prereqs": [
       "CS233",
@@ -798,7 +798,7 @@
     "description": "Programming Languages & Compilers\n\nStructure of programming languages and their implementation. Basic language design principles; abstract data types; functional languages; type systems; object-oriented languages. Basics of lexing, parsing, syntax-directed translation, semantic analysis, and code generation. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 233 or CS 240; CS 374; one of MATH 225, MATH 257, MATH 415, MATH 416, ASRM 406.\n",
     "creditHours": 4,
     "semestersOffered": [],
-    "concentrations": [],
+    "concentrations": ["core"],
     "requirementsSatisfied": [],
     "prereqs": [
       "CS233",
