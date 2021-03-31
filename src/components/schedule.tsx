@@ -84,31 +84,63 @@ export const Schedule: React.FC<{
       <h1>Schedule</h1>
       <div>
         {rows.map(({ semester, year, selectedCourses }) => (
-          <div className={styles.row} key={`${year}-${semester}`}>
-            <p>
-              {semester} {year}
-            </p>
-            {range(
-              Math.max(5, ...selectedCourses.map(({ position }) => position))
-            ).map((i) => {
-              const selectedCourse = selectedCourses.find(
-                ({ position }) => position === i
-              );
-              return (
-                <div className={styles.cell} key={i}>
-                  {selectedCourse && (
-                    <CourseTile
-                      course={selectedCourse.course}
-                      onTileEvent={onTileEvent}
-                      key={selectedCourse.course.id}
-                    />
-                  )}
-                </div>
-              );
-            })}
-          </div>
+          <Row
+            year={year}
+            semester={semester}
+            selectedCourses={selectedCourses}
+            onTileEvent={onTileEvent}
+          />
         ))}
       </div>
     </div>
   );
 };
+
+const Row = ({
+  year,
+  semester,
+  selectedCourses,
+  onTileEvent,
+}: {
+  year: number;
+  semester: string;
+  selectedCourses: CourseSelection[];
+  onTileEvent: TileEventHandler;
+}) => (
+  <div className={styles.row} key={`${year}-${semester}`}>
+    <p>
+      {semester} {year}
+    </p>
+    {range(Math.max(5, ...selectedCourses.map(({ position }) => position))).map(
+      (i) => (
+        <Cell
+          key={i}
+          selectedCourse={selectedCourses.find(
+            ({ position }) => position === i
+          )}
+          onTileEvent={onTileEvent}
+        />
+      )
+    )}
+  </div>
+);
+
+const Cell = ({
+  key,
+  selectedCourse,
+  onTileEvent,
+}: {
+  key: number;
+  selectedCourse: CourseSelection;
+  onTileEvent: TileEventHandler;
+}) => (
+  <div className={styles.cell} key={key}>
+    {selectedCourse && (
+      <CourseTile
+        course={selectedCourse.course}
+        onTileEvent={onTileEvent}
+        key={selectedCourse.course.id}
+      />
+    )}
+  </div>
+);
