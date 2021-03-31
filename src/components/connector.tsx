@@ -32,6 +32,7 @@ export const Connector: React.FC<{
         position: "absolute",
         left: bounds.left - padding,
         top: bounds.top - padding,
+        pointerEvents: "none",
       }}
       width={bounds.width + 2 * padding}
       height={bounds.height + 2 * padding}
