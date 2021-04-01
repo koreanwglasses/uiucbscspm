@@ -103,6 +103,10 @@ export const App: React.FC = () => {
             }
           />{" "}
           Suggest Prerequisite Courses <br />
+          <br />
+          <a href="https://github.com/koreanwglasses/uiucbscspm">
+            View source on Github
+          </a>
           <Schedule
             selectedCourses={selectedCourses}
             onTileEvent={handleTileEvent}
