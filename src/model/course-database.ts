@@ -7,7 +7,7 @@ export class CourseDatabase {
   private constructor() {}
 
   async load() {
-    const response = await fetch("/static/courses.json");
+    const response = await fetch("./static/courses.json");
     this.courses = await response.json();
   }
 
