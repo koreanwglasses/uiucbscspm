@@ -2,6 +2,7 @@ import * as React from "react";
 import { Course, CourseSelection } from "../model/course";
 import { CourseDatabase } from "../model/course-database";
 import { courseSuggestions } from "../model/course-suggestions";
+import { verifyPrerequisites } from "../model/verify-prerequisites";
 import { JSONMap, range } from "../utils";
 import { Connector } from "./connector";
 import { CourseTile, TileEventHandler } from "./course-tile";
@@ -86,26 +87,76 @@ export const Schedule: React.FC<{
     selectedCourses: new Array(5).fill(null),
   }));
 
+  const findRowBySemester = ({
+    semester,
+    year,
+  }: {
+    semester: string;
+    year: number;
+  }) => rows.find((row) => row.semester === semester && row.year === year);
+
   selectedCourses.forEach(
     (selection) =>
-      (rows.find(
-        (row) =>
-          row.semester === selection.semester && row.year === selection.year
-      ).selectedCourses[selection.position] = selection)
+      (findRowBySemester(selection).selectedCourses[
+        selection.position
+      ] = selection)
   );
 
   const tentativeSelections: (CourseSelection & { tentative: true })[] = [];
+  const addTentativeSelection = (
+    selection: CourseSelection & { tentative?: true }
+  ) => {
+    if (
+      tentativeSelections.find(
+        (existingSelection) =>
+          existingSelection.course.id === selection.course.id
+      )
+    )
+      /* Skip if already added */
+      return;
+
+    const row = findRowBySemester(selection);
+    const position = row.selectedCourses.findIndex(
+      (x) => !x /* find first empty slot */
+    );
+
+    const tentativeSelection = {
+      ...selection,
+      position,
+      tentative: true as const,
+    };
+    row.selectedCourses[position] = tentativeSelection;
+    tentativeSelections.push(tentativeSelection);
+  };
+
+  if (suggestPrerequisiteCourses) {
+    /**
+     * Selections whose prerequisites are not met
+     */
+    const targets = selectedCourses.filter(
+      (selection) => !verifyPrerequisites(selectedCourses, selection)
+    );
+
+    []
+      .concat(
+        /* get suggestions for all target courses*/
+        ...targets.map((target) => courseSuggestions(selectedCourses, target))
+      )
+      .forEach(
+        (selection) => addTentativeSelection(selection) /* Show suggestion */
+      );
+  }
 
   if (suggestFollowupCourses) {
     rows.forEach((row, i) => {
       if (i === 0) return;
 
+      const { semester, year } = row;
+
       const prevRow = rows[i - 1];
-      const previouslyTaken: CourseSelection[] = []
-        .concat(...rows.map((row) => row.selectedCourses))
-        .filter((x) => x);
-      const followupCourses: string[] = []
+      []
         .concat(
+          /* get all followup courses from previous row */
           ...prevRow.selectedCourses.map(
             (selectedCourse) =>
               !selectedCourse?.tentative &&
@@ -122,30 +173,20 @@ export const Schedule: React.FC<{
         )
         .filter((followup) =>
           /* filter out courses where prereqs are not met */
-          courseDatabase
-            .getCourseById(followup)
-            .prereqs.map(
-              (prereq) =>
-                !!previouslyTaken.find(
-                  (selection) => selection.course.id.slice(0, 5) === prereq
-                )
-            )
-            .reduce((a, b) => a && b, true)
+          verifyPrerequisites(selectedCourses, {
+            course: courseDatabase.getCourseById(followup),
+            semester,
+            year,
+          })
+        )
+        .forEach((followup) =>
+          /* Show suggestions */
+          addTentativeSelection({
+            course: courseDatabase.getCourseById(followup),
+            semester,
+            year,
+          })
         );
-      let j = 0;
-      row.selectedCourses.forEach((selection, k) => {
-        if (!selection && j < followupCourses.length) {
-          const tentativeSelection = {
-            course: courseDatabase.getCourseById(followupCourses[j++]),
-            year: row.year,
-            semester: row.semester,
-            position: k,
-            tentative: true as const,
-          };
-          row.selectedCourses[k] = tentativeSelection;
-          tentativeSelections.push(tentativeSelection);
-        }
-      });
     });
   }
 
@@ -195,7 +236,7 @@ export const Schedule: React.FC<{
                 start={start}
                 end={end}
                 key={`${i},${j}`}
-                color={tentative ? "#ddd" : "#000"}
+                opacity={tentative ? 0.25 : 1}
               />
             )
           );

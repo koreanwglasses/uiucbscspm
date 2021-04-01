@@ -40,7 +40,7 @@ export function courseSuggestions(
     //replace all courses in ‘temp’ with their prerequisites list
 
     //temp2 will have the new list, we replace temp with temp2
-    let temp2: Course[];
+    const temp2: Course[] = [];
 
     //for each course in temp
     temp.forEach((course) => {
@@ -54,22 +54,22 @@ export function courseSuggestions(
           temp2.push(course_form);
 
           //generate the course, add to output schedule
-          let course_temp: CourseSelection;
+          const course_temp: Partial<CourseSelection> = {};
           course_temp.course = course_form;
           course_temp.semester = convert_num_to_sem(targetSem);
           course_temp.year = targetYear;
 
-          mappings.set(course_form, course_temp);
+          mappings.set(course_form, course_temp as CourseSelection);
         } else {
           //we already added the course, but we need it as a prereq earlier in the schedule
 
           //replace prior mappings
-          let course_temp: CourseSelection;
+          const course_temp: Partial<CourseSelection> = {};
           course_temp.course = course_form;
           course_temp.semester = convert_num_to_sem(targetSem);
           course_temp.year = targetYear;
 
-          mappings.set(course_form, course_temp);
+          mappings.set(course_form, course_temp as CourseSelection);
         }
       }); //end of prereq adding loop
     }); //end of course based loop

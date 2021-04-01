@@ -14,6 +14,14 @@ export const App: React.FC = () => {
     CourseSelection[]
   >([]);
 
+  const [suggestFollowupCourses, setSuggestFollowupCourses] = React.useState(
+    true
+  );
+  const [
+    suggestPrerequisiteCourses,
+    setSuggestPrerequisiteCourses,
+  ] = React.useState(false);
+
   const handleDropOnSchedule = (event: DropEvent) => {
     const cell = getCellAt(
       event.parentEvent.clientX,
@@ -81,10 +89,25 @@ export const App: React.FC = () => {
           <p>
             Requirements met: {verifyRequirements(selectedCourses).join(", ")}
           </p>
+          <input
+            type="checkbox"
+            defaultChecked={suggestFollowupCourses}
+            onInput={(e) => setSuggestFollowupCourses(e.currentTarget.checked)}
+          />{" "}
+          Suggest Followup Courses <br />
+          <input
+            type="checkbox"
+            defaultChecked={suggestPrerequisiteCourses}
+            onInput={(e) =>
+              setSuggestPrerequisiteCourses(e.currentTarget.checked)
+            }
+          />{" "}
+          Suggest Prerequisite Courses <br />
           <Schedule
             selectedCourses={selectedCourses}
             onTileEvent={handleTileEvent}
-            // suggestFollowupCourses={true}
+            suggestFollowupCourses={suggestFollowupCourses}
+            suggestPrerequisiteCourses={suggestPrerequisiteCourses}
           />
         </div>
         <div className={styles.paletteContainer}>

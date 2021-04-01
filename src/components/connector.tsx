@@ -3,8 +3,8 @@ import * as React from "react";
 export const Connector: React.FC<{
   start: HTMLElement;
   end: HTMLElement;
-  color?: string;
-}> = ({ start, end, color = "#000" }) => {
+  opacity?: number;
+}> = ({ start, end, opacity = 1 }) => {
   const startRect = start.getBoundingClientRect();
   const startPosition = {
     x: scrollX + startRect.left + startRect.width / 2,
@@ -46,7 +46,6 @@ export const Connector: React.FC<{
           refX="0"
           refY="3.5"
           orient="auto"
-          fill={color}
         >
           <polygon points="0 0, 10 3.5, 0 7" />
         </marker>
@@ -56,7 +55,8 @@ export const Connector: React.FC<{
         y1={padding + (startPosition.y < endPosition.y ? 0 : bounds.height)}
         x2={padding + (startPosition.x < endPosition.x ? bounds.width : 0)}
         y2={padding + (startPosition.y < endPosition.y ? bounds.height : 0)}
-        stroke={color}
+        stroke={"#000"}
+        opacity={opacity}
         strokeWidth="1"
         markerEnd="url(#arrowhead)"
       />
