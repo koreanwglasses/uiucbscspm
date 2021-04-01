@@ -21,10 +21,10 @@ export function courseSuggestions(
   const currentYear = 2021;
   const currentSem = 1; //fall is odd, spring is even
 
-  let targetSem = 0;
+  var targetSem = 0;
   if (targetCourse.semester == "fall") targetSem = 1;
 
-  let targetYear = targetCourse.year;
+  var targetYear = targetCourse.year;
 
   //these are used in the loop case, they count backwards
   //the first round of prereqs we add must be put in the semester prior to the targetSem, targetYear pair
@@ -81,6 +81,8 @@ export function courseSuggestions(
           course_temp.semester = convert_num_to_sem(targetSem);
           course_temp.year = targetYear;
 
+          console.log("altered " + course_form.name + " to date " + convert_num_to_sem(targetSem) + " " + targetYear)
+
           mappings.set(course_form, course_temp as CourseSelection);
         }
       } //end of sanity check conditional --> trying to use continue throws an error message?
@@ -92,7 +94,18 @@ export function courseSuggestions(
 
     //replace temp with temp2, all prereqs added
     temp = [...temp2]
+    
+    if ((
+      targetYear < currentYear ||
+      (targetYear == currentYear && targetSem < currentSem)) && temp.length > 0
+    ) {
+      console.log("imposs " + targetYear + " " + targetSem)
+      //schedule is impossible!
+      const issue_output = new Array<CourseSelection>();
+      //console.log("returned schedule!")
 
+      return issue_output;
+    }
     //adjust the semester, year variables
     if (targetSem == 0) {
       targetSem = 1;
@@ -101,16 +114,7 @@ export function courseSuggestions(
       targetSem -= 1;
     }
 
-    if (
-      targetYear < currentYear ||
-      (targetYear == currentYear && targetSem < currentSem)
-    ) {
-      //schedule is impossible!
-      const issue_output = new Array<CourseSelection>();
-      console.log("returned schedule!")
-
-      return issue_output;
-    }
+    
 
     //console.log("Courses in temp at the end of the loop")
     //temp.forEach(element => { console.log("Course= " + element.name)
