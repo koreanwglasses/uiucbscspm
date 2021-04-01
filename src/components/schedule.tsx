@@ -62,7 +62,7 @@ export const isSchedule = (element: HTMLElement) =>
   element.classList.contains(styles.schedule);
 
 export const Schedule: React.FC<{
-  selectedCourses: CourseSelection[];
+  selectedCourses: (CourseSelection & { tentative?: boolean })[];
   onTileEvent: TileEventHandler;
 }> = ({ selectedCourses, onTileEvent }) => {
   const courseDatabase = CourseDatabase.getInstance();
@@ -154,8 +154,11 @@ export const Schedule: React.FC<{
           />
         ))}
       </div>
-      {selectedCourses.map((selectedCourse, i) => {
-        const prequisiteSelections = selectedCourses.filter(
+      {[...tentativeSelections, ...selectedCourses].map((selectedCourse, i) => {
+        const prequisiteSelections = [
+          ...tentativeSelections,
+          ...selectedCourses,
+        ].filter(
           ({ course }) =>
             selectedCourse.course.prereqs.includes(course.id.slice(0, 5)) // TODO: make a more robust prereq searcher
         );
@@ -171,9 +174,18 @@ export const Schedule: React.FC<{
             year: selectedCourse.year,
             position: selectedCourse.position,
           });
+          const tentative =
+            prequisiteSelection.tentative || selectedCourse.tentative;
           return (
             start &&
-            end && <Connector start={start} end={end} key={`${i},${j}`} />
+            end && (
+              <Connector
+                start={start}
+                end={end}
+                key={`${i},${j}`}
+                color={tentative ? "#ddd" : "#000"}
+              />
+            )
           );
         });
       })}
