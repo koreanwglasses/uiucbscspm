@@ -31,10 +31,9 @@ export function courseSuggestions(
 
   if (targetSem == 0) {
     targetYear -= 1;
-    targetSem = 1
-  }
-  else {
-    targetSem = 0
+    targetSem = 1;
+  } else {
+    targetSem = 0;
   }
 
   //generate ‘target’ = semester+year combo for target course
@@ -44,9 +43,8 @@ export function courseSuggestions(
   while (prereqs_left) {
     //replace all courses in ‘temp’ with their prerequisites list
 
-
     //temp2 will have the new list, we replace temp with temp2
-    let temp2: Course[] 
+    let temp2: Course[];
     temp2 = new Array<Course>();
     //for each course in temp
     temp.forEach((course) => {
@@ -55,51 +53,64 @@ export function courseSuggestions(
 
       //for each prereq in the prereq courses
       prereq_list.forEach((prereq) => {
-        console.log("prereq: " + prereq)
+        console.log("prereq: " + prereq);
         const course_form = convert_string_to_course(prereq);
 
         if (course_form.name != "undef") {
+          if (!added.has(course_form)) {
+            added.add(course_form);
+            console.log(
+              "added " +
+                course_form.name +
+                " with date " +
+                convert_num_to_sem(targetSem) +
+                " " +
+                targetYear
+            );
+            temp2.push(course_form);
 
-        if (!added.has(course_form)) {
-          added.add(course_form);
-          console.log("added " + course_form.name + " with date " + convert_num_to_sem(targetSem) + " " + targetYear)
-          temp2.push(course_form);
+            //generate the course, add to output schedule
+            const course_temp: Partial<CourseSelection> = {};
+            course_temp.course = course_form;
+            course_temp.semester = convert_num_to_sem(targetSem);
+            course_temp.year = targetYear;
 
-          //generate the course, add to output schedule
-          const course_temp: Partial<CourseSelection> = {};
-          course_temp.course = course_form;
-          course_temp.semester = convert_num_to_sem(targetSem);
-          course_temp.year = targetYear;
+            mappings.set(course_form, course_temp as CourseSelection);
+          } else {
+            //we already added the course, but we need it as a prereq earlier in the schedule
 
-          mappings.set(course_form, course_temp as CourseSelection);
-        } else {
-          //we already added the course, but we need it as a prereq earlier in the schedule
+            //replace prior mappings
+            const course_temp: Partial<CourseSelection> = {};
+            course_temp.course = course_form;
+            course_temp.semester = convert_num_to_sem(targetSem);
+            course_temp.year = targetYear;
 
-          //replace prior mappings
-          const course_temp: Partial<CourseSelection> = {};
-          course_temp.course = course_form;
-          course_temp.semester = convert_num_to_sem(targetSem);
-          course_temp.year = targetYear;
+            console.log(
+              "altered " +
+                course_form.name +
+                " to date " +
+                convert_num_to_sem(targetSem) +
+                " " +
+                targetYear
+            );
 
-          console.log("altered " + course_form.name + " to date " + convert_num_to_sem(targetSem) + " " + targetYear)
-
-          mappings.set(course_form, course_temp as CourseSelection);
-        }
-      } //end of sanity check conditional --> trying to use continue throws an error message?
+            mappings.set(course_form, course_temp as CourseSelection);
+          }
+        } //end of sanity check conditional --> trying to use continue throws an error message?
       }); //end of prereq adding loop
     }); //end of course based loop
 
-    console.log("end of course loop")
-
+    console.log("end of course loop");
 
     //replace temp with temp2, all prereqs added
-    temp = [...temp2]
-    
-    if ((
-      targetYear < currentYear ||
-      (targetYear == currentYear && targetSem < currentSem)) && temp.length > 0
+    temp = [...temp2];
+
+    if (
+      (targetYear < currentYear ||
+        (targetYear == currentYear && targetSem < currentSem)) &&
+      temp.length > 0
     ) {
-      console.log("imposs " + targetYear + " " + targetSem)
+      console.log("imposs " + targetYear + " " + targetSem);
       //schedule is impossible!
       const issue_output = new Array<CourseSelection>();
       //console.log("returned schedule!")
@@ -113,8 +124,6 @@ export function courseSuggestions(
     } else {
       targetSem -= 1;
     }
-
-    
 
     //console.log("Courses in temp at the end of the loop")
     //temp.forEach(element => { console.log("Course= " + element.name)
@@ -137,7 +146,7 @@ export function courseSuggestions(
     output_schedule.push(mappings.get(key));
   }
 
-  console.log("returned schedule!")
+  console.log("returned schedule!");
   return output_schedule;
 
   //throw new Error("method not implemented");
@@ -151,8 +160,8 @@ function convert_num_to_sem(semester: number): string {
 function convert_string_to_course(course_title: string): Course {
   if (!course_title.includes("CS")) {
     var invalid_course: Partial<Course> = {};
-    invalid_course.name = "undef"
-    return invalid_course as Course
+    invalid_course.name = "undef";
+    return invalid_course as Course;
   }
   return CourseDatabase.getInstance().getCourseById(course_title);
 }
