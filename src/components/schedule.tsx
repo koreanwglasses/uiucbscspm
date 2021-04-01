@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Course, CourseSelection } from "../model/course";
 import { CourseDatabase } from "../model/course-database";
+import { courseSuggestions } from "../model/course-suggestions";
 import { JSONMap, range } from "../utils";
 import { Connector } from "./connector";
 import { CourseTile, TileEventHandler } from "./course-tile";
@@ -64,7 +65,14 @@ export const isSchedule = (element: HTMLElement) =>
 export const Schedule: React.FC<{
   selectedCourses: (CourseSelection & { tentative?: boolean })[];
   onTileEvent: TileEventHandler;
-}> = ({ selectedCourses, onTileEvent }) => {
+  suggestFollowupCourses?: boolean;
+  suggestPrerequisiteCourses?: boolean;
+}> = ({
+  selectedCourses,
+  onTileEvent,
+  suggestFollowupCourses = false,
+  suggestPrerequisiteCourses = false,
+}) => {
   const courseDatabase = CourseDatabase.getInstance();
 
   type Row = {
@@ -87,55 +95,59 @@ export const Schedule: React.FC<{
   );
 
   const tentativeSelections: (CourseSelection & { tentative: true })[] = [];
-  rows.forEach((row, i) => {
-    if (i === 0) return;
 
-    const prevRow = rows[i - 1];
-    const previouslyTaken: CourseSelection[] = []
-      .concat(...rows.map((row) => row.selectedCourses))
-      .filter((x) => x);
-    const followupCourses: string[] = []
-      .concat(
-        ...prevRow.selectedCourses.map(
-          (selectedCourse) =>
-            !selectedCourse?.tentative && selectedCourse?.course.followupCourses
+  if (suggestFollowupCourses) {
+    rows.forEach((row, i) => {
+      if (i === 0) return;
+
+      const prevRow = rows[i - 1];
+      const previouslyTaken: CourseSelection[] = []
+        .concat(...rows.map((row) => row.selectedCourses))
+        .filter((x) => x);
+      const followupCourses: string[] = []
+        .concat(
+          ...prevRow.selectedCourses.map(
+            (selectedCourse) =>
+              !selectedCourse?.tentative &&
+              selectedCourse?.course.followupCourses
+          )
         )
-      )
-      .filter((x) => x /* filter out falsy values */)
-      .filter(
-        (followup) =>
-          /* filter courses already selected or suggested */
-          ![...tentativeSelections, ...selectedCourses].find(
-            (selection) => selection.course.id.slice(0, 5) === followup
-          )
-      )
-      .filter((followup) =>
-        /* filter out courses where prereqs are not met */
-        courseDatabase
-          .getCourseById(followup)
-          .prereqs.map(
-            (prereq) =>
-              !!previouslyTaken.find(
-                (selection) => selection.course.id.slice(0, 5) === prereq
-              )
-          )
-          .reduce((a, b) => a && b, true)
-      );
-    let j = 0;
-    row.selectedCourses.forEach((selection, k) => {
-      if (!selection && j < followupCourses.length) {
-        const tentativeSelection = {
-          course: courseDatabase.getCourseById(followupCourses[j++]),
-          year: row.year,
-          semester: row.semester,
-          position: k,
-          tentative: true as const,
-        };
-        row.selectedCourses[k] = tentativeSelection;
-        tentativeSelections.push(tentativeSelection);
-      }
+        .filter((x) => x /* filter out falsy values */)
+        .filter(
+          (followup) =>
+            /* filter courses already selected or suggested */
+            ![...tentativeSelections, ...selectedCourses].find(
+              (selection) => selection.course.id.slice(0, 5) === followup
+            )
+        )
+        .filter((followup) =>
+          /* filter out courses where prereqs are not met */
+          courseDatabase
+            .getCourseById(followup)
+            .prereqs.map(
+              (prereq) =>
+                !!previouslyTaken.find(
+                  (selection) => selection.course.id.slice(0, 5) === prereq
+                )
+            )
+            .reduce((a, b) => a && b, true)
+        );
+      let j = 0;
+      row.selectedCourses.forEach((selection, k) => {
+        if (!selection && j < followupCourses.length) {
+          const tentativeSelection = {
+            course: courseDatabase.getCourseById(followupCourses[j++]),
+            year: row.year,
+            semester: row.semester,
+            position: k,
+            tentative: true as const,
+          };
+          row.selectedCourses[k] = tentativeSelection;
+          tentativeSelections.push(tentativeSelection);
+        }
+      });
     });
-  });
+  }
 
   const cellRefs = React.useRef(new JSONMap<CellData, HTMLDivElement>());
 

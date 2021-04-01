@@ -84,6 +84,7 @@ export const App: React.FC = () => {
           <Schedule
             selectedCourses={selectedCourses}
             onTileEvent={handleTileEvent}
+            // suggestFollowupCourses={true}
           />
         </div>
         <div className={styles.paletteContainer}>
