@@ -91,6 +91,9 @@ export const Schedule: React.FC<{
     if (i === 0) return;
 
     const prevRow = rows[i - 1];
+    const previouslyTaken: CourseSelection[] = []
+      .concat(...rows.map((row) => row.selectedCourses))
+      .filter((x) => x);
     const followupCourses: string[] = []
       .concat(
         ...prevRow.selectedCourses.map(
@@ -98,31 +101,38 @@ export const Schedule: React.FC<{
             !selectedCourse?.tentative && selectedCourse?.course.followupCourses
         )
       )
-      .filter((x) => x /* filter out falsy values */);
-
+      .filter((x) => x /* filter out falsy values */)
+      .filter(
+        (followup) =>
+          /* filter courses already selected or suggested */
+          ![...tentativeSelections, ...selectedCourses].find(
+            (selection) => selection.course.id.slice(0, 5) === followup
+          )
+      )
+      .filter((followup) =>
+        /* filter out courses where prereqs are not met */
+        courseDatabase
+          .getCourseById(followup)
+          .prereqs.map(
+            (prereq) =>
+              !!previouslyTaken.find(
+                (selection) => selection.course.id.slice(0, 5) === prereq
+              )
+          )
+          .reduce((a, b) => a && b, true)
+      );
     let j = 0;
     row.selectedCourses.forEach((selection, k) => {
-      if (!selection) {
-        while (
-          j < followupCourses.length &&
-          [...tentativeSelections, ...selectedCourses].find(
-            (selection) =>
-              selection.course.id.slice(0, 5) === followupCourses[j]
-          )
-        )
-          j++;
-
-        if (j < followupCourses.length) {
-          const tentativeSelection = {
-            course: courseDatabase.getCourseById(followupCourses[j]),
-            year: row.year,
-            semester: row.semester,
-            position: k,
-            tentative: true as const,
-          };
-          row.selectedCourses[k] = tentativeSelection;
-          tentativeSelections.push(tentativeSelection);
-        }
+      if (!selection && j < followupCourses.length) {
+        const tentativeSelection = {
+          course: courseDatabase.getCourseById(followupCourses[j++]),
+          year: row.year,
+          semester: row.semester,
+          position: k,
+          tentative: true as const,
+        };
+        row.selectedCourses[k] = tentativeSelection;
+        tentativeSelections.push(tentativeSelection);
       }
     });
   });
