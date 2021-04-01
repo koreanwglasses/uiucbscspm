@@ -15,6 +15,10 @@ export class CourseDatabase {
     return this.courses;
   }
 
+  getCourseById(id: string) {
+    return this.courses.find((course) => course.id.slice(0, 5) === id);
+  }
+
   getCourseByName(name: string) {
     return this.courses.find((course) => course.name === name);
   }

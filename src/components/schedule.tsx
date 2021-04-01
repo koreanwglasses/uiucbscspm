@@ -1,5 +1,6 @@
 import * as React from "react";
-import { CourseSelection } from "../model/course";
+import { Course, CourseSelection } from "../model/course";
+import { CourseDatabase } from "../model/course-database";
 import { JSONMap, range } from "../utils";
 import { Connector } from "./connector";
 import { CourseTile, TileEventHandler } from "./course-tile";
@@ -64,23 +65,67 @@ export const Schedule: React.FC<{
   selectedCourses: CourseSelection[];
   onTileEvent: TileEventHandler;
 }> = ({ selectedCourses, onTileEvent }) => {
+  const courseDatabase = CourseDatabase.getInstance();
+
   type Row = {
     semester: "fall" | "spring";
     year: number;
-    selectedCourses: CourseSelection[];
+    selectedCourses: (CourseSelection & { tentative?: boolean })[];
   };
 
-  const rows: Row[] = semesters.map((sem) => ({ ...sem, selectedCourses: [] }));
+  const rows: Row[] = semesters.map((sem) => ({
+    ...sem,
+    selectedCourses: new Array(5).fill(null),
+  }));
 
-  selectedCourses.forEach((selectedCourse) =>
-    rows
-      .find(
+  selectedCourses.forEach(
+    (selection) =>
+      (rows.find(
         (row) =>
-          row.semester === selectedCourse.semester &&
-          row.year === selectedCourse.year
-      )
-      .selectedCourses.push(selectedCourse)
+          row.semester === selection.semester && row.year === selection.year
+      ).selectedCourses[selection.position] = selection)
   );
+
+  const tentativeSelections: (CourseSelection & { tentative: true })[] = [];
+  rows.forEach((row, i) => {
+    if (i === 0) return;
+
+    const prevRow = rows[i - 1];
+    const followupCourses: string[] = []
+      .concat(
+        ...prevRow.selectedCourses.map(
+          (selectedCourse) =>
+            !selectedCourse?.tentative && selectedCourse?.course.followupCourses
+        )
+      )
+      .filter((x) => x /* filter out falsy values */);
+
+    let j = 0;
+    row.selectedCourses.forEach((selection, k) => {
+      if (!selection) {
+        while (
+          j < followupCourses.length &&
+          [...tentativeSelections, ...selectedCourses].find(
+            (selection) =>
+              selection.course.id.slice(0, 5) === followupCourses[j]
+          )
+        )
+          j++;
+
+        if (j < followupCourses.length) {
+          const tentativeSelection = {
+            course: courseDatabase.getCourseById(followupCourses[j]),
+            year: row.year,
+            semester: row.semester,
+            position: k,
+            tentative: true as const,
+          };
+          row.selectedCourses[k] = tentativeSelection;
+          tentativeSelections.push(tentativeSelection);
+        }
+      }
+    });
+  });
 
   const cellRefs = React.useRef(new JSONMap<CellData, HTMLDivElement>());
 
@@ -135,28 +180,28 @@ const Row = ({
 }: {
   year: number;
   semester: string;
-  selectedCourses: CourseSelection[];
+  selectedCourses: (CourseSelection & { tentative?: boolean })[];
   onTileEvent: TileEventHandler;
   onCellRef: (cell: CellData, ref: HTMLDivElement) => void;
-}) => (
-  <div className={styles.row} key={`${year}-${semester}`}>
-    <p>
-      {semester} {year}
-    </p>
-    {range(Math.max(5, ...selectedCourses.map(({ position }) => position))).map(
-      (position) => (
-        <Cell
-          key={position}
-          selectedCourse={selectedCourses.find(
-            (selectedCourse) => selectedCourse.position === position
-          )}
-          onTileEvent={onTileEvent}
-          ref={(ref) => onCellRef({ semester, year, position }, ref)}
-        />
-      )
-    )}
-  </div>
-);
+}) => {
+  return (
+    <div className={styles.row} key={`${year}-${semester}`}>
+      <p>
+        {semester} {year}
+      </p>
+      {selectedCourses.map((selectedCourse, position) => {
+        return (
+          <Cell
+            key={position}
+            selectedCourse={selectedCourse}
+            onTileEvent={onTileEvent}
+            ref={(ref) => onCellRef({ semester, year, position }, ref)}
+          />
+        );
+      })}
+    </div>
+  );
+};
 
 const Cell = React.forwardRef(
   (
@@ -164,17 +209,18 @@ const Cell = React.forwardRef(
       selectedCourse,
       onTileEvent,
     }: {
-      selectedCourse: CourseSelection;
+      selectedCourse: CourseSelection & { tentative?: boolean };
       onTileEvent: TileEventHandler;
     },
     ref: React.ForwardedRef<HTMLDivElement>
   ) => (
     <div className={styles.cell} ref={ref}>
-      {selectedCourse && (
+      {selectedCourse?.course && (
         <CourseTile
           course={selectedCourse.course}
           onTileEvent={onTileEvent}
           key={selectedCourse.course.id}
+          tentative={selectedCourse.tentative}
         />
       )}
     </div>
