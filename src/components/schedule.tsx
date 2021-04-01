@@ -1,9 +1,9 @@
 import * as React from "react";
-import { Course, CourseSelection } from "../model/course";
+import { CourseSelection } from "../model/course";
 import { CourseDatabase } from "../model/course-database";
 import { courseSuggestions } from "../model/course-suggestions";
 import { verifyPrerequisites } from "../model/verify-prerequisites";
-import { JSONMap, range } from "../utils";
+import { JSONMap } from "../utils";
 import { Connector } from "./connector";
 import { CourseTile, TileEventHandler } from "./course-tile";
 import styles from "./schedule.module.css";
