@@ -109,7 +109,8 @@ export const Schedule: React.FC<{
     if (
       [...tentativeSelections, ...selectedCourses].find(
         (existingSelection) =>
-          existingSelection.course.id === selection.course.id
+          existingSelection.course.id.slice(0, 5) ===
+          selection.course.id.slice(0, 5)
       )
     )
       /* Skip if already added */
