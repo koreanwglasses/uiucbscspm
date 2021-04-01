@@ -107,7 +107,7 @@ export const Schedule: React.FC<{
     selection: CourseSelection & { tentative?: true }
   ) => {
     if (
-      tentativeSelections.find(
+      [...tentativeSelections, ...selectedCourses].find(
         (existingSelection) =>
           existingSelection.course.id === selection.course.id
       )
@@ -164,13 +164,6 @@ export const Schedule: React.FC<{
           )
         )
         .filter((x) => x /* filter out falsy values */)
-        .filter(
-          (followup) =>
-            /* filter courses already selected or suggested */
-            ![...tentativeSelections, ...selectedCourses].find(
-              (selection) => selection.course.id.slice(0, 5) === followup
-            )
-        )
         .filter((followup) =>
           /* filter out courses where prereqs are not met */
           verifyPrerequisites(selectedCourses, {
